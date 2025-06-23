@@ -3,8 +3,9 @@ import React from 'react';
 import Navigation from '../components/Navigation';
 import Hero from '../components/Hero';
 import About from '../components/About';
-import Skills from '../components/Skills';
-import Projects from '../components/Projects';
+import Journey from '../components/Journey';
+import Philosophy from '../components/Philosophy';
+import Mission from '../components/Mission';
 import Contact from '../components/Contact';
 import Footer from '../components/Footer';
 
@@ -14,8 +15,9 @@ const Index = () => {
       <Navigation />
       <Hero />
       <About />
-      <Skills />
-      <Projects />
+      <Journey />
+      <Philosophy />
+      <Mission />
       <Contact />
       <Footer />
     </div>

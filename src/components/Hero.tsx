@@ -1,61 +1,48 @@
 
 import React from 'react';
-import { ChevronDown, Github, Linkedin, Mail } from 'lucide-react';
+import { ChevronDown } from 'lucide-react';
 
 const Hero = () => {
   return (
-    <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden">
+    <section id="hero" className="min-h-screen flex items-center justify-center relative overflow-hidden">
       {/* Animated background elements */}
       <div className="absolute inset-0 overflow-hidden">
-        <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-blue-500/10 rounded-full blur-3xl animate-pulse"></div>
-        <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-purple-500/10 rounded-full blur-3xl animate-pulse delay-1000"></div>
+        <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-orange-500/10 rounded-full blur-3xl animate-pulse"></div>
+        <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-red-500/10 rounded-full blur-3xl animate-pulse delay-1000"></div>
       </div>
 
-      <div className="text-center z-10 px-4">
-        <div className="mb-8">
-          <h1 className="text-5xl md:text-7xl font-bold text-white mb-4 animate-fade-in">
-            John <span className="text-blue-400">Doe</span>
+      <div className="container mx-auto px-4 z-10">
+        <div className="text-center">
+          <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-6 animate-fade-in leading-tight">
+            Building Bridges Between<br />
+            <span className="text-orange-400">Basque Heritage</span> and{' '}
+            <span className="text-red-400">African Innovation</span>
           </h1>
-          <p className="text-xl md:text-2xl text-gray-300 mb-8 animate-fade-in-delay">
-            Full Stack Developer & UI/UX Designer
+          <p className="text-xl md:text-2xl text-gray-300 mb-8 animate-fade-in-delay max-w-4xl mx-auto">
+            Senior Staff Product Manager at KingMakers, crafting frictionless payment experiences across Africa
           </p>
-          <p className="text-lg text-gray-400 max-w-2xl mx-auto animate-fade-in-delay-2">
-            I create beautiful, functional, and user-centered digital experiences
-          </p>
-        </div>
+          
+          <div className="flex flex-wrap justify-center gap-4 mb-12 animate-fade-in-delay-2">
+            <span className="inline-block px-6 py-3 bg-blue-600/80 text-white rounded-full font-medium backdrop-blur-sm">
+              Product Leader
+            </span>
+            <span className="inline-block px-6 py-3 bg-gray-700/80 text-white rounded-full font-medium backdrop-blur-sm">
+              NYU Stern Lecturer
+            </span>
+            <span className="inline-block px-6 py-3 bg-orange-600/80 text-white rounded-full font-medium backdrop-blur-sm">
+              23 Years Connected to Africa
+            </span>
+          </div>
 
-        <div className="flex justify-center space-x-6 mb-12 animate-fade-in-delay-3">
-          <a
-            href="https://github.com"
-            className="p-3 bg-gray-800 hover:bg-gray-700 rounded-full transition-colors duration-200"
-            aria-label="GitHub"
-          >
-            <Github size={24} className="text-white" />
-          </a>
-          <a
-            href="https://linkedin.com"
-            className="p-3 bg-gray-800 hover:bg-gray-700 rounded-full transition-colors duration-200"
-            aria-label="LinkedIn"
-          >
-            <Linkedin size={24} className="text-white" />
-          </a>
-          <a
-            href="mailto:john@example.com"
-            className="p-3 bg-gray-800 hover:bg-gray-700 rounded-full transition-colors duration-200"
-            aria-label="Email"
-          >
-            <Mail size={24} className="text-white" />
-          </a>
-        </div>
-
-        <div className="animate-fade-in-delay-4">
-          <a
-            href="#about"
-            className="inline-flex items-center px-8 py-4 bg-blue-600 hover:bg-blue-700 text-white font-medium rounded-lg transition-colors duration-200"
-          >
-            Get to know me
-            <ChevronDown size={20} className="ml-2" />
-          </a>
+          <div className="animate-fade-in-delay-3">
+            <a
+              href="#about"
+              className="inline-flex items-center px-8 py-4 bg-blue-600 hover:bg-blue-700 text-white font-medium rounded-lg transition-colors duration-200 text-lg"
+            >
+              Explore My Journey
+              <ChevronDown size={20} className="ml-2" />
+            </a>
+          </div>
         </div>
       </div>
 
