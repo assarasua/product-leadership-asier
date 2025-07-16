@@ -1,59 +1,72 @@
 
 import React from 'react';
-import { MapPin, Heart, Mountain } from 'lucide-react';
+import { Award, Users, Globe, Briefcase } from 'lucide-react';
 
 const About = () => {
   return (
-    <section id="about" className="py-20 px-4">
-      <div className="max-w-7xl mx-auto">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">From Ibarra to Africa</h2>
+    <section id="about" className="py-20">
+      <div className="container-wide">
+        <div className="text-center mb-16 animate-fade-in">
+          <h2 className="text-headline text-foreground mb-6">About Me</h2>
+          <p className="text-body-large text-muted-foreground max-w-3xl mx-auto">
+            Passionate about building products that make a difference
+          </p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-12 items-center mb-16">
-          <div>
-            <div className="prose prose-lg prose-invert max-w-none">
-              <p className="text-gray-300 mb-6 text-lg leading-relaxed">
-                Born in the rolling hills of <strong className="text-orange-400">Ibarra, Basque Country</strong>, my journey began at the family farm <em>Bizkardo baserria</em>, where my mother and grandmother taught me the essence of customer excellence through their authentic dedication to their craft.
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+          <div className="animate-slide-in-left">
+            <div className="space-y-6 text-muted-foreground">
+              <p className="text-lg leading-relaxed">
+                I'm a seasoned product manager and entrepreneur with over a decade of experience building innovative solutions
+                across fintech, data analytics, and IoT industries. Currently, I lead the payments team at KingMakers,
+                focusing on creating frictionless payment experiences across African markets.
               </p>
-              <p className="text-gray-300 mb-6 text-lg leading-relaxed">
-                My father built resilience into my character, preparing me for the challenges that would define my path. These early lessons in <em className="text-orange-400">Lan Egiati</em> (honest work) became the foundation for everything that followed.
+              
+              <p className="text-lg leading-relaxed">
+                As a Global Lecturer at NYU Stern School of Business, I'm passionate about bridging the gap between
+                technology and society, teaching the next generation of innovators about the transformative power of technology.
               </p>
-              <p className="text-gray-300 mb-8 text-lg leading-relaxed">
-                For <strong className="text-red-400">23 years, Africa has been calling my name</strong>. What started as a transformative journey to Kenya and Tanzania in 2002 has evolved into a mission to revolutionize financial experiences across the continent, shaped by formative experiences in gamification and user behavioral change.
+              
+              <p className="text-lg leading-relaxed">
+                My entrepreneurial journey spans multiple successful ventures, from co-founding Graphext, a no-code data
+                visualization platform, to leading product development at CoverWallet. I believe in the power of technology
+                to solve complex problems and create meaningful impact.
               </p>
             </div>
-            <a
-              href="#journey"
-              className="inline-block px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white font-medium rounded-lg transition-colors duration-200"
-            >
-              Discover The Journey
-            </a>
           </div>
           
-          <div className="relative">
-            <div className="bg-gradient-to-br from-orange-500/20 to-red-500/20 rounded-2xl p-8 backdrop-blur-sm border border-orange-700/30">
-              <div className="text-center">
-                <div className="w-32 h-32 bg-gradient-to-br from-orange-500 to-red-500 rounded-full mx-auto mb-6 flex items-center justify-center">
-                  <span className="text-4xl font-bold text-white">AS</span>
+          <div className="animate-fade-in-delay-2">
+            <div className="grid grid-cols-2 gap-6">
+              <div className="glass-card p-6 rounded-2xl text-center hover-lift">
+                <div className="flex justify-center mb-4">
+                  <Award className="w-8 h-8 text-primary" />
                 </div>
-                <h4 className="text-2xl font-bold text-white mb-2">Asier Sarasua</h4>
-                <p className="text-gray-300 mb-4">Product Leader & Innovation Catalyst</p>
-                
-                <div className="space-y-3 text-sm">
-                  <div className="flex items-center justify-center text-gray-400">
-                    <MapPin size={16} className="mr-2" />
-                    Madrid, Spain • Basque Heritage
-                  </div>
-                  <div className="flex items-center justify-center text-gray-400">
-                    <Heart size={16} className="mr-2" />
-                    23 Years Connected to Africa
-                  </div>
-                  <div className="flex items-center justify-center text-gray-400">
-                    <Mountain size={16} className="mr-2" />
-                    Zegama Aizkorri Finisher
-                  </div>
+                <div className="text-3xl font-bold text-foreground mb-2">10+</div>
+                <div className="text-muted-foreground text-sm">Years Experience</div>
+              </div>
+              
+              <div className="glass-card p-6 rounded-2xl text-center hover-lift">
+                <div className="flex justify-center mb-4">
+                  <Briefcase className="w-8 h-8 text-secondary" />
                 </div>
+                <div className="text-3xl font-bold text-foreground mb-2">6</div>
+                <div className="text-muted-foreground text-sm">Companies</div>
+              </div>
+              
+              <div className="glass-card p-6 rounded-2xl text-center hover-lift">
+                <div className="flex justify-center mb-4">
+                  <Users className="w-8 h-8 text-accent" />
+                </div>
+                <div className="text-3xl font-bold text-foreground mb-2">3</div>
+                <div className="text-muted-foreground text-sm">Languages</div>
+              </div>
+              
+              <div className="glass-card p-6 rounded-2xl text-center hover-lift">
+                <div className="flex justify-center mb-4">
+                  <Globe className="w-8 h-8 text-primary" />
+                </div>
+                <div className="text-3xl font-bold text-foreground mb-2">5</div>
+                <div className="text-muted-foreground text-sm">Countries</div>
               </div>
             </div>
           </div>
