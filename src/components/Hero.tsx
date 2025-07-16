@@ -15,7 +15,7 @@ const Hero = () => {
         <div className="text-center">
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-6 animate-fade-in leading-tight">
             Building Bridges Between<br />
-            <span className="text-orange-400">Basque Heritage</span> and{' '}
+            <span className="text-orange-400">Basque Heritage</span>, <span className="text-blue-400">Silicon Valley Tech</span> and{' '}
             <span className="text-red-400">African Innovation</span>
           </h1>
           <p className="text-xl md:text-2xl text-gray-300 mb-8 animate-fade-in-delay max-w-4xl mx-auto">
