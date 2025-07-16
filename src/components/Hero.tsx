@@ -15,7 +15,7 @@ const Hero = () => {
       <div className="container-wide z-10">
         <div className="text-center max-w-6xl mx-auto">
           {/* Main Headline */}
-          <h1 className="text-display text-foreground mb-6 animate-fade-in">
+          <h1 className="text-4xl md:text-6xl lg:text-7xl xl:text-8xl font-bold text-foreground mb-8 animate-fade-in leading-tight">
             Building Bridges Between<br />
             <span className="text-primary-contrast">Basque Heritage</span>,{' '}
             <span className="text-accent-contrast">Silicon Valley Tech</span> and{' '}
@@ -23,11 +23,11 @@ const Hero = () => {
           </h1>
           
           {/* Subtitle */}
-          <p className="text-xl md:text-3xl lg:text-4xl font-semibold text-muted-foreground mb-6 animate-fade-in-delay">
+          <p className="text-xl md:text-2xl lg:text-3xl font-medium text-muted-foreground mb-8 animate-fade-in-delay">
             Creative Farmer at Bizkardo | Global Lecturer | Entrepreneur
           </p>
           
-          <p className="text-lg md:text-xl text-muted-foreground mb-12 animate-fade-in-delay-2 max-w-5xl mx-auto leading-relaxed">
+          <p className="text-lg md:text-xl text-muted-foreground mb-16 animate-fade-in-delay-2 max-w-5xl mx-auto leading-relaxed">
             Cultivating innovation from the Basque countryside while driving technology solutions across global markets.
             Teaching the next generation at NYU Stern and building bridges between heritage and innovation.
           </p>
