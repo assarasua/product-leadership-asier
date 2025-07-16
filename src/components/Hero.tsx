@@ -23,13 +23,13 @@ const Hero = () => {
           </h1>
           
           {/* Subtitle */}
-          <p className="text-headline text-muted-foreground mb-8 animate-fade-in-delay">
-            Senior Staff Product Manager | Global Lecturer | Entrepreneur
+          <p className="text-xl md:text-3xl lg:text-4xl font-semibold text-muted-foreground mb-6 animate-fade-in-delay">
+            Creative Farmer at Bizkardo | Global Lecturer | Entrepreneur
           </p>
           
-          <p className="text-body-large text-muted-foreground mb-12 animate-fade-in-delay-2 max-w-4xl mx-auto">
-            Driving innovation in payments, fintech, and data analytics across global markets.
-            Currently leading payments strategy at KingMakers for African markets and educating the next generation at NYU Stern.
+          <p className="text-lg md:text-xl text-muted-foreground mb-12 animate-fade-in-delay-2 max-w-5xl mx-auto leading-relaxed">
+            Cultivating innovation from the Basque countryside while driving technology solutions across global markets.
+            Teaching the next generation at NYU Stern and building bridges between heritage and innovation.
           </p>
           
           {/* Stats Cards */}
