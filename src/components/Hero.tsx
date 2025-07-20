@@ -1,11 +1,8 @@
 
 import React from 'react';
 import { ChevronDown, Award, Building2, GraduationCap } from 'lucide-react';
-import { useTranslation } from 'react-i18next';
 
 const Hero = () => {
-  const { t } = useTranslation();
-  
   return (
     <section id="hero" className="min-h-screen flex items-center justify-center relative overflow-hidden pt-16">
       {/* Gen Z Africa-inspired animated background */}
@@ -19,16 +16,20 @@ const Hero = () => {
         <div className="text-center max-w-6xl mx-auto">
           {/* Main Headline */}
           <h1 className="text-4xl md:text-6xl lg:text-7xl xl:text-8xl font-bold text-foreground mb-8 animate-fade-in leading-tight">
-            {t('hero.title')}
+            Building Bridges Between<br />
+            <span className="text-primary-contrast">Basque Heritage</span>,{' '}
+            <span className="text-accent-contrast">Silicon Valley Tech</span> and{' '}
+            <span className="text-secondary-contrast">African Innovation</span>
           </h1>
           
           {/* Subtitle */}
           <p className="text-xl md:text-2xl lg:text-3xl font-medium text-muted-foreground mb-8 animate-fade-in-delay">
-            {t('hero.subtitle')}
+            Creative Farmer at Bizkardo | Global Lecturer | Entrepreneur
           </p>
           
           <p className="text-lg md:text-xl text-muted-foreground mb-16 animate-fade-in-delay-2 max-w-5xl mx-auto leading-relaxed">
-            {t('hero.description')}
+            Cultivating innovation from the Basque countryside while driving technology solutions across global markets.
+            Teaching the next generation at NYU Stern and building bridges between heritage and innovation.
           </p>
           
           {/* Stats Cards */}
@@ -64,13 +65,13 @@ const Hero = () => {
               href="#contact"
               className="glass-button px-8 py-4 text-foreground font-medium rounded-xl transition-all duration-300 hover-lift"
             >
-              {t('hero.cta')}
+              Get In Touch
             </a>
             <a
               href="#about"
               className="inline-flex items-center px-8 py-4 bg-primary text-primary-foreground font-medium rounded-xl transition-all duration-300 hover-lift"
             >
-              {t('about.title')}
+              Learn More
               <ChevronDown size={20} className="ml-2" />
             </a>
           </div>

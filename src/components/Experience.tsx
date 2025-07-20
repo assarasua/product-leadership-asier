@@ -13,6 +13,14 @@ const Experience = () => {
       current: true
     },
     {
+      title: "Senior Staff Product Manager, Payments",
+      company: "KingMakers",
+      period: "2024 - 2025",
+      location: "Madrid, Spain",
+      description: "Led payments team and product strategy for African markets, focusing on frictionless payment experiences across multiple countries",
+      highlights: ["African Markets", "Payment Strategy", "Team Leadership"]
+    },
+    {
       title: "Global Lecturer",
       company: "NYU Stern School of Business",
       period: "2018 - Present",
@@ -20,14 +28,6 @@ const Experience = () => {
       description: "Teaching Information Technology in Business and Society, focusing on the intersection of technology and society",
       highlights: ["Education", "Technology & Society", "Business Innovation"],
       current: true
-    },
-    {
-      title: "Senior Staff Product Manager, Payments",
-      company: "KingMakers",
-      period: "2024 - 2025",
-      location: "Madrid, Spain",
-      description: "Led payments team and product strategy for African markets, focusing on frictionless payment experiences across multiple countries",
-      highlights: ["African Markets", "Payment Strategy", "Team Leadership"]
     },
     {
       title: "Group Product Manager",
