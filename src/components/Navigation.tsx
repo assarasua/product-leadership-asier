@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
 
@@ -16,9 +15,9 @@ const Navigation = () => {
 
   const navItems = [
     { href: '#about', label: 'About' },
-    { href: '#journey', label: 'Journey' },
-    { href: '#philosophy', label: 'Philosophy' },
-    { href: '#mission', label: 'Mission' },
+    { href: '#experience', label: 'Experience' },
+    { href: '#skills', label: 'Skills' },
+    { href: '#projects', label: 'Projects' },
     { href: '#contact', label: 'Contact' }
   ];
 
@@ -34,7 +33,7 @@ const Navigation = () => {
           
           {/* Desktop Navigation */}
           <div className="hidden md:block">
-            <div className="ml-10 flex items-baseline space-x-4">
+            <div className="ml-10 flex items-center space-x-4">
               {navItems.map((item) => (
                 <a
                   key={item.href}

@@ -1,10 +1,8 @@
 
 import React from 'react';
 import { ChevronDown, Award, Building2, GraduationCap } from 'lucide-react';
-import { useTranslation } from 'react-i18next';
 
 const Hero = () => {
-  const { t } = useTranslation();
   return (
     <section id="hero" className="min-h-screen flex items-center justify-center relative overflow-hidden pt-16">
       {/* Gen Z Africa-inspired animated background */}
@@ -18,7 +16,7 @@ const Hero = () => {
         <div className="text-center max-w-6xl mx-auto">
           {/* Main Headline */}
           <h1 className="text-4xl md:text-6xl lg:text-7xl xl:text-8xl font-bold text-foreground mb-8 animate-fade-in leading-tight">
-            {t('hero.title')}
+            Asier Sarasua Amundarain
           </h1>
           
           {/* Subtitle */}
