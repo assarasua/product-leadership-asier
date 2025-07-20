@@ -22,8 +22,8 @@ const About = () => {
               <p className="text-lg leading-relaxed">
                 I'm a seasoned 360 product manager and entrepreneur with over a decade of experience building innovative solutions
                 across fintech, data analytics, and IoT industries. My expertise spans the full spectrum from coding to business 
-                strategy and marketing. I recently completed my role leading the payments team at KingMakers in 2025, where I focused 
-                on creating frictionless payment experiences across African markets.
+                strategy and marketing. I recently completed my role leading the payments team at KingMakers in 2025, and I'm 
+                currently Creative Farmer at Bizkardo Lab (Stealth mode), where I'm working on the next generation of innovative solutions.
               </p>
               
               <p className="text-lg leading-relaxed">
