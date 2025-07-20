@@ -1,18 +1,21 @@
 
 import React from 'react';
 import { Award, Users, Globe, Briefcase } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
 
 const About = () => {
+  const { t } = useTranslation();
+
   return (
     <section id="about" className="py-20">
       <div className="container-wide">
         <div className="text-center mb-16 animate-fade-in">
-          <h2 className="text-headline text-foreground mb-6">About Me</h2>
+          <h2 className="text-headline text-foreground mb-6">{t('about.title')}</h2>
           <p className="text-body-large text-muted-foreground max-w-3xl mx-auto mb-6">
-            Passionate about building products that make a difference
+            {t('about.subtitle')}
           </p>
           <blockquote className="text-xl font-medium text-primary italic max-w-4xl mx-auto border-l-4 border-primary/30 pl-6 bg-primary/5 rounded-lg p-6">
-            "I believe in the power of technology to solve complex problems and create meaningful impact."
+            "{t('about.quote')}"
           </blockquote>
         </div>
 
@@ -20,23 +23,15 @@ const About = () => {
           <div className="animate-slide-in-left">
             <div className="space-y-6 text-muted-foreground">
               <p className="text-lg leading-relaxed">
-                I'm a seasoned 360 product manager and entrepreneur with over a decade of experience building innovative solutions
-                across fintech, data analytics, and IoT industries. My expertise spans the full spectrum from coding to business 
-                strategy and marketing. Currently, I lead the payments team at KingMakers, focusing on creating frictionless 
-                payment experiences across African markets.
+                {t('about.paragraph1')}
               </p>
               
               <p className="text-lg leading-relaxed">
-                As a Global Lecturer at NYU Stern School of Business, I'm passionate about bridging the gap between
-                technology and society, teaching the next generation of innovators about the transformative power of technology.
+                {t('about.paragraph2')}
               </p>
               
               <p className="text-lg leading-relaxed">
-                My entrepreneurial journey spans multiple successful ventures, from founding Kibbber to being among the first 
-                handful of employees at Graphext, a no-code data visualization platform, and serving as Group Product Manager 
-                at CoverWallet, a data-driven insurtech platform that accelerates and modernizes insurance acquisition, placement 
-                and servicing utilizing purely digital tools for the 2nd largest insurance brokerage firm in the world, Aon. 
-                There, I led multiple product groups focused on data analytics and digital transformation.
+                {t('about.paragraph3')}
               </p>
             </div>
           </div>
@@ -48,7 +43,7 @@ const About = () => {
                   <Award className="w-8 h-8 text-primary" />
                 </div>
                 <div className="text-3xl font-bold text-foreground mb-2">10+</div>
-                <div className="text-muted-foreground text-sm">Years Experience</div>
+                <div className="text-muted-foreground text-sm">{t('about.stats.experience')}</div>
               </div>
               
               <div className="glass-card p-6 rounded-2xl text-center hover-lift">
@@ -56,7 +51,7 @@ const About = () => {
                   <Briefcase className="w-8 h-8 text-secondary" />
                 </div>
                 <div className="text-3xl font-bold text-foreground mb-2">6</div>
-                <div className="text-muted-foreground text-sm">Companies</div>
+                <div className="text-muted-foreground text-sm">{t('about.stats.companies')}</div>
               </div>
               
               <div className="glass-card p-6 rounded-2xl text-center hover-lift">
@@ -64,7 +59,7 @@ const About = () => {
                   <Users className="w-8 h-8 text-accent" />
                 </div>
                 <div className="text-3xl font-bold text-foreground mb-2">3</div>
-                <div className="text-muted-foreground text-sm">Languages</div>
+                <div className="text-muted-foreground text-sm">{t('about.stats.languages')}</div>
               </div>
               
               <div className="glass-card p-6 rounded-2xl text-center hover-lift">
@@ -72,7 +67,7 @@ const About = () => {
                   <Globe className="w-8 h-8 text-primary" />
                 </div>
                 <div className="text-3xl font-bold text-foreground mb-2">5</div>
-                <div className="text-muted-foreground text-sm">Countries</div>
+                <div className="text-muted-foreground text-sm">{t('about.stats.countries')}</div>
               </div>
             </div>
           </div>

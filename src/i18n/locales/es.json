@@ -1,6 +1,6 @@
 {
   "navigation": {
-    "about": "Acerca de",
+    "about": "Sobre mí",
     "journey": "Trayectoria",
     "philosophy": "Filosofía",
     "mission": "Misión",
@@ -8,13 +8,27 @@
   },
   "hero": {
     "title": "Construyendo Puentes Entre el Patrimonio Vasco, la Tecnología de Silicon Valley y la Innovación Africana",
-    "subtitle": "Agricultor Creativo en Bizkardo | Profesor Global | Emprendedor",
+    "subtitle": "Agricultor Creativo en Bizkardo | Profesor Global | Empresario",
     "description": "Cultivando innovación desde el campo vasco mientras impulso soluciones tecnológicas en mercados globales. Enseñando a la próxima generación en NYU Stern y construyendo puentes entre patrimonio e innovación.",
-    "cta1": "Ponerse en Contacto",
+    "cta1": "Contactar",
     "cta2": "Saber Más",
     "stats": {
       "experience": "Años de Experiencia",
       "companies": "Empresas",
+      "countries": "Países"
+    }
+  },
+  "about": {
+    "title": "Sobre Mí",
+    "subtitle": "Apasionado por construir productos que marquen la diferencia",
+    "quote": "Creo en el poder de la tecnología para resolver problemas complejos y crear un impacto significativo.",
+    "paragraph1": "Soy un experimentado gestor de producto 360 y empresario con más de una década de experiencia construyendo soluciones innovadoras en fintech, análisis de datos e industrias IoT. Mi experiencia abarca todo el espectro desde programación hasta estrategia de negocio y marketing. Actualmente, lidero el equipo de pagos en KingMakers, enfocándome en crear experiencias de pago sin fricciones en mercados africanos.",
+    "paragraph2": "Como Profesor Global en NYU Stern School of Business, soy apasionado por cerrar la brecha entre tecnología y sociedad, enseñando a la próxima generación de innovadores sobre el poder transformador de la tecnología.",
+    "paragraph3": "Mi trayectoria empresarial abarca múltiples proyectos exitosos, desde fundar Kibbber hasta estar entre los primeros empleados de Graphext, una plataforma de visualización de datos sin código, y servir como Group Product Manager en CoverWallet, una plataforma insurtech basada en datos que acelera y moderniza la adquisición, colocación y servicio de seguros utilizando herramientas puramente digitales para la segunda correduría de seguros más grande del mundo, Aon. Allí, lideré múltiples grupos de producto enfocados en análisis de datos y transformación digital.",
+    "stats": {
+      "experience": "Años de Experiencia",
+      "companies": "Empresas",
+      "languages": "Idiomas",
       "countries": "Países"
     }
   },

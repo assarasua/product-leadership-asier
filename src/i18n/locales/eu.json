@@ -18,6 +18,20 @@
       "countries": "Herriak"
     }
   },
+  "about": {
+    "title": "Nire Buruz",
+    "subtitle": "Diferentzia egiten duten produktuak eraikitzeko pasioa",
+    "quote": "Teknologiaren ahalmenean sinesten dut arazo konplexuak konpontzeko eta eragin esanguratsua sortzeko.",
+    "paragraph1": "Hamarkada bat baino gehiagoko esperientzia duen 360 produktu kudeatzaile eta ekintzaile esperientzatua naiz, fintech, datu analisia eta IoT industrietan konponbide berritzaileak eraikitzen. Nire esperientzia programaziotik hasita negozio estrategia eta marketingraino zabaltzen da. Gaur egun, KingMakers-eko ordainketa taldea zuzentzen dut, Afrikako merkatuetan marruskagabeko ordainketa esperientziak sortzen zentratuz.",
+    "paragraph2": "NYU Stern School of Business-eko Irakasle Global gisa, teknologia eta gizartearen arteko tartea ixteko pasioa dut, berritzaileen hurrengo belaunaldiari teknologiaren botere eraldatzaileari buruz erakusten.",
+    "paragraph3": "Nire enpresari bidaia proiektu arrakastatsuen artean zabaltzen da, Kibbber sortzailea izatetik hasita Graphext-eko lehen langile multzoan egoteraino, kode gabeko datu bistaratzeko plataforma bat, eta CoverWallet-en Group Product Manager gisa aritzera, datuen gainean oinarritutako insurtech plataforma bat, munduko bigarren aseguru korredoria handiena den Aon-erentzat tresna digital hutsak erabiliz aseguru eskuraketa, kokapena eta zerbitzua azeleratzen eta modernizatzen duena. Han, datu analisia eta eraldaketa digitalean zentratutako produktu talde anitzak zuzendu nituen.",
+    "stats": {
+      "experience": "Urte Esperientzia",
+      "companies": "Enpresak",
+      "languages": "Hizkuntzak",
+      "countries": "Herriak"
+    }
+  },
   "footer": {
     "subtitle": "Produktu Liderra eta Berrikuntza Katalizatzailea",
     "tagline": "Kulturen eta berrikuntzaren arteko zubiak eraikitzen"
