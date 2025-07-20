@@ -43,16 +43,16 @@ const Experience = () => {
       company: "Graphext",
       period: "2018 - 2020",
       location: "Madrid, Spain",
-      description: "Co-founded data visualization platform, managed product development and customer success",
-      highlights: ["Co-founder", "Data Visualization", "Customer Success"]
+      description: "Among the first employees at this data visualization platform, managed product development and customer success",
+      highlights: ["Early Employee", "Data Visualization", "Customer Success"]
     },
     {
       title: "Chief Marketing Officer",
       company: "MainTool",
       period: "2014 - 2017",
       location: "Madrid, Spain",
-      description: "Led marketing strategy and brand development for IoT and technology solutions",
-      highlights: ["IoT", "Marketing Strategy", "Brand Development"]
+      description: "Among the first employees, led marketing strategy and brand development for IoT and technology solutions",
+      highlights: ["Early Employee", "Marketing Strategy", "Brand Development"]
     }
   ];
 
