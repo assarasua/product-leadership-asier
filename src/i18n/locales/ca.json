@@ -32,6 +32,138 @@
       "countries": "Països"
     }
   },
+  "experience": {
+    "title": "Experiència Professional",
+    "subtitle": "Construint productes innovadors en mercats globals",
+    "current": "Actual",
+    "keyAchievement": "Assoliment Clau",
+    "countries": "Països",
+    "brands": "Marques",
+    "paymentMethods": "Mètodes de Pagament",
+    "roles": {
+      "creativeFarmer": "Agricultor Creatiu",
+      "seniorStaffPM": "Gerent Senior de Producte, Pagaments",
+      "globalLecturer": "Professor Global",
+      "groupPM": "Gerent de Grup de Producte",
+      "headCustomerSuccess": "Cap d'Èxit del Client i Gerent de Producte",
+      "cmo": "Director de Màrqueting"
+    },
+    "companies": {
+      "bizkardo": "Bizkardo Lab (Mode sigilós)",
+      "kingmakers": "KingMakers",
+      "nyu": "NYU Stern School of Business",
+      "coverwallet": "CoverWallet (empresa Aon)",
+      "graphext": "Graphext",
+      "maintool": "MainTool"
+    },
+    "descriptions": {
+      "bizkardo": "Artesà digital i físic, desenvolupant solucions e2e per impactar localment i globalment",
+      "kingmakers": "Vaig liderar l'equip de pagaments i l'estratègia de producte per a mercats africans, centrant-me en experiències de pagament sense fricció en múltiples països",
+      "nyu": "Ensenyant Tecnologia de la Informació en Negocis i Societat, centrant-me en la intersecció de tecnologia i societat",
+      "coverwallet": "Vaig llançar solucions de pagament escalables en múltiples països en la indústria d'assegurances altament regulada: Argentina, EUA, Espanya, Portugal i França. Vaig implementar diversos mètodes de pagament incloent xecs en paper, targetes, transferència bancària, ACH i Apple Pay tant per a agents com clients. Vaig assegurar el compliment PCI en més de 30 marques amb múltiples models operatius i regulacions.",
+      "graphext": "Entre els primers empleats d'aquesta plataforma de visualització de dades, vaig gestionar el desenvolupament de productes i l'èxit del client",
+      "maintool": "Entre els primers empleats, vaig liderar l'estratègia de màrqueting i desenvolupament de marca per a solucions IoT i tecnològiques"
+    }
+  },
+  "journey": {
+    "title": "El Viatge",
+    "items": {
+      "spark": {
+        "title": "L'Espurna",
+        "subtitle": "Primer Viatge Africà",
+        "description": "Als 8 anys, vaig viatjar a Kenya i Tanzània amb els meus pares, despertant una connexió de per vida amb Àfrica que més tard definiria la meva missió professional."
+      },
+      "foundation": {
+        "title": "La Base",
+        "subtitle": "Descobrint el Sentit del Producte a través de la Gamificació",
+        "description": "El meu viatge cap a la comprensió del canvi de comportament de l'usuari va començar a Karmacracy, una startup espanyola pionera fundada per Alex Dolara. Treballant al costat d'Alex, vaig descobrir l'impacte profund de les mecàniques de joc en el compromís i modificació del comportament de l'usuari.",
+        "detailed": "A Karmacracy, vaig aprendre a ser un usuari avançat de principis de gamificació, entenent com elements com punts de karma, nivells, insígnies i competència social podien impulsar un compromís autèntic de l'usuari. Alex Dolara es va convertir en un mentor instrumental que va aportar sentit del producte i experiència en gamificació al meu desenvolupament professional."
+      },
+      "summit": {
+        "title": "La Cimera",
+        "subtitle": "Marató Zegama Aizkorri",
+        "description": "Vaig completar la prestigiosa marató de muntanya de la Copa del Món en 7:49:46, acabant 395è en general. Aquesta carrera de 42.2km amb 2.853m de desnivell exemplifica la meva filosofia: 'Cap muntanya és prou alta quan combines lideratge autèntic amb visió estratègica.'"
+      },
+      "leadership": {
+        "title": "Lideratge Forjat",
+        "subtitle": "Taller a Diani Beach",
+        "description": "Durant un taller transformador a Kenya, vaig establir principis fonamentals de lideratge a través d'interaccions amb mentors locals com Omari i Nouha. Vaig aprendre la importància crítica d'escoltar perspectives locals i entendre realitats diàries."
+      },
+      "mission": {
+        "title": "La Missió",
+        "subtitle": "Innovació Fintech Africana",
+        "description": "Liderant el desenvolupament d'infraestructura de pagaments a Àfrica a KingMakers, construint experiències de dipòsit i retirada sense fricció que serveixen mercats diversos mentre respecten contextos locals."
+      }
+    }
+  },
+  "philosophy": {
+    "title": "Filosofia de Lideratge",
+    "basqueValues": "Valors Bascos",
+    "leadershipFrameworks": "Marcs de Lideratge",
+    "values": {
+      "lanEgiati": {
+        "term": "Lan Egiati",
+        "meaning": "Treball Honest",
+        "application": "L'honor més alt en la cultura basca, prioritzant l'esforç autèntic sobre les demostracions impressionants"
+      },
+      "gardentasuna": {
+        "term": "Gardentasuna",
+        "meaning": "Transparència",
+        "application": "Superant la desconfiança institucional a través de l'honestedat i el compromís genuí amb l'èxit comunitari"
+      },
+      "auzolan": {
+        "term": "Auzolan",
+        "meaning": "Cooperació Comunitària",
+        "application": "Xarxes d'ajuda mútua on l'èxit individual depèn de l'assoliment col·lectiu"
+      }
+    },
+    "frameworks": {
+      "slowDown": {
+        "name": "Vés Lent, Avança Ràpid",
+        "description": "La paciència estratègica en la construcció d'infraestructura de mesurament permet una execució accelerada i confiança basada en dades"
+      },
+      "backwardThinking": {
+        "name": "Pensament Invers",
+        "description": "Comença amb moments perfectes de l'usuari i enginyeria inversa de la infraestructura necessària per crear-los"
+      }
+    }
+  },
+  "mission": {
+    "title": "Missió Actual",
+    "company": "Bizkardo",
+    "role": "Agricultor Creatiu i Líder d'Innovació",
+    "description": "Cultivant innovació des del camp basc mentre impulso solucions tecnològiques en mercats globals, connectant el patrimoni amb la innovació d'avantguarda.",
+    "achievements": "Assoliments Clau",
+    "achievementsList": [
+      "Finalista de la Marató Copa del Món Zegama Aizkorri (7:49:46, 395è general, 2019)",
+      "Professor Global a NYU Stern des de 2018",
+      "Solucions de pagament en 5 països amb 100% compliment PCI",
+      "Certificacions Stripe Associate Architect & Fundamentals",
+      "Cofundador de Graphext i Kibber, empleat primerenc a MainTool"
+    ]
+  },
+  "contact": {
+    "title": "Connectem",
+    "subtitle": "Llest per construir alguna cosa significativa junts? Ja sigui que estiguis interessat en innovació fintech, lideratge de producte, estratègies de gamificació, o explorant oportunitats a Àfrica, m'encantaria escoltar-te.",
+    "getInTouch": "Posar-se en Contacte",
+    "location": "Ubicació",
+    "heritage": "Patrimoni",
+    "teaching": "Ensenyament",
+    "locationValue": "Bizkardo Baserria Ibarra",
+    "heritageValue": "País Basc",
+    "teachingValue": "NYU Stern School of Business",
+    "bridgeDescription": "Construint ponts entre cultures i innovació.",
+    "passionDescription": "Sóc apassionat per crear connexions significatives entre el patrimoni basc i la innovació africana, sempre buscant oportunitats per aplicar principis de gamificació per resoldre problemes del món real.",
+    "form": {
+      "name": "Nom",
+      "email": "Email",
+      "message": "Missatge",
+      "namePlaceholder": "El teu nom",
+      "emailPlaceholder": "el.teu.email@exemple.com",
+      "messagePlaceholder": "El teu missatge...",
+      "submit": "Posar-se en Contacte"
+    }
+  },
   "footer": {
     "subtitle": "Líder de Producte i Catalitzador d'Innovació",
     "tagline": "Construint ponts entre cultures i innovació"

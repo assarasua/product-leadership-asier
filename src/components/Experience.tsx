@@ -1,57 +1,60 @@
 import React from 'react';
 import { Building2, Calendar, MapPin, Award, CreditCard, Shield } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
 
 const Experience = () => {
+  const { t } = useTranslation();
+  
   const experiences = [
     {
-      title: "Creative Farmer",
-      company: "Bizkardo Lab (Stealth mode)",
+      title: t('experience.roles.creativeFarmer'),
+      company: t('experience.companies.bizkardo'),
       period: "2025 - Present",
       location: "Ibarra & Globally",
-      description: "Digital and physical artisan, developing e2e solutions to impact local and globally",
+      description: t('experience.descriptions.bizkardo'),
       highlights: ["Innovation", "Product Strategy", "Stealth Development"],
       current: true
     },
     {
-      title: "Senior Staff Product Manager, Payments",
-      company: "KingMakers",
+      title: t('experience.roles.seniorStaffPM'),
+      company: t('experience.companies.kingmakers'),
       period: "2024 - 2025",
       location: "Madrid, Spain",
-      description: "Led payments team and product strategy for African markets, focusing on frictionless payment experiences across multiple countries",
+      description: t('experience.descriptions.kingmakers'),
       highlights: ["African Markets", "Payment Strategy", "Team Leadership"]
     },
     {
-      title: "Global Lecturer",
-      company: "NYU Stern School of Business",
+      title: t('experience.roles.globalLecturer'),
+      company: t('experience.companies.nyu'),
       period: "2018 - Present",
       location: "New York, NY",
-      description: "Teaching Information Technology in Business and Society, focusing on the intersection of technology and society",
+      description: t('experience.descriptions.nyu'),
       highlights: ["Education", "Technology & Society", "Business Innovation"],
       current: true
     },
     {
-      title: "Group Product Manager",
-      company: "CoverWallet (Aon company)",
+      title: t('experience.roles.groupPM'),
+      company: t('experience.companies.coverwallet'),
       period: "2020 - 2024",
       location: "Madrid, Spain",
-      description: "Launched scalable payment solutions across multiple countries in the highly regulated insurance industry: Argentina, USA, Spain, Portugal, and France. Implemented diverse payment methods including paper check, cards, bank transfer, ACH, and Apple Pay for both agents and customers. Ensured PCI compliance across 30+ brands with multiple operation models and regulations.",
+      description: t('experience.descriptions.coverwallet'),
       highlights: ["5 Countries", "30+ Brands", "6 Payment Methods", "PCI Compliance"],
       achievement: true
     },
     {
-      title: "Head of Customer Success & Product Manager",
-      company: "Graphext",
+      title: t('experience.roles.headCustomerSuccess'),
+      company: t('experience.companies.graphext'),
       period: "2018 - 2020",
       location: "Madrid, Spain",
-      description: "Among the first employees at this data visualization platform, managed product development and customer success",
+      description: t('experience.descriptions.graphext'),
       highlights: ["Early Employee", "Data Visualization", "Customer Success"]
     },
     {
-      title: "Chief Marketing Officer",
-      company: "MainTool",
+      title: t('experience.roles.cmo'),
+      company: t('experience.companies.maintool'),
       period: "2014 - 2017",
       location: "Madrid, Spain",
-      description: "Among the first employees, led marketing strategy and brand development for IoT and technology solutions",
+      description: t('experience.descriptions.maintool'),
       highlights: ["Early Employee", "Marketing Strategy", "Brand Development"]
     }
   ];
@@ -60,9 +63,9 @@ const Experience = () => {
     <section id="experience" className="py-20">
       <div className="container-wide">
         <div className="text-center mb-16 animate-fade-in">
-          <h2 className="text-headline text-foreground mb-6">Professional Experience</h2>
+          <h2 className="text-headline text-foreground mb-6">{t('experience.title')}</h2>
           <p className="text-body-large text-muted-foreground max-w-3xl mx-auto">
-            Building innovative products across global markets
+            {t('experience.subtitle')}
           </p>
         </div>
 
@@ -86,7 +89,7 @@ const Experience = () => {
                         <span className="font-medium">{exp.company}</span>
                         {exp.current && (
                           <span className="ml-2 px-2 py-1 bg-secondary/20 text-secondary text-xs rounded-full">
-                            Current
+                            {t('experience.current')}
                           </span>
                         )}
                       </div>
@@ -131,20 +134,20 @@ const Experience = () => {
                 <div className="mt-6 pt-6 border-t border-border">
                   <div className="flex items-center text-primary mb-3">
                     <Shield className="w-5 h-5 mr-2" />
-                    <span className="font-semibold">Key Achievement</span>
+                    <span className="font-semibold">{t('experience.keyAchievement')}</span>
                   </div>
                   <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
                     <div className="text-center">
                       <div className="text-2xl font-bold text-foreground">5</div>
-                      <div className="text-xs text-muted-foreground">Countries</div>
+                      <div className="text-xs text-muted-foreground">{t('experience.countries')}</div>
                     </div>
                     <div className="text-center">
                       <div className="text-2xl font-bold text-foreground">30+</div>
-                      <div className="text-xs text-muted-foreground">Brands</div>
+                      <div className="text-xs text-muted-foreground">{t('experience.brands')}</div>
                     </div>
                     <div className="text-center">
                       <div className="text-2xl font-bold text-foreground">6</div>
-                      <div className="text-xs text-muted-foreground">Payment Methods</div>
+                      <div className="text-xs text-muted-foreground">{t('experience.paymentMethods')}</div>
                     </div>
                     <div className="text-center flex items-center justify-center">
                       <CreditCard className="w-6 h-6 text-secondary" />

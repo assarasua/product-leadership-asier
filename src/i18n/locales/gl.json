@@ -32,6 +32,138 @@
       "countries": "Países"
     }
   },
+  "experience": {
+    "title": "Experiencia Profesional",
+    "subtitle": "Construíndo produtos innovadores en mercados globais",
+    "current": "Actual",
+    "keyAchievement": "Logro Clave",
+    "countries": "Países",
+    "brands": "Marcas",
+    "paymentMethods": "Métodos de Pago",
+    "roles": {
+      "creativeFarmer": "Agricultor Creativo",
+      "seniorStaffPM": "Xerente Senior de Produto, Pagos",
+      "globalLecturer": "Profesor Global",
+      "groupPM": "Xerente de Grupo de Produto",
+      "headCustomerSuccess": "Xefe de Éxito do Cliente e Xerente de Produto",
+      "cmo": "Director de Marketing"
+    },
+    "companies": {
+      "bizkardo": "Bizkardo Lab (Modo sigiloso)",
+      "kingmakers": "KingMakers",
+      "nyu": "NYU Stern School of Business",
+      "coverwallet": "CoverWallet (empresa Aon)",
+      "graphext": "Graphext",
+      "maintool": "MainTool"
+    },
+    "descriptions": {
+      "bizkardo": "Artesán dixital e físico, desenvolvendo solucións e2e para impactar local e globalmente",
+      "kingmakers": "Liderou o equipo de pagos e a estratexia de produto para mercados africanos, enfocándome en experiencias de pago sen fricción en múltiples países",
+      "nyu": "Ensinando Tecnoloxía da Información en Negocios e Sociedade, enfocándome na intersección de tecnoloxía e sociedade",
+      "coverwallet": "Lancei solucións de pago escalables en múltiples países na industria de seguros altamente regulada: Arxentina, EUA, España, Portugal e Francia. Implementei diversos métodos de pago incluíndo cheques en papel, tarxetas, transferencia bancaria, ACH e Apple Pay tanto para axentes como clientes. Asegurei o cumprimento PCI en máis de 30 marcas con múltiples modelos operativos e regulacións.",
+      "graphext": "Entre os primeiros empregados desta plataforma de visualización de datos, xestionei o desenvolvemento de produtos e o éxito do cliente",
+      "maintool": "Entre os primeiros empregados, liderou a estratexia de marketing e desenvolvemento de marca para solucións IoT e tecnolóxicas"
+    }
+  },
+  "journey": {
+    "title": "A Viaxe",
+    "items": {
+      "spark": {
+        "title": "A Chispa",
+        "subtitle": "Primeira Viaxe Africana",
+        "description": "Aos 8 anos, viaxei a Kenia e Tanzania cos meus pais, espetando unha conexión de por vida con África que máis tarde definiría a miña misión profesional."
+      },
+      "foundation": {
+        "title": "A Base",
+        "subtitle": "Descubrindo o Sentido do Produto a través da Gamificación",
+        "description": "A miña viaxe cara á comprensión do cambio de comportamento do usuario comezou en Karmacracy, unha startup española pioneira fundada por Alex Dolara. Traballando xunto a Alex, descubrín o profundo impacto das mecánicas de xogo no compromiso e modificación do comportamento do usuario.",
+        "detailed": "En Karmacracy, aprendín a ser un usuario avanzado de principios de gamificación, entendendo como elementos como puntos de karma, niveis, insignias e competencia social podían impulsar un compromiso auténtico do usuario. Alex Dolara converteuse nun mentor instrumental que aportou sentido do produto e experiencia en gamificación ao meu desenvolvemento profesional."
+      },
+      "summit": {
+        "title": "A Cume",
+        "subtitle": "Maratón Zegama Aizkorri",
+        "description": "Completei o prestixioso maratón de montaña da Copa do Mundo en 7:49:46, terminando 395º en xeral. Esta carreira de 42.2km con 2.853m de desnivel exemplifica a miña filosofía: 'Ningunha montaña é o suficientemente alta cando combinas liderado auténtico con visión estratéxica.'"
+      },
+      "leadership": {
+        "title": "Liderado Forxado",
+        "subtitle": "Taller en Diani Beach",
+        "description": "Durante un taller transformador en Kenia, establecín principios fundamentais de liderado a través de interaccións con mentores locais como Omari e Nouha. Aprendín a importancia crítica de escoitar perspectivas locais e entender realidades diarias."
+      },
+      "mission": {
+        "title": "A Misión",
+        "subtitle": "Innovación Fintech Africana",
+        "description": "Liderando o desenvolvemento de infraestrutura de pagos en África en KingMakers, construíndo experiencias de depósito e retirada sen fricción que serven a mercados diversos mentres respectan contextos locais."
+      }
+    }
+  },
+  "philosophy": {
+    "title": "Filosofía de Liderado",
+    "basqueValues": "Valores Vascos",
+    "leadershipFrameworks": "Marcos de Liderado",
+    "values": {
+      "lanEgiati": {
+        "term": "Lan Egiati",
+        "meaning": "Traballo Honesto",
+        "application": "A honra máis alta na cultura vasca, priorizando o esforzo auténtico sobre as demostracións impresionantes"
+      },
+      "gardentasuna": {
+        "term": "Gardentasuna",
+        "meaning": "Transparencia",
+        "application": "Superando a desconfianza institucional a través da honestidade e o compromiso xenuíno co éxito comunitario"
+      },
+      "auzolan": {
+        "term": "Auzolan",
+        "meaning": "Cooperación Comunitaria",
+        "application": "Redes de axuda mutua onde o éxito individual depende do logro colectivo"
+      }
+    },
+    "frameworks": {
+      "slowDown": {
+        "name": "Vai Devagar, Avanza Rápido",
+        "description": "A paciencia estratéxica na construción de infraestrutura de medición permite unha execución acelerada e confianza baseada en datos"
+      },
+      "backwardThinking": {
+        "name": "Pensamento Inverso",
+        "description": "Comeza con momentos perfectos do usuario e enxeñaría inversa da infraestrutura necesaria para crealos"
+      }
+    }
+  },
+  "mission": {
+    "title": "Misión Actual",
+    "company": "Bizkardo",
+    "role": "Agricultor Creativo e Líder de Innovación",
+    "description": "Cultivando innovación desde o campo vasco mentres impulso solucións tecnolóxicas en mercados globais, conectando o patrimonio coa innovación de vangarda.",
+    "achievements": "Logros Clave",
+    "achievementsList": [
+      "Finalista do Maratón Copa do Mundo Zegama Aizkorri (7:49:46, 395º xeral, 2019)",
+      "Profesor Global en NYU Stern desde 2018",
+      "Solucións de pago en 5 países con 100% cumprimento PCI",
+      "Certificacións Stripe Associate Architect & Fundamentals",
+      "Cofundador de Graphext e Kibber, empregado temperán en MainTool"
+    ]
+  },
+  "contact": {
+    "title": "Conectemos",
+    "subtitle": "Listo para construír algo significativo xuntos? Xa sexa que esteas interesado en innovación fintech, liderado de produto, estratexias de gamificación, ou explorando oportunidades en África, gustaríame escoitarte.",
+    "getInTouch": "Poñerse en Contacto",
+    "location": "Ubicación",
+    "heritage": "Patrimonio",
+    "teaching": "Ensino",
+    "locationValue": "Bizkardo Baserria Ibarra",
+    "heritageValue": "País Vasco",
+    "teachingValue": "NYU Stern School of Business",
+    "bridgeDescription": "Construíndo pontes entre culturas e innovación.",
+    "passionDescription": "Son apaixonado por crear conexións significativas entre o patrimonio vasco e a innovación africana, sempre buscando oportunidades para aplicar principios de gamificación para resolver problemas do mundo real.",
+    "form": {
+      "name": "Nome",
+      "email": "Email",
+      "message": "Mensaxe",
+      "namePlaceholder": "O teu nome",
+      "emailPlaceholder": "teu.email@exemplo.com",
+      "messagePlaceholder": "A túa mensaxe...",
+      "submit": "Poñerse en Contacto"
+    }
+  },
   "footer": {
     "subtitle": "Líder de Produto e Catalizador de Innovación",
     "tagline": "Construíndo pontes entre culturas e innovación"

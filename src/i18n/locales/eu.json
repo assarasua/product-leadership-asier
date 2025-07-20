@@ -32,6 +32,138 @@
       "countries": "Herriak"
     }
   },
+  "experience": {
+    "title": "Esperientzia Profesionala",
+    "subtitle": "Produktu berritzaileak eraikitzen merkatu globaletan",
+    "current": "Oraingoa",
+    "keyAchievement": "Lorpen Nagusia",
+    "countries": "Herriak",
+    "brands": "Markak",
+    "paymentMethods": "Ordainketa Metodoak",
+    "roles": {
+      "creativeFarmer": "Nekazari Sortzailea",
+      "seniorStaffPM": "Produktu Kudeatzaile Senior Nagusia, Ordainketak",
+      "globalLecturer": "Irakasle Globala",
+      "groupPM": "Produktu Talde Kudeatzailea",
+      "headCustomerSuccess": "Bezero Arrakasta Burua eta Produktu Kudeatzailea",
+      "cmo": "Marketing Zuzendaria"
+    },
+    "companies": {
+      "bizkardo": "Bizkardo Lab (Ezkutuko modua)",
+      "kingmakers": "KingMakers",
+      "nyu": "NYU Stern School of Business",
+      "coverwallet": "CoverWallet (Aon enpresa)",
+      "graphext": "Graphext",
+      "maintool": "MainTool"
+    },
+    "descriptions": {
+      "bizkardo": "Artisau digital eta fisikoa, e2e konponbideak garatzen tokian tokian eta globalki eragina izateko",
+      "kingmakers": "Ordainketa taldea eta produktu estrategia zuzendu nituen Afrikako merkatuetarako, herralde anitzetan marruskagabeko ordainketa esperientziak sortzen zentratuz",
+      "nyu": "Negozioetan eta Gizartean Informazio Teknologia irakasten, teknologia eta gizartearen arteko elkargunean zentratuz",
+      "coverwallet": "Ordainketa konponbide eskalagarriak abiarazi nituen herralde anitzetan aseguru industria oso erregulatuan: Argentina, AEB, Espainia, Portugal eta Frantzia. Ordainketa metodo ezberdinak inplementatu nituen paper txekeak, txartelak, banku transferentzia, ACH eta Apple Pay barne agente eta bezeroetarako. PCI betetze bermatu nuen 30+ markatan operazio eredu eta arautegia anitzekiko.",
+      "graphext": "Datu bistaratzeko plataforma honetako lehen langileen artean, produktu garapena eta bezero arrakasta kudeatu nituen",
+      "maintool": "Lehen langileen artean, marketing estrategia eta marka garapena zuzendu nituen IoT eta teknologia konponbideetan"
+    }
+  },
+  "journey": {
+    "title": "Bidaia",
+    "items": {
+      "spark": {
+        "title": "Txinparta",
+        "subtitle": "Lehen Afrika Bidaia",
+        "description": "8 urterekin, gurasoekin batera Kenia eta Tanzania bidaiatu nuen, Afrikarekin bizitza osoko konexioa piztu zuena eta geroago nire misio profesionala definituko zuena."
+      },
+      "foundation": {
+        "title": "Oinarria",
+        "subtitle": "Produktu Zentzua Aurkitzea Gamifikazioaren bidez",
+        "description": "Erabiltzaileen portaera aldaketaren ulermena Karmacracy-n hasi zen, Alex Dolararen eskutik sortutako startup espainiar aitzindaria. Alexekin lan eginez, joko mekaniken eragin sakona aurkitu nuen erabiltzaileen konpromiso eta portaera aldaketan.",
+        "detailed": "Karmacracy-n, gamifikazio printzipioen erabiltzaile aditu izaten ikasi nuen, karma puntuak, mailak, domina eta gizarte lehia bezalako elementuek nola bultzatu zezaketen erabiltzaileen benetako konpromisoa ulertuz. Alex Dolara mentor instrumentala bihurtu zen, produktu zentzua eta gamifikazio espezializazioa nire garapen profesionalera ekarri zituena."
+      },
+      "summit": {
+        "title": "Gailurra",
+        "subtitle": "Zegama Aizkorri Maratoia",
+        "description": "Munduko Kopako mendi maraton ospetsua osatu nuen 7:49:46-tan, 395. postuan amaitzen. 42,2km-ko lasterketa hau 2.853m-ko garaiera igoerarekin nire filosofia adierazten du: 'Ez dago mendi alturik nahiko lidertza autentikoa eta ikuspegi estrategikoa konbinatzen dituzunean.'"
+      },
+      "leadership": {
+        "title": "Lidertza Sortu",
+        "subtitle": "Diani Beach Tailerra",
+        "description": "Kenian egin nuen tailer eraldatzaile batean, lidertza printzipio nagusiak ezarri nituen Omari eta Nouha bezalako tokiko mentorrekiko elkarrekintzen bidez. Tokiko ikuspegiak entzutearen eta eguneroko errealitatea ulertzearenbortantzia kritikoa ikasi nuen."
+      },
+      "mission": {
+        "title": "Misioa",
+        "subtitle": "Afrika Fintech Berrikuntza",
+        "description": "Afrikako ordainketa azpiegitura garapena zuzentzen KingMakers-en, marruskagabeko deposito eta ateratzeko esperientziak eraikitzen merkatu ezberdinak zerbitzatzen dituztenak tokiko testuinguruak errespetatzen dituzten bitartean."
+      }
+    }
+  },
+  "philosophy": {
+    "title": "Lidertza Filosofia",
+    "basqueValues": "Euskal Balioak",
+    "leadershipFrameworks": "Lidertza Markoak",
+    "values": {
+      "lanEgiati": {
+        "term": "Lan Egiati",
+        "meaning": "Lan Zintzoa",
+        "application": "Euskal kulturako ohorenik handiena, ahalegin autentikoa lehenetsi erakusketa ikusgarrien gainetik"
+      },
+      "gardentasuna": {
+        "term": "Gardentasuna",
+        "meaning": "Gardentasuna",
+        "application": "Instituzio deskonfianta gainditzea zintzotasunaren eta komunitatearen arrakastarekin benetako konpromisoaren bidez"
+      },
+      "auzolan": {
+        "term": "Auzolan",
+        "meaning": "Komunitate Lankidetza",
+        "application": "Elkar laguntzako sareak non banakako arrakasta lorpen kolektiboaren mende dagoen"
+      }
+    },
+    "frameworks": {
+      "slowDown": {
+        "name": "Poliki Joan, Azkarrago Ibili",
+        "description": "Neurketa azpiegitura eraikitzeko pazientzia estrategikoak exekuzio azeleratua eta datuen gainean oinarritutako konfiantza ahalbideratzen du"
+      },
+      "backwardThinking": {
+        "name": "Atzera Pentsatzea",
+        "description": "Erabiltzailearen momentu perfektuekin hasi eta horiek sortzeko beharrezkoa den azpiegitura alderantzizko ingeniaritzaz diseinatu"
+      }
+    }
+  },
+  "mission": {
+    "title": "Oraingo Misioa",
+    "company": "Bizkardo",
+    "role": "Nekazari Sortzailea eta Berrikuntza Liderra",
+    "description": "Euskal nekazal ingurunetik berrikuntza sustatzen teknologia konponbideak merkatu globaletan bultzatzen, ondarea eta aitzindariko berrikuntzaren arteko zubiak eraikitzen.",
+    "achievements": "Lorpen Nagusiak",
+    "achievementsList": [
+      "Zegama Aizkorri Munduko Kopa Maraton amaitzailea (7:49:46, 395. orokorra, 2019)",
+      "NYU Stern Irakasle Globala 2018tik",
+      "5 herrialdetako ordainketa konponbideak %100 PCI betetzearekin",
+      "Stripe Associate Architect eta Fundamentals ziurtagiriak",
+      "Graphext eta Kibber sortzailea, MainTool-eko lehen langilea"
+    ]
+  },
+  "contact": {
+    "title": "Konektatu Gaitezen",
+    "subtitle": "Prest zaude zerbait esanguratsua batera eraikitzeko? Fintech berrikuntzan, produktu lidertzan, gamifikazio estrategietan edo Afrikako aukeretan interesatua bazaude, entzutea gustatuko litzaidake.",
+    "getInTouch": "Harremanetan Jarri",
+    "location": "Kokapena",
+    "heritage": "Ondarea",
+    "teaching": "Irakaskuntza",
+    "locationValue": "Bizkardo Baserria Ibarra",
+    "heritageValue": "Euskal Herria",
+    "teachingValue": "NYU Stern School of Business",
+    "bridgeDescription": "Kulturen eta berrikuntzaren arteko zubiak eraikitzen.",
+    "passionDescription": "Euskal ondarea eta Afrika berrikuntzaren arteko konexio esanguratsuak sortzeko pasioa dut, beti gamifikazio printzipioak aplikatzeko aukerak bilatzen munduko arazo errealak konpontzeko.",
+    "form": {
+      "name": "Izena",
+      "email": "Email",
+      "message": "Mezua",
+      "namePlaceholder": "Zure izena",
+      "emailPlaceholder": "zure.emaila@adibidea.com",
+      "messagePlaceholder": "Zure mezua...",
+      "submit": "Harremanetan Jarri"
+    }
+  },
   "footer": {
     "subtitle": "Produktu Liderra eta Berrikuntza Katalizatzailea",
     "tagline": "Kulturen eta berrikuntzaren arteko zubiak eraikitzen"

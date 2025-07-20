@@ -32,6 +32,138 @@
       "countries": "Countries"
     }
   },
+  "experience": {
+    "title": "Professional Experience",
+    "subtitle": "Building innovative products across global markets",
+    "current": "Current",
+    "keyAchievement": "Key Achievement",
+    "countries": "Countries",
+    "brands": "Brands",
+    "paymentMethods": "Payment Methods",
+    "roles": {
+      "creativeFarmer": "Creative Farmer",
+      "seniorStaffPM": "Senior Staff Product Manager, Payments",
+      "globalLecturer": "Global Lecturer",
+      "groupPM": "Group Product Manager",
+      "headCustomerSuccess": "Head of Customer Success & Product Manager",
+      "cmo": "Chief Marketing Officer"
+    },
+    "companies": {
+      "bizkardo": "Bizkardo Lab (Stealth mode)",
+      "kingmakers": "KingMakers",
+      "nyu": "NYU Stern School of Business",
+      "coverwallet": "CoverWallet (Aon company)",
+      "graphext": "Graphext",
+      "maintool": "MainTool"
+    },
+    "descriptions": {
+      "bizkardo": "Digital and physical artisan, developing e2e solutions to impact local and globally",
+      "kingmakers": "Led payments team and product strategy for African markets, focusing on frictionless payment experiences across multiple countries",
+      "nyu": "Teaching Information Technology in Business and Society, focusing on the intersection of technology and society",
+      "coverwallet": "Launched scalable payment solutions across multiple countries in the highly regulated insurance industry: Argentina, USA, Spain, Portugal, and France. Implemented diverse payment methods including paper check, cards, bank transfer, ACH, and Apple Pay for both agents and customers. Ensured PCI compliance across 30+ brands with multiple operation models and regulations.",
+      "graphext": "Among the first employees at this data visualization platform, managed product development and customer success",
+      "maintool": "Among the first employees, led marketing strategy and brand development for IoT and technology solutions"
+    }
+  },
+  "journey": {
+    "title": "The Journey",
+    "items": {
+      "spark": {
+        "title": "The Spark",
+        "subtitle": "First African Journey",
+        "description": "At age 8, traveled to Kenya and Tanzania with parents, sparking a lifelong connection to Africa that would later define my professional mission."
+      },
+      "foundation": {
+        "title": "The Foundation",
+        "subtitle": "Discovering Product Sense Through Gamification",
+        "description": "My journey into understanding user behavioral change began at Karmacracy, a pioneering Spanish startup founded by Alex Dolara. Working alongside Alex, I discovered the profound impact of game mechanics on user engagement and behavior modification.",
+        "detailed": "At Karmacracy, I learned to be a power user of gamification principles, understanding how elements like karma points, levels, badges, and social competition could drive authentic user engagement. Alex Dolara became an instrumental mentor who brought product sense and gamification expertise into my professional development."
+      },
+      "summit": {
+        "title": "The Summit",
+        "subtitle": "Zegama Aizkorri Marathon",
+        "description": "Completed the prestigious World Cup mountain marathon in 7:49:46, finishing 395th overall. This 42.2km race with 2,853m elevation gain exemplifies my philosophy: 'No mountain is high enough when you combine authentic leadership with strategic vision.'"
+      },
+      "leadership": {
+        "title": "Leadership Forged",
+        "subtitle": "Diani Beach Workshop",
+        "description": "During a transformative workshop in Kenya, established core leadership principles through interactions with local mentors like Omari and Nouha. Learned the critical importance of listening to local perspectives and understanding daily realities."
+      },
+      "mission": {
+        "title": "The Mission",
+        "subtitle": "African Fintech Innovation",
+        "description": "Leading payment infrastructure development across Africa at KingMakers, building frictionless deposit and withdrawal experiences that serve diverse markets while respecting local contexts."
+      }
+    }
+  },
+  "philosophy": {
+    "title": "Leadership Philosophy",
+    "basqueValues": "Basque Values",
+    "leadershipFrameworks": "Leadership Frameworks",
+    "values": {
+      "lanEgiati": {
+        "term": "Lan Egiati",
+        "meaning": "Honest Work",
+        "application": "The highest honor in Basque culture, prioritizing authentic effort over impressive displays"
+      },
+      "gardentasuna": {
+        "term": "Gardentasuna",
+        "meaning": "Transparency",
+        "application": "Overcoming institutional distrust through honesty and genuine commitment to community success"
+      },
+      "auzolan": {
+        "term": "Auzolan",
+        "meaning": "Community Cooperation",
+        "application": "Mutual aid networks where individual success depends on collective achievement"
+      }
+    },
+    "frameworks": {
+      "slowDown": {
+        "name": "Slow Down, Go Faster",
+        "description": "Strategic patience in building measurement infrastructure enables accelerated execution and data-driven confidence"
+      },
+      "backwardThinking": {
+        "name": "Backward Thinking",
+        "description": "Start with perfect user moments and reverse engineer the infrastructure needed to create them"
+      }
+    }
+  },
+  "mission": {
+    "title": "Current Mission",
+    "company": "Bizkardo",
+    "role": "Creative Farmer & Innovation Lead",
+    "description": "Cultivating innovation from the Basque countryside while driving technology solutions across global markets, bridging heritage with cutting-edge innovation.",
+    "achievements": "Key Achievements",
+    "achievementsList": [
+      "Zegama Aizkorri World Cup Marathon finisher (7:49:46, 395th overall, 2019)",
+      "NYU Stern Global Lecturer since 2018",
+      "Payment solutions across 5 countries with 100% PCI compliance",
+      "Stripe Associate Architect & Fundamentals certifications",
+      "Co-founded Graphext and Kibber, early employee at MainTool"
+    ]
+  },
+  "contact": {
+    "title": "Let's Connect",
+    "subtitle": "Ready to build something meaningful together? Whether you're interested in fintech innovation, product leadership, gamification strategies, or exploring opportunities in Africa, I'd love to hear from you.",
+    "getInTouch": "Get In Touch",
+    "location": "Location",
+    "heritage": "Heritage",
+    "teaching": "Teaching",
+    "locationValue": "Bizkardo Baserria Ibarra",
+    "heritageValue": "Basque Country",
+    "teachingValue": "NYU Stern School of Business",
+    "bridgeDescription": "Building bridges between cultures and innovation.",
+    "passionDescription": "I'm passionate about creating meaningful connections between Basque heritage and African innovation, always looking for opportunities to apply gamification principles to solve real-world problems.",
+    "form": {
+      "name": "Name",
+      "email": "Email",
+      "message": "Message",
+      "namePlaceholder": "Your name",
+      "emailPlaceholder": "your.email@example.com",
+      "messagePlaceholder": "Your message...",
+      "submit": "Get In Touch"
+    }
+  },
   "footer": {
     "subtitle": "Product Leader & Innovation Catalyst",
     "tagline": "Building bridges between cultures and innovation"

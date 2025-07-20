@@ -1,27 +1,29 @@
-
 import React from 'react';
 import { Building2, Award, GraduationCap, Shield, Globe, Users } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
 
 const Mission = () => {
+  const { t } = useTranslation();
+  
   const achievements = [
     {
-      text: "Zegama Aizkorri World Cup Marathon finisher (7:49:46, 395th overall, 2019)",
+      text: t('mission.achievementsList.0'),
       icon: <Award size={20} />
     },
     {
-      text: "NYU Stern Global Lecturer since 2018",
+      text: t('mission.achievementsList.1'),
       icon: <GraduationCap size={20} />
     },
     {
-      text: "Payment solutions across 5 countries with 100% PCI compliance",
+      text: t('mission.achievementsList.2'),
       icon: <Shield size={20} />
     },
     {
-      text: "Stripe Associate Architect & Fundamentals certifications",
+      text: t('mission.achievementsList.3'),
       icon: <Award size={20} />
     },
     {
-      text: "Co-founded Graphext and Kibber, early employee at MainTool",
+      text: t('mission.achievementsList.4'),
       icon: <Building2 size={20} />
     }
   ];
@@ -30,7 +32,7 @@ const Mission = () => {
     <section id="mission" className="py-20 px-4 bg-gray-900/30">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">Current Mission</h2>
+          <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">{t('mission.title')}</h2>
         </div>
 
         <div className="grid lg:grid-cols-2 gap-12 items-start">
@@ -40,13 +42,13 @@ const Mission = () => {
               <div className="flex items-center mb-6">
                 <Building2 size={40} className="text-blue-400 mr-4" />
                 <div>
-                  <h3 className="text-3xl font-bold text-blue-300">Bizkardo</h3>
-                  <p className="text-xl text-gray-300">Creative Farmer & Innovation Lead</p>
+                  <h3 className="text-3xl font-bold text-blue-300">{t('mission.company')}</h3>
+                  <p className="text-xl text-gray-300">{t('mission.role')}</p>
                 </div>
               </div>
               
               <p className="text-gray-300 text-lg leading-relaxed mb-6">
-                Building frictionless payment and wallet experiences across Africa, addressing critical financial inclusion challenges while applying gamification principles learned at Karmacracy to drive user adoption and engagement.
+                {t('mission.description')}
               </p>
 
               <div className="grid grid-cols-2 gap-4 text-center">
@@ -66,7 +68,7 @@ const Mission = () => {
 
           {/* Key Achievements */}
           <div>
-            <h3 className="text-3xl font-bold text-white mb-8">Key Achievements</h3>
+            <h3 className="text-3xl font-bold text-white mb-8">{t('mission.achievements')}</h3>
             <div className="space-y-4">
               {achievements.map((achievement, index) => (
                 <div
