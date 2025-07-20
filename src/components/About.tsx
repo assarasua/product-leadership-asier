@@ -20,9 +20,10 @@ const About = () => {
           <div className="animate-slide-in-left">
             <div className="space-y-6 text-muted-foreground">
               <p className="text-lg leading-relaxed">
-                I'm a seasoned product manager and entrepreneur with over a decade of experience building innovative solutions
-                across fintech, data analytics, and IoT industries. Currently, I lead the payments team at KingMakers,
-                focusing on creating frictionless payment experiences across African markets.
+                I'm a seasoned 360 product manager and entrepreneur with over a decade of experience building innovative solutions
+                across fintech, data analytics, and IoT industries. My expertise spans the full spectrum from coding to business 
+                strategy and marketing. Currently, I lead the payments team at KingMakers, focusing on creating frictionless 
+                payment experiences across African markets.
               </p>
               
               <p className="text-lg leading-relaxed">
