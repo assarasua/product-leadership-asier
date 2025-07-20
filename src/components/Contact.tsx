@@ -2,6 +2,7 @@
 import React, { useState } from 'react';
 import { Mail, MapPin, GraduationCap, Send } from 'lucide-react';
 import { toast } from 'sonner';
+import { supabase } from '@/integrations/supabase/client';
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -10,10 +11,48 @@ const Contact = () => {
     message: ''
   });
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    toast.success('Message sent successfully! I\'ll get back to you soon.');
-    setFormData({ name: '', email: '', message: '' });
+    
+    try {
+      // Save to Supabase
+      const { error: dbError } = await supabase
+        .from('bizkardo_contacts')
+        .insert([
+          {
+            name: formData.name,
+            email: formData.email,
+            message: formData.message
+          }
+        ]);
+
+      if (dbError) {
+        console.error('Database error:', dbError);
+        toast.error('Failed to save contact. Please try again.');
+        return;
+      }
+
+      // Send emails via edge function
+      const { error: emailError } = await supabase.functions.invoke('send-contact-email', {
+        body: {
+          name: formData.name,
+          email: formData.email,
+          message: formData.message
+        }
+      });
+
+      if (emailError) {
+        console.error('Email error:', emailError);
+        toast.error('Contact saved but email notification failed.');
+      } else {
+        toast.success('Message sent successfully! I\'ll get back to you soon.');
+      }
+
+      setFormData({ name: '', email: '', message: '' });
+    } catch (error) {
+      console.error('Error:', error);
+      toast.error('Something went wrong. Please try again.');
+    }
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
@@ -27,13 +66,13 @@ const Contact = () => {
     {
       icon: <MapPin size={24} />,
       title: "Location",
-      info: "Madrid, Spain",
+      info: "Bizkardo Baserria Ibarra",
       link: null
     },
     {
       icon: <MapPin size={24} />,
       title: "Heritage",
-      info: "Ibarra, Basque Country",
+      info: "Basque Country",
       link: null
     },
     {
