@@ -16,7 +16,10 @@ const Hero = () => {
         <div className="text-center max-w-6xl mx-auto">
           {/* Main Headline */}
           <h1 className="text-4xl md:text-6xl lg:text-7xl xl:text-8xl font-bold text-foreground mb-8 animate-fade-in leading-tight">
-            Asier Sarasua Amundarain
+            Building Bridges Between<br />
+            <span className="text-primary-contrast">Basque Heritage</span>,{' '}
+            <span className="text-accent-contrast">Silicon Valley Tech</span> and{' '}
+            <span className="text-secondary-contrast">African Innovation</span>
           </h1>
           
           {/* Subtitle */}
