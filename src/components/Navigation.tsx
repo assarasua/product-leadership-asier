@@ -1,8 +1,10 @@
 
 import React, { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
 
 const Navigation = () => {
+  const { t } = useTranslation();
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
 
@@ -15,11 +17,11 @@ const Navigation = () => {
   }, []);
 
   const navItems = [
-    { href: '#about', label: 'About' },
-    { href: '#journey', label: 'Journey' },
-    { href: '#philosophy', label: 'Philosophy' },
-    { href: '#mission', label: 'Mission' },
-    { href: '#contact', label: 'Contact' }
+    { href: '#about', label: t('navigation.about') },
+    { href: '#journey', label: t('navigation.journey') },
+    { href: '#philosophy', label: t('navigation.philosophy') },
+    { href: '#mission', label: t('navigation.mission') },
+    { href: '#contact', label: t('navigation.contact') }
   ];
 
   return (
@@ -29,7 +31,7 @@ const Navigation = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <div className="flex-shrink-0">
-            <h1 className="text-2xl font-bold text-white">Asier Sarasua</h1>
+            <h1 className="text-2xl font-bold text-white">Asier Sarasua Amundarain</h1>
           </div>
           
           {/* Desktop Navigation */}

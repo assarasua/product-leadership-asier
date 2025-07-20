@@ -1,0 +1,25 @@
+{
+  "navigation": {
+    "about": "Nire buruz",
+    "journey": "Bidaia",
+    "philosophy": "Filosofia",
+    "mission": "Misioa",
+    "contact": "Kontaktua"
+  },
+  "hero": {
+    "title": "Euskal Ondarea, Silicon Valley-ko Teknologia eta Afrikako Berrikuntza Lotzen",
+    "subtitle": "Bizkardo-ko Nekazari Sortzailea | Irakasle Globala | Ekintzailea",
+    "description": "Euskal nekazal ingurunetik berrikuntza sustatzen teknologia konponbideak merkatu globaletan bultzatzen. NYU Stern-en hurrengo belaunaldia erakusten eta ondarea eta berrikuntza arteko zubiak eraikitzen.",
+    "cta1": "Harremanetan jarri",
+    "cta2": "Gehiago ikasi",
+    "stats": {
+      "experience": "Urte Esperientzia",
+      "companies": "Enpresak",
+      "countries": "Herriak"
+    }
+  },
+  "footer": {
+    "subtitle": "Produktu Liderra eta Berrikuntza Katalizatzailea",
+    "tagline": "Kulturen eta berrikuntzaren arteko zubiak eraikitzen"
+  }
+}

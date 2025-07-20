@@ -1,0 +1,25 @@
+{
+  "navigation": {
+    "about": "Acerca de",
+    "journey": "Trayectoria",
+    "philosophy": "Filosofía",
+    "mission": "Misión",
+    "contact": "Contacto"
+  },
+  "hero": {
+    "title": "Construyendo Puentes Entre el Patrimonio Vasco, la Tecnología de Silicon Valley y la Innovación Africana",
+    "subtitle": "Agricultor Creativo en Bizkardo | Profesor Global | Emprendedor",
+    "description": "Cultivando innovación desde el campo vasco mientras impulso soluciones tecnológicas en mercados globales. Enseñando a la próxima generación en NYU Stern y construyendo puentes entre patrimonio e innovación.",
+    "cta1": "Ponerse en Contacto",
+    "cta2": "Saber Más",
+    "stats": {
+      "experience": "Años de Experiencia",
+      "companies": "Empresas",
+      "countries": "Países"
+    }
+  },
+  "footer": {
+    "subtitle": "Líder de Producto y Catalizador de Innovación",
+    "tagline": "Construyendo puentes entre culturas e innovación"
+  }
+}
