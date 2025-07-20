@@ -8,9 +8,12 @@ const About = () => {
       <div className="container-wide">
         <div className="text-center mb-16 animate-fade-in">
           <h2 className="text-headline text-foreground mb-6">About Me</h2>
-          <p className="text-body-large text-muted-foreground max-w-3xl mx-auto">
+          <p className="text-body-large text-muted-foreground max-w-3xl mx-auto mb-6">
             Passionate about building products that make a difference
           </p>
+          <blockquote className="text-xl font-medium text-primary italic max-w-4xl mx-auto border-l-4 border-primary/30 pl-6 bg-primary/5 rounded-lg p-6">
+            "I believe in the power of technology to solve complex problems and create meaningful impact."
+          </blockquote>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
@@ -29,8 +32,10 @@ const About = () => {
               
               <p className="text-lg leading-relaxed">
                 My entrepreneurial journey spans multiple successful ventures, from co-founding Graphext, a no-code data
-                visualization platform, to leading product development at CoverWallet. I believe in the power of technology
-                to solve complex problems and create meaningful impact.
+                visualization platform, to serving as Group Product Manager at CoverWallet, a data-driven insurtech platform 
+                that accelerates and modernizes insurance acquisition, placement and servicing utilizing purely digital tools 
+                for the 2nd largest insurance brokerage firm in the world, Aon. There, I led multiple product groups focused 
+                on data analytics and digital transformation.
               </p>
             </div>
           </div>
