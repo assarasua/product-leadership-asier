@@ -7,7 +7,7 @@ const Experience = () => {
       title: "Creative Farmer",
       company: "Bizkardo Lab (Stealth mode)",
       period: "2025 - Present",
-      location: "Remote",
+      location: "Ibarra & Globally",
       description: "Leading innovative product development in stealth mode, focusing on cutting-edge solutions and emerging market opportunities",
       highlights: ["Innovation", "Product Strategy", "Stealth Development"],
       current: true
@@ -16,7 +16,7 @@ const Experience = () => {
       title: "Senior Staff Product Manager, Payments",
       company: "KingMakers",
       period: "2024 - 2025",
-      location: "Remote",
+      location: "Madrid, Spain",
       description: "Led payments team and product strategy for African markets, focusing on frictionless payment experiences across multiple countries",
       highlights: ["African Markets", "Payment Strategy", "Team Leadership"]
     },
