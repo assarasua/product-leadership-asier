@@ -40,8 +40,8 @@ const Mission = () => {
               <div className="flex items-center mb-6">
                 <Building2 size={40} className="text-blue-400 mr-4" />
                 <div>
-                  <h3 className="text-3xl font-bold text-blue-300">KingMakers</h3>
-                  <p className="text-xl text-gray-300">Senior Staff Product Manager</p>
+                  <h3 className="text-3xl font-bold text-blue-300">Bizkardo</h3>
+                  <p className="text-xl text-gray-300">Creative Farmer & Innovation Lead</p>
                 </div>
               </div>
               
