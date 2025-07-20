@@ -19,7 +19,7 @@ interface Language {
 
 const languages: Language[] = [
   { code: 'en', name: 'English', nativeName: 'English', flag: 'gb' },
-  { code: 'eu', name: 'Basque', nativeName: 'Euskera', flag: 'es-pv' },
+  { code: 'eu', name: 'Basque', nativeName: 'Euskera', flag: 'es-eu' },
   { code: 'es', name: 'Spanish', nativeName: 'Español', flag: 'es' },
   { code: 'gl', name: 'Galician', nativeName: 'Galego', flag: 'es-ga' },
   { code: 'ca', name: 'Catalan', nativeName: 'Català', flag: 'es-ct' },
