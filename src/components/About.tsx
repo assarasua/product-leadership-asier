@@ -32,11 +32,11 @@ const About = () => {
               </p>
               
               <p className="text-lg leading-relaxed">
-                My entrepreneurial journey spans multiple successful ventures, from co-founding Graphext, a no-code data
-                visualization platform, to serving as Group Product Manager at CoverWallet, a data-driven insurtech platform 
-                that accelerates and modernizes insurance acquisition, placement and servicing utilizing purely digital tools 
-                for the 2nd largest insurance brokerage firm in the world, Aon. There, I led multiple product groups focused 
-                on data analytics and digital transformation.
+                My entrepreneurial journey spans multiple successful ventures, from founding Kibbber to being among the first 
+                handful of employees at Graphext, a no-code data visualization platform, and serving as Group Product Manager 
+                at CoverWallet, a data-driven insurtech platform that accelerates and modernizes insurance acquisition, placement 
+                and servicing utilizing purely digital tools for the 2nd largest insurance brokerage firm in the world, Aon. 
+                There, I led multiple product groups focused on data analytics and digital transformation.
               </p>
             </div>
           </div>
