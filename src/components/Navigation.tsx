@@ -1,10 +1,13 @@
 
 import React, { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
+import { LanguageSwitcher } from './LanguageSwitcher';
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const { t } = useTranslation();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -15,11 +18,11 @@ const Navigation = () => {
   }, []);
 
   const navItems = [
-    { href: '#about', label: 'About' },
-    { href: '#journey', label: 'Journey' },
-    { href: '#philosophy', label: 'Philosophy' },
-    { href: '#mission', label: 'Mission' },
-    { href: '#contact', label: 'Contact' }
+    { href: '#about', label: t('nav.about') },
+    { href: '#experience', label: t('nav.experience') },
+    { href: '#skills', label: t('nav.skills') },
+    { href: '#projects', label: t('nav.projects') },
+    { href: '#contact', label: t('nav.contact') }
   ];
 
   return (
@@ -34,7 +37,7 @@ const Navigation = () => {
           
           {/* Desktop Navigation */}
           <div className="hidden md:block">
-            <div className="ml-10 flex items-baseline space-x-4">
+            <div className="ml-10 flex items-center space-x-4">
               {navItems.map((item) => (
                 <a
                   key={item.href}
@@ -44,6 +47,7 @@ const Navigation = () => {
                   {item.label}
                 </a>
               ))}
+              <LanguageSwitcher />
             </div>
           </div>
 
@@ -73,6 +77,9 @@ const Navigation = () => {
                 {item.label}
               </a>
             ))}
+            <div className="px-3 py-2">
+              <LanguageSwitcher />
+            </div>
           </div>
         </div>
       )}

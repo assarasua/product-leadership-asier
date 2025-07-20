@@ -3,8 +3,10 @@ import React, { useState } from 'react';
 import { Mail, MapPin, GraduationCap, Send } from 'lucide-react';
 import { toast } from 'sonner';
 import { supabase } from '@/integrations/supabase/client';
+import { useTranslation } from 'react-i18next';
 
 const Contact = () => {
+  const { t } = useTranslation();
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -43,15 +45,15 @@ const Contact = () => {
 
       if (emailError) {
         console.error('Email error:', emailError);
-        toast.error('Contact saved but email notification failed.');
+        toast.error(t('contact.form.error'));
       } else {
-        toast.success('Message sent successfully! I\'ll get back to you soon.');
+        toast.success(t('contact.form.success'));
       }
 
       setFormData({ name: '', email: '', message: '' });
     } catch (error) {
       console.error('Error:', error);
-      toast.error('Something went wrong. Please try again.');
+      toast.error(t('contact.form.error'));
     }
   };
 
@@ -65,20 +67,20 @@ const Contact = () => {
   const contactInfo = [
     {
       icon: <MapPin size={24} />,
-      title: "Location",
+      title: t('contact.location'),
       info: "Bizkardo Baserria Ibarra",
       link: null
     },
     {
       icon: <MapPin size={24} />,
-      title: "Heritage",
-      info: "Basque Country",
+      title: t('contact.heritage'),
+      info: t('contact.heritage_value'),
       link: null
     },
     {
       icon: <GraduationCap size={24} />,
-      title: "Teaching",
-      info: "NYU Stern School of Business",
+      title: t('contact.teaching'),
+      info: t('contact.teaching_value'),
       link: null
     }
   ];
@@ -87,17 +89,16 @@ const Contact = () => {
     <section id="contact" className="py-20 px-4 bg-gray-900/30">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">Let's Connect</h2>
+          <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">{t('contact.title')}</h2>
           <p className="text-xl text-gray-400 max-w-4xl mx-auto">
-            Ready to build something meaningful together? Whether you're interested in fintech innovation, 
-            product leadership, gamification strategies, or exploring opportunities in Africa, I'd love to hear from you.
+            {t('contact.subtitle')}
           </p>
         </div>
 
         <div className="grid lg:grid-cols-2 gap-12">
           {/* Contact Info */}
           <div>
-            <h3 className="text-2xl font-bold text-white mb-8">Get In Touch</h3>
+            <h3 className="text-2xl font-bold text-white mb-8">{t('contact.getInTouch')}</h3>
             <div className="space-y-6 mb-8">
               {contactInfo.map((info, index) => (
                 <div key={index} className="flex items-center">
@@ -114,10 +115,9 @@ const Contact = () => {
             
             <div className="bg-gradient-to-r from-orange-500/10 to-red-500/10 backdrop-blur-sm border border-orange-700/30 rounded-xl p-6">
               <p className="text-gray-300 leading-relaxed">
-                <strong className="text-orange-400">Building bridges between cultures and innovation.</strong>
+                <strong className="text-orange-400">{t('contact.bridgeMessage')}</strong>
                 <br /><br />
-                I'm passionate about creating meaningful connections between Basque heritage and African innovation, 
-                always looking for opportunities to apply gamification principles to solve real-world problems.
+                {t('contact.bridgeDescription')}
               </p>
             </div>
           </div>
@@ -127,7 +127,7 @@ const Contact = () => {
             <form onSubmit={handleSubmit} className="space-y-6">
               <div>
                 <label htmlFor="name" className="block text-sm font-medium text-gray-300 mb-2">
-                  Name
+                  {t('contact.form.name')}
                 </label>
                 <input
                   type="text"
@@ -137,12 +137,12 @@ const Contact = () => {
                   onChange={handleChange}
                   required
                   className="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500"
-                  placeholder="Your name"
+                  placeholder={t('contact.form.namePlaceholder')}
                 />
               </div>
               <div>
                 <label htmlFor="email" className="block text-sm font-medium text-gray-300 mb-2">
-                  Email
+                  {t('contact.form.email')}
                 </label>
                 <input
                   type="email"
@@ -152,12 +152,12 @@ const Contact = () => {
                   onChange={handleChange}
                   required
                   className="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500"
-                  placeholder="your.email@example.com"
+                  placeholder={t('contact.form.emailPlaceholder')}
                 />
               </div>
               <div>
                 <label htmlFor="message" className="block text-sm font-medium text-gray-300 mb-2">
-                  Message
+                  {t('contact.form.message')}
                 </label>
                 <textarea
                   id="message"
@@ -167,7 +167,7 @@ const Contact = () => {
                   required
                   rows={5}
                   className="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500 resize-none"
-                  placeholder="Your message..."
+                  placeholder={t('contact.form.messagePlaceholder')}
                 />
               </div>
               <button
@@ -175,7 +175,7 @@ const Contact = () => {
                 className="w-full bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white font-medium py-3 px-6 rounded-lg transition-all duration-200 flex items-center justify-center"
               >
                 <Send size={20} className="mr-2" />
-                Get In Touch
+                {t('contact.form.submit')}
               </button>
             </form>
           </div>
