@@ -4,13 +4,21 @@ import { Building2, Calendar, MapPin, Award, CreditCard, Shield } from 'lucide-r
 const Experience = () => {
   const experiences = [
     {
+      title: "Creative Farmer",
+      company: "Bizkardo Lab (Stealth mode)",
+      period: "2025 - Present",
+      location: "Remote",
+      description: "Leading innovative product development in stealth mode, focusing on cutting-edge solutions and emerging market opportunities",
+      highlights: ["Innovation", "Product Strategy", "Stealth Development"],
+      current: true
+    },
+    {
       title: "Senior Staff Product Manager, Payments",
       company: "KingMakers",
-      period: "2024 - Present",
+      period: "2024 - 2025",
       location: "Remote",
-      description: "Leading payments team and product strategy for African markets, focusing on frictionless payment experiences across multiple countries",
-      highlights: ["African Markets", "Payment Strategy", "Team Leadership"],
-      current: true
+      description: "Led payments team and product strategy for African markets, focusing on frictionless payment experiences across multiple countries",
+      highlights: ["African Markets", "Payment Strategy", "Team Leadership"]
     },
     {
       title: "Global Lecturer",
