@@ -8,7 +8,7 @@ const Experience = () => {
       company: "Bizkardo Lab (Stealth mode)",
       period: "2025 - Present",
       location: "Ibarra & Globally",
-      description: "Leading innovative product development in stealth mode, focusing on cutting-edge solutions and emerging market opportunities",
+      description: "Digital and physical artisan, developing e2e solutions to impact local and globally",
       highlights: ["Innovation", "Product Strategy", "Stealth Development"],
       current: true
     },
