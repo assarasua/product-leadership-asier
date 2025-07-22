@@ -22,7 +22,7 @@ const Hero = () => {
             Building Bridges Between<br />
             <span className="text-primary-contrast">Basque Heritage</span>,{' '}
             <span className="text-accent-contrast">Silicon Valley Tech</span> and{' '}
-            <span className="text-secondary-contrast">African Innovation</span>
+            <span className="text-secondary-contrast">Glocal European & African Innovation</span>
           </h1>
           
           {/* Subtitle */}
