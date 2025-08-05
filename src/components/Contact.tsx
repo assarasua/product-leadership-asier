@@ -13,13 +13,21 @@ const Contact = () => {
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
   const lastSubmissionTime = useRef<number>(0);
+  const [submissionCount, setSubmissionCount] = useState(0);
   
-  // Rate limiting: 30 seconds between submissions
+  // Enhanced rate limiting: 30 seconds between submissions, max 5 per session
   const SUBMISSION_COOLDOWN = 30000;
+  const MAX_SUBMISSIONS_PER_SESSION = 5;
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     
+    // Session submission limit check
+    if (submissionCount >= MAX_SUBMISSIONS_PER_SESSION) {
+      toast.error('Maximum submissions reached for this session. Please refresh the page.');
+      return;
+    }
+
     // Rate limiting check
     const now = Date.now();
     if (now - lastSubmissionTime.current < SUBMISSION_COOLDOWN) {
@@ -28,9 +36,40 @@ const Contact = () => {
       return;
     }
 
-    // Input validation
-    if (formData.message.length > 5000) {
+    // Enhanced input validation
+    const trimmedName = formData.name.trim();
+    const trimmedEmail = formData.email.trim();
+    const trimmedMessage = formData.message.trim();
+
+    if (trimmedName.length < 2) {
+      toast.error('Name must be at least 2 characters long.');
+      return;
+    }
+
+    if (trimmedMessage.length < 10) {
+      toast.error('Message must be at least 10 characters long.');
+      return;
+    }
+
+    if (trimmedMessage.length > 5000) {
       toast.error('Message is too long. Please keep it under 5000 characters.');
+      return;
+    }
+
+    // Basic content filtering
+    const suspiciousPatterns = [
+      /<script[^>]*>.*?<\/script>/gi,
+      /javascript:/gi,
+      /vbscript:/gi,
+      /on\w+\s*=/gi
+    ];
+
+    const hasSuspiciousContent = suspiciousPatterns.some(pattern => 
+      pattern.test(trimmedName) || pattern.test(trimmedMessage)
+    );
+
+    if (hasSuspiciousContent) {
+      toast.error('Your message contains invalid content. Please remove any code or scripts.');
       return;
     }
 
@@ -72,6 +111,7 @@ const Contact = () => {
       }
 
       setFormData({ name: '', email: '', message: '' });
+      setSubmissionCount(prev => prev + 1);
     } catch (error) {
       console.error('Error:', error);
       toast.error('Something went wrong. Please try again.');
