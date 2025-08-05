@@ -101,8 +101,8 @@
     "basqueValues": "Euskal Balioak",
     "leadershipFrameworks": "Lidertza Markoak",
     "values": {
-      "lanEgiati": {
-        "term": "Lan Egiati",
+      "lanEgitea": {
+        "term": "Lan Egitea",
         "meaning": "Lan Zintzoa",
         "application": "Euskal kulturako ohorenik handiena, ahalegin autentikoa lehenetsi erakusketa ikusgarrien gainetik"
       },
@@ -139,7 +139,7 @@
       "NYU Stern Irakasle Globala 2018tik",
       "5 herrialdetako ordainketa konponbideak %100 PCI betetzearekin",
       "Stripe Associate Architect eta Fundamentals ziurtagiriak",
-      "Graphext eta Kibber sortzailea, MainTool-eko lehen langilea"
+      "Kibber sortzailea, Graphext eta MainTool-eko lehen langilea"
     ]
   },
   "contact": {
