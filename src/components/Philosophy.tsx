@@ -7,9 +7,9 @@ const Philosophy = () => {
   
   const basqueValues = [
     {
-      term: t('philosophy.values.lanEgiati.term'),
-      meaning: t('philosophy.values.lanEgiati.meaning'),
-      application: t('philosophy.values.lanEgiati.application'),
+      term: t('philosophy.values.lanEgitea.term'),
+      meaning: t('philosophy.values.lanEgitea.meaning'),
+      application: t('philosophy.values.lanEgitea.application'),
       icon: <HandHeart size={32} />
     },
     {
