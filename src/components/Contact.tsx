@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 import { Mail, MapPin, GraduationCap, Send } from 'lucide-react';
 import { toast } from 'sonner';
 import { supabase } from '@/integrations/supabase/client';
@@ -11,9 +11,31 @@ const Contact = () => {
     email: '',
     message: ''
   });
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const lastSubmissionTime = useRef<number>(0);
+  
+  // Rate limiting: 30 seconds between submissions
+  const SUBMISSION_COOLDOWN = 30000;
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    
+    // Rate limiting check
+    const now = Date.now();
+    if (now - lastSubmissionTime.current < SUBMISSION_COOLDOWN) {
+      const remainingTime = Math.ceil((SUBMISSION_COOLDOWN - (now - lastSubmissionTime.current)) / 1000);
+      toast.error(`Please wait ${remainingTime} seconds before submitting again.`);
+      return;
+    }
+
+    // Input validation
+    if (formData.message.length > 5000) {
+      toast.error('Message is too long. Please keep it under 5000 characters.');
+      return;
+    }
+
+    setIsSubmitting(true);
+    lastSubmissionTime.current = now;
     
     try {
       // Save to Supabase
@@ -53,6 +75,8 @@ const Contact = () => {
     } catch (error) {
       console.error('Error:', error);
       toast.error('Something went wrong. Please try again.');
+    } finally {
+      setIsSubmitting(false);
     }
   };
 
@@ -171,7 +195,8 @@ const Contact = () => {
               </div>
               <button
                 type="submit"
-                className="w-full bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white font-medium py-3 px-6 rounded-lg transition-all duration-200 flex items-center justify-center"
+                disabled={isSubmitting}
+                className="w-full bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 disabled:opacity-50 disabled:cursor-not-allowed text-white font-medium py-3 px-6 rounded-lg transition-all duration-200 flex items-center justify-center"
               >
                 <Send size={20} className="mr-2" />
                 {t('contact.form.submit')}

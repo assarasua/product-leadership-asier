@@ -172,10 +172,12 @@ export type Database = {
       }
       subscribers: {
         Row: {
+          cheese_weight: string | null
           created_at: string
           email: string
           id: string
           language_preference: string | null
+          monthly_price: number | null
           stripe_customer_id: string | null
           subscribed: boolean
           subscription_end: string | null
@@ -184,10 +186,12 @@ export type Database = {
           user_id: string | null
         }
         Insert: {
+          cheese_weight?: string | null
           created_at?: string
           email: string
           id?: string
           language_preference?: string | null
+          monthly_price?: number | null
           stripe_customer_id?: string | null
           subscribed?: boolean
           subscription_end?: string | null
@@ -196,10 +200,12 @@ export type Database = {
           user_id?: string | null
         }
         Update: {
+          cheese_weight?: string | null
           created_at?: string
           email?: string
           id?: string
           language_preference?: string | null
+          monthly_price?: number | null
           stripe_customer_id?: string | null
           subscribed?: boolean
           subscription_end?: string | null
@@ -217,7 +223,7 @@ export type Database = {
       [_ in never]: never
     }
     Enums: {
-      [_ in never]: never
+      cheese_tier: "quarter_kg" | "half_kg" | "one_kg" | "two_kg"
     }
     CompositeTypes: {
       [_ in never]: never
@@ -344,6 +350,8 @@ export type CompositeTypes<
 
 export const Constants = {
   public: {
-    Enums: {},
+    Enums: {
+      cheese_tier: ["quarter_kg", "half_kg", "one_kg", "two_kg"],
+    },
   },
 } as const
