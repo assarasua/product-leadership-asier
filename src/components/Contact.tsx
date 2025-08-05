@@ -9,7 +9,8 @@ const Contact = () => {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
-    message: ''
+    message: '',
+    honeypot: '' // Anti-bot honeypot field
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
   const lastSubmissionTime = useRef<number>(0);
@@ -36,6 +37,12 @@ const Contact = () => {
       return;
     }
 
+    // Honeypot check (anti-bot measure)
+    if (formData.honeypot) {
+      console.warn('Bot submission detected');
+      return; // Silent failure for bots
+    }
+
     // Enhanced input validation
     const trimmedName = formData.name.trim();
     const trimmedEmail = formData.email.trim();
@@ -56,12 +63,17 @@ const Contact = () => {
       return;
     }
 
-    // Basic content filtering
+    // Enhanced content filtering
     const suspiciousPatterns = [
       /<script[^>]*>.*?<\/script>/gi,
       /javascript:/gi,
       /vbscript:/gi,
-      /on\w+\s*=/gi
+      /on\w+\s*=/gi,
+      /data:/gi,
+      /<iframe[^>]*>.*?<\/iframe>/gi,
+      /eval\s*\(/gi,
+      /document\./gi,
+      /window\./gi
     ];
 
     const hasSuspiciousContent = suspiciousPatterns.some(pattern => 
@@ -99,7 +111,10 @@ const Contact = () => {
         body: {
           name: formData.name,
           email: formData.email,
-          message: formData.message
+          message: formData.message,
+          honeypot: formData.honeypot,
+          timestamp: Date.now(),
+          userAgent: navigator.userAgent
         }
       });
 
@@ -110,7 +125,7 @@ const Contact = () => {
         toast.success("Message sent successfully! I'll get back to you soon.");
       }
 
-      setFormData({ name: '', email: '', message: '' });
+      setFormData({ name: '', email: '', message: '', honeypot: '' });
       setSubmissionCount(prev => prev + 1);
     } catch (error) {
       console.error('Error:', error);
@@ -233,6 +248,21 @@ const Contact = () => {
                   placeholder={t('contact.form.messagePlaceholder')}
                 />
               </div>
+              
+              {/* Honeypot field - hidden from users, visible to bots */}
+              <div style={{ display: 'none' }}>
+                <label htmlFor="website">Website (leave blank):</label>
+                <input
+                  type="text"
+                  id="website"
+                  name="honeypot"
+                  value={formData.honeypot}
+                  onChange={handleChange}
+                  tabIndex={-1}
+                  autoComplete="off"
+                />
+              </div>
+              
               <button
                 type="submit"
                 disabled={isSubmitting}
