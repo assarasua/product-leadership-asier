@@ -69,13 +69,6 @@ const Hero = () => {
             >
               {t('hero.cta1')}
             </a>
-            <a
-              href="#about"
-              className="inline-flex items-center px-8 py-4 bg-primary text-primary-foreground font-medium rounded-xl transition-all duration-300 hover-lift"
-            >
-              {t('hero.cta2')}
-              <ChevronDown size={20} className="ml-2" />
-            </a>
           </div>
         </div>
       </div>
