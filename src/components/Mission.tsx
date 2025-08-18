@@ -25,6 +25,26 @@ const Mission = () => {
     {
       text: t('mission.achievementsList.4'),
       icon: <Building2 size={20} />
+    },
+    {
+      text: t('mission.achievementsList.5'),
+      icon: <Award size={20} />
+    },
+    {
+      text: t('mission.achievementsList.6'),
+      icon: <Users size={20} />
+    },
+    {
+      text: t('mission.achievementsList.7'),
+      icon: <Award size={20} />
+    },
+    {
+      text: t('mission.achievementsList.8'),
+      icon: <Award size={20} />
+    },
+    {
+      text: t('mission.achievementsList.9'),
+      icon: <Building2 size={20} />
     }
   ];
 
