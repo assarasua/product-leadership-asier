@@ -8,6 +8,10 @@ const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
 
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
   useEffect(() => {
     const handleScroll = () => {
       setScrolled(window.scrollY > 50);
@@ -31,7 +35,12 @@ const Navigation = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <div className="flex-shrink-0">
-            <h1 className="text-2xl font-bold text-white">Asier Sarasua Amundarain</h1>
+            <h1 
+              className="text-2xl font-bold text-white cursor-pointer hover:text-orange-400 transition-colors duration-200"
+              onClick={scrollToTop}
+            >
+              Asier Sarasua Amundarain
+            </h1>
           </div>
           
           {/* Desktop Navigation */}
