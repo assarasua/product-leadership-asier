@@ -7,7 +7,7 @@ export type Json =
   | Json[]
 
 export type Database = {
-  // Allows to automatically instanciate createClient with right options
+  // Allows to automatically instantiate createClient with right options
   // instead of createClient<Database, { PostgrestVersion: 'XX' }>(URL, KEY)
   __InternalSupabase: {
     PostgrestVersion: "12.2.3 (519615d)"
@@ -83,6 +83,132 @@ export type Database = {
           message?: string
           name?: string
           updated_at?: string
+        }
+        Relationships: []
+      }
+      day_bars: {
+        Row: {
+          close: number
+          created_at: string
+          date: string
+          high: number
+          low: number
+          open: number
+          prior_close: number | null
+          symbol: string
+          updated_at: string
+          volume: number
+        }
+        Insert: {
+          close: number
+          created_at?: string
+          date: string
+          high: number
+          low: number
+          open: number
+          prior_close?: number | null
+          symbol: string
+          updated_at?: string
+          volume: number
+        }
+        Update: {
+          close?: number
+          created_at?: string
+          date?: string
+          high?: number
+          low?: number
+          open?: number
+          prior_close?: number | null
+          symbol?: string
+          updated_at?: string
+          volume?: number
+        }
+        Relationships: []
+      }
+      derived_minute_metrics: {
+        Row: {
+          atr: number | null
+          created_at: string
+          current_price: number
+          from_open_return: number | null
+          ma_fast: number | null
+          ma_slow: number | null
+          pct_change_10m: number | null
+          pct_change_60m: number | null
+          price_vs_vwap: number | null
+          rsi: number | null
+          rvol: number | null
+          symbol: string
+          time: string
+          volume_current: number | null
+          vwap: number | null
+        }
+        Insert: {
+          atr?: number | null
+          created_at?: string
+          current_price: number
+          from_open_return?: number | null
+          ma_fast?: number | null
+          ma_slow?: number | null
+          pct_change_10m?: number | null
+          pct_change_60m?: number | null
+          price_vs_vwap?: number | null
+          rsi?: number | null
+          rvol?: number | null
+          symbol: string
+          time: string
+          volume_current?: number | null
+          vwap?: number | null
+        }
+        Update: {
+          atr?: number | null
+          created_at?: string
+          current_price?: number
+          from_open_return?: number | null
+          ma_fast?: number | null
+          ma_slow?: number | null
+          pct_change_10m?: number | null
+          pct_change_60m?: number | null
+          price_vs_vwap?: number | null
+          rsi?: number | null
+          rvol?: number | null
+          symbol?: string
+          time?: string
+          volume_current?: number | null
+          vwap?: number | null
+        }
+        Relationships: []
+      }
+      minute_bars: {
+        Row: {
+          close: number
+          created_at: string
+          high: number
+          low: number
+          open: number
+          symbol: string
+          time: string
+          volume: number
+        }
+        Insert: {
+          close: number
+          created_at?: string
+          high: number
+          low: number
+          open: number
+          symbol: string
+          time: string
+          volume: number
+        }
+        Update: {
+          close?: number
+          created_at?: string
+          high?: number
+          low?: number
+          open?: number
+          symbol?: string
+          time?: string
+          volume?: number
         }
         Relationships: []
       }
@@ -167,6 +293,33 @@ export type Database = {
           status?: string
           updated_at?: string
           urgency?: string | null
+        }
+        Relationships: []
+      }
+      securities: {
+        Row: {
+          created_at: string
+          market_cap: number | null
+          name: string
+          sector: string | null
+          symbol: string
+          updated_at: string
+        }
+        Insert: {
+          created_at?: string
+          market_cap?: number | null
+          name: string
+          sector?: string | null
+          symbol: string
+          updated_at?: string
+        }
+        Update: {
+          created_at?: string
+          market_cap?: number | null
+          name?: string
+          sector?: string | null
+          symbol?: string
+          updated_at?: string
         }
         Relationships: []
       }
