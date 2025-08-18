@@ -9,7 +9,7 @@ const Projects = () => {
       description: "A full-featured e-commerce platform built with React, Node.js, and Stripe integration.",
       image: "bg-gradient-to-br from-blue-500 to-purple-600",
       tags: ["React", "Node.js", "MongoDB", "Stripe"],
-      github: "https://github.com",
+      github: "https://github.com/assarasua",
       live: "https://example.com"
     },
     {
@@ -17,7 +17,7 @@ const Projects = () => {
       description: "A collaborative task management application with real-time updates and team features.",
       image: "bg-gradient-to-br from-green-500 to-teal-600",
       tags: ["React", "Socket.io", "Express", "PostgreSQL"],
-      github: "https://github.com",
+      github: "https://github.com/assarasua",
       live: "https://example.com"
     },
     {
@@ -25,7 +25,7 @@ const Projects = () => {
       description: "A beautiful weather dashboard with forecasts, maps, and location-based services.",
       image: "bg-gradient-to-br from-orange-500 to-red-600",
       tags: ["React", "Weather API", "Charts.js", "Tailwind"],
-      github: "https://github.com",
+      github: "https://github.com/assarasua",
       live: "https://example.com"
     },
     {
@@ -33,7 +33,7 @@ const Projects = () => {
       description: "A responsive portfolio website showcasing creative design and smooth animations.",
       image: "bg-gradient-to-br from-purple-500 to-pink-600",
       tags: ["React", "Framer Motion", "Tailwind", "Vite"],
-      github: "https://github.com",
+      github: "https://github.com/assarasua",
       live: "https://example.com"
     }
   ];

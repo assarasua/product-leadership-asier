@@ -18,7 +18,7 @@ const Footer = () => {
           
           <div className="flex space-x-6">
             <a
-              href="https://github.com"
+              href="https://github.com/assarasua"
               className="text-gray-400 hover:text-white transition-colors duration-200"
               aria-label="GitHub"
             >
@@ -32,7 +32,7 @@ const Footer = () => {
               <Linkedin size={24} />
             </a>
             <a
-              href="mailto:asier@example.com"
+              href="mailto:asier@bizkardolab.eu"
               className="text-gray-400 hover:text-white transition-colors duration-200"
               aria-label="Email"
             >
