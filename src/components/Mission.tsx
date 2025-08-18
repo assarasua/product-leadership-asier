@@ -41,10 +41,6 @@ const Mission = () => {
     {
       text: t('mission.achievementsList.8'),
       icon: <Award size={20} />
-    },
-    {
-      text: t('mission.achievementsList.9'),
-      icon: <Building2 size={20} />
     }
   ];
 
