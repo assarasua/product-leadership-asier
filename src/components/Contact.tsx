@@ -1,5 +1,5 @@
 import React, { useState, useRef } from 'react';
-import { Mail, MapPin, GraduationCap, Send } from 'lucide-react';
+import { Mail, MapPin, GraduationCap, ArrowRight } from 'lucide-react';
 import { toast } from 'sonner';
 import { supabase } from '@/integrations/supabase/client';
 import { useTranslation } from 'react-i18next';
@@ -273,10 +273,10 @@ const Contact = () => {
               <button
                 type="submit"
                 disabled={isSubmitting}
-                className="w-full bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 disabled:opacity-50 disabled:cursor-not-allowed text-white font-medium py-3 px-6 rounded-lg transition-all duration-200 flex items-center justify-center"
+                className="w-full bg-gray-800 hover:bg-gray-700 border border-gray-600 hover:border-gray-500 disabled:opacity-50 disabled:cursor-not-allowed text-white font-medium py-4 px-6 rounded-lg transition-all duration-200 flex items-center justify-center group"
               >
-                <Send size={20} className="mr-2" />
-                {t('contact.form.submit')}
+                <span className="mr-3">{t('contact.form.submit')}</span>
+                <ArrowRight size={20} className="transition-transform duration-200 group-hover:translate-x-1" />
               </button>
             </form>
           </div>
