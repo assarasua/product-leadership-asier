@@ -49,6 +49,20 @@ const Mission = () => {
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">{t('mission.title')}</h2>
+          
+          {/* YouTube Video Embed */}
+          <div className="max-w-4xl mx-auto mb-12">
+            <div className="relative aspect-video bg-gray-800/50 rounded-lg overflow-hidden">
+              <iframe
+                src="https://www.youtube.com/embed/lHFQYvocWf8"
+                title="Webit Festival 2016 - Speaker Video"
+                className="absolute inset-0 w-full h-full"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              />
+            </div>
+          </div>
         </div>
 
         <div className="grid md:grid-cols-2 gap-8">
