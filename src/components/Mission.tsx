@@ -50,23 +50,41 @@ const Mission = () => {
 
   return (
     <section id="mission" className="py-20 px-4 bg-gray-900/30">
-      <div className="max-w-4xl mx-auto">
+      <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">{t('mission.title')}</h2>
         </div>
 
-        <div className="space-y-4">
-          {achievements.map((achievement, index) => (
-            <div
-              key={index}
-              className="bg-gray-800/50 backdrop-blur-sm border border-gray-700 rounded-lg p-6 hover:bg-gray-800/70 transition-colors duration-200"
-            >
-              <div className="flex items-start">
-                <div className="text-blue-400 mr-4 mt-1">{achievement.icon}</div>
-                <p className="text-gray-300 text-lg leading-relaxed">{achievement.text}</p>
+        <div className="grid md:grid-cols-2 gap-8">
+          {/* Left Column */}
+          <div className="space-y-4">
+            {achievements.slice(0, Math.ceil(achievements.length / 2)).map((achievement, index) => (
+              <div
+                key={index}
+                className="bg-gray-800/50 backdrop-blur-sm border border-gray-700 rounded-lg p-6 hover:bg-gray-800/70 transition-colors duration-200"
+              >
+                <div className="flex items-start">
+                  <div className="text-blue-400 mr-4 mt-1">{achievement.icon}</div>
+                  <p className="text-gray-300 text-lg leading-relaxed">{achievement.text}</p>
+                </div>
               </div>
-            </div>
-          ))}
+            ))}
+          </div>
+
+          {/* Right Column */}
+          <div className="space-y-4">
+            {achievements.slice(Math.ceil(achievements.length / 2)).map((achievement, index) => (
+              <div
+                key={index + Math.ceil(achievements.length / 2)}
+                className="bg-gray-800/50 backdrop-blur-sm border border-gray-700 rounded-lg p-6 hover:bg-gray-800/70 transition-colors duration-200"
+              >
+                <div className="flex items-start">
+                  <div className="text-blue-400 mr-4 mt-1">{achievement.icon}</div>
+                  <p className="text-gray-300 text-lg leading-relaxed">{achievement.text}</p>
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </section>
