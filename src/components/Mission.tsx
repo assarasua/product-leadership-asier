@@ -49,29 +49,15 @@ const Mission = () => {
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">{t('mission.title')}</h2>
-          
-          {/* YouTube Video Embed */}
-          <div className="max-w-4xl mx-auto mb-12">
-            <div className="relative aspect-video bg-gray-800/50 rounded-lg overflow-hidden">
-              <iframe
-                src="https://www.youtube.com/embed/lHFQYvocWf8"
-                title="Webit Festival 2016 - Speaker Video"
-                className="absolute inset-0 w-full h-full"
-                frameBorder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
-              />
-            </div>
-          </div>
         </div>
 
         <div className="grid md:grid-cols-2 gap-8">
           {/* Left Column */}
           <div className="space-y-4">
-            {achievements.slice(0, Math.ceil(achievements.length / 2)).map((achievement, index) => (
+            {achievements.slice(0, 4).map((achievement, index) => (
               <div
                 key={index}
-                className="bg-gray-800/50 backdrop-blur-sm border border-gray-700 rounded-lg p-6 hover:bg-gray-800/70 transition-colors duration-200"
+                className="bg-gray-800/50 backdrop-blur-sm border border-gray-700 rounded-lg p-6 hover:bg-gray-800/70 transition-colors duration-200 mb-4"
               >
                 <div className="flex items-start">
                   <div className="text-blue-400 mr-4 mt-1">{achievement.icon}</div>
@@ -83,10 +69,10 @@ const Mission = () => {
 
           {/* Right Column */}
           <div className="space-y-4">
-            {achievements.slice(Math.ceil(achievements.length / 2)).map((achievement, index) => (
+            {achievements.slice(4, 8).map((achievement, index) => (
               <div
-                key={index + Math.ceil(achievements.length / 2)}
-                className="bg-gray-800/50 backdrop-blur-sm border border-gray-700 rounded-lg p-6 hover:bg-gray-800/70 transition-colors duration-200"
+                key={index + 4}
+                className="bg-gray-800/50 backdrop-blur-sm border border-gray-700 rounded-lg p-6 hover:bg-gray-800/70 transition-colors duration-200 mb-4"
               >
                 <div className="flex items-start">
                   <div className="text-blue-400 mr-4 mt-1">{achievement.icon}</div>
@@ -94,6 +80,20 @@ const Mission = () => {
                 </div>
               </div>
             ))}
+          </div>
+        </div>
+        
+        {/* YouTube Video Embed */}
+        <div className="max-w-4xl mx-auto mt-12">
+          <div className="relative aspect-video bg-gray-800/50 rounded-lg overflow-hidden">
+            <iframe
+              src="https://www.youtube.com/embed/lHFQYvocWf8"
+              title="Webit Festival 2016 - Speaker Video"
+              className="absolute inset-0 w-full h-full"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            />
           </div>
         </div>
       </div>
