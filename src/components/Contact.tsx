@@ -1,5 +1,5 @@
 import React, { useState, useRef } from 'react';
-import { Mail, MapPin, GraduationCap, Send } from 'lucide-react';
+import { Mail, MapPin, GraduationCap, Send, MessageCircle } from 'lucide-react';
 import { toast } from 'sonner';
 import { supabase } from '@/integrations/supabase/client';
 import { useTranslation } from 'react-i18next';
@@ -142,6 +142,13 @@ const Contact = () => {
     });
   };
 
+  const handleWhatsAppClick = () => {
+    const phoneNumber = "34634554698"; // Replace with actual WhatsApp Business number
+    const message = encodeURIComponent(t('contact.whatsapp.defaultMessage'));
+    const whatsappUrl = `https://wa.me/${phoneNumber}?text=${message}`;
+    window.open(whatsappUrl, '_blank');
+  };
+
   const contactInfo = [
     {
       icon: <MapPin size={24} />,
@@ -160,6 +167,12 @@ const Contact = () => {
       title: t('contact.teaching'),
       info: t('contact.teachingValue'),
       link: null
+    },
+    {
+      icon: <MessageCircle size={24} />,
+      title: t('contact.whatsapp.title'),
+      info: t('contact.whatsapp.info'),
+      link: handleWhatsAppClick
     }
   ];
 
@@ -179,7 +192,7 @@ const Contact = () => {
             <h3 className="text-2xl font-bold text-white mb-8">{t('contact.getInTouch')}</h3>
             <div className="space-y-6 mb-8">
               {contactInfo.map((info, index) => (
-                <div key={index} className="flex items-center">
+                <div key={index} className={`flex items-center ${info.link ? 'cursor-pointer hover:opacity-80 transition-opacity' : ''}`} onClick={info.link}>
                   <div className="flex-shrink-0 w-12 h-12 bg-gradient-to-r from-orange-500 to-red-500 rounded-lg flex items-center justify-center text-white mr-4">
                     {info.icon}
                   </div>

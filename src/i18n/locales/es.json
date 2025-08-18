@@ -154,6 +154,11 @@
     "teachingValue": "NYU Stern School of Business",
     "bridgeDescription": "Construyendo puentes entre culturas e innovación.",
     "passionDescription": "Soy apasionado por crear conexiones significativas entre el patrimonio vasco y la innovación africana, siempre buscando oportunidades para aplicar principios de gamificación para resolver problemas del mundo real.",
+    "whatsapp": {
+      "title": "WhatsApp Business",
+      "info": "Chatea conmigo directamente",
+      "defaultMessage": "¡Hola! Estoy interesado en conectar y discutir oportunidades de colaboración potenciales."
+    },
     "form": {
       "name": "Nombre",
       "email": "Email",
