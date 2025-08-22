@@ -417,6 +417,41 @@ export type Database = {
       [_ in never]: never
     }
     Functions: {
+      get_full_quote_details: {
+        Args: { quote_id: string }
+        Returns: {
+          access_token: string
+          address: string
+          budget: string
+          created_at: string
+          description: string
+          door_type: string
+          email: string
+          estimate: number
+          id: string
+          installation_type: string
+          language: string
+          name: string
+          phone: string
+          status: string
+          updated_at: string
+          urgency: string
+        }[]
+      }
+      get_quote_summary: {
+        Args: { quote_access_token: string }
+        Returns: {
+          budget: string
+          created_at: string
+          door_type: string
+          estimate: number
+          id: string
+          installation_type: string
+          status: string
+          updated_at: string
+          urgency: string
+        }[]
+      }
       log_quote_access: {
         Args: {
           access_type: string
