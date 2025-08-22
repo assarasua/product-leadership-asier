@@ -34,32 +34,6 @@ const Hero = () => {
             {t('hero.description')}
           </p>
           
-          {/* Stats Cards */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12 animate-fade-in-delay-3">
-            <div className="glass-card p-6 rounded-2xl hover-lift">
-              <div className="flex items-center justify-center mb-4">
-                <Award className="w-8 h-8 text-primary" />
-              </div>
-              <div className="text-3xl font-bold text-foreground mb-2">10+</div>
-              <div className="text-muted-foreground">{t('hero.stats.experience')}</div>
-            </div>
-            
-            <div className="glass-card p-6 rounded-2xl hover-lift">
-              <div className="flex items-center justify-center mb-4">
-                <Building2 className="w-8 h-8 text-secondary" />
-              </div>
-              <div className="text-3xl font-bold text-foreground mb-2">6</div>
-              <div className="text-muted-foreground">{t('hero.stats.companies')}</div>
-            </div>
-            
-            <div className="glass-card p-6 rounded-2xl hover-lift">
-              <div className="flex items-center justify-center mb-4">
-                <GraduationCap className="w-8 h-8 text-accent" />
-              </div>
-              <div className="text-3xl font-bold text-foreground mb-2">5</div>
-              <div className="text-muted-foreground">{t('hero.stats.countries')}</div>
-            </div>
-          </div>
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in-delay-4">
