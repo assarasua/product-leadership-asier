@@ -93,6 +93,11 @@
         "title": "Misioa",
         "subtitle": "Health Tech eta AgriTech Berrikuntza",
         "description": "Osasun teknologia eta nekazaritza teknologiaren berrikuntza gidatzen merkatu emergenteetan gizartean eragin positibo esanguratsua izan dezaketen, Silicon Valley-ko teknologia eta nire jaioterri euskal herriko oinarri ruralak konbinatuz."
+      },
+      "vision": {
+        "title": "Ikuspegia",
+        "subtitle": "AI eta Gizartearen Harmonizazioa",
+        "description": "Gizartea eta AI harmoniatsu bizikide izango diren etorkizun bat ikusten eta eraikitzen. Bidegurutzean gaude gaur egungo gure ekintzek biharko mundua zehazten dutenean. Etorkizuna ez dago harrian idatzita - gurea da arretaz moldatzeko, gure gizarte egiturek, ekonomiek eta etika markoek iraunkortasuna bilatuz."
       }
     }
   },
