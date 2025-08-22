@@ -244,6 +244,7 @@ export type Database = {
       }
       quotes: {
         Row: {
+          access_token: string | null
           address: string | null
           budget: string | null
           created_at: string
@@ -259,8 +260,10 @@ export type Database = {
           status: string
           updated_at: string
           urgency: string | null
+          user_id: string | null
         }
         Insert: {
+          access_token?: string | null
           address?: string | null
           budget?: string | null
           created_at?: string
@@ -276,8 +279,10 @@ export type Database = {
           status?: string
           updated_at?: string
           urgency?: string | null
+          user_id?: string | null
         }
         Update: {
+          access_token?: string | null
           address?: string | null
           budget?: string | null
           created_at?: string
@@ -293,8 +298,47 @@ export type Database = {
           status?: string
           updated_at?: string
           urgency?: string | null
+          user_id?: string | null
         }
         Relationships: []
+      }
+      quotes_audit_log: {
+        Row: {
+          access_type: string
+          accessed_at: string | null
+          accessed_by: string
+          id: string
+          ip_address: unknown | null
+          quote_id: string | null
+          user_agent: string | null
+        }
+        Insert: {
+          access_type: string
+          accessed_at?: string | null
+          accessed_by: string
+          id?: string
+          ip_address?: unknown | null
+          quote_id?: string | null
+          user_agent?: string | null
+        }
+        Update: {
+          access_type?: string
+          accessed_at?: string | null
+          accessed_by?: string
+          id?: string
+          ip_address?: unknown | null
+          quote_id?: string | null
+          user_agent?: string | null
+        }
+        Relationships: [
+          {
+            foreignKeyName: "quotes_audit_log_quote_id_fkey"
+            columns: ["quote_id"]
+            isOneToOne: false
+            referencedRelation: "quotes"
+            referencedColumns: ["id"]
+          },
+        ]
       }
       securities: {
         Row: {
@@ -373,7 +417,15 @@ export type Database = {
       [_ in never]: never
     }
     Functions: {
-      [_ in never]: never
+      log_quote_access: {
+        Args: {
+          access_type: string
+          ip_address?: unknown
+          quote_id: string
+          user_agent?: string
+        }
+        Returns: undefined
+      }
     }
     Enums: {
       cheese_tier: "quarter_kg" | "half_kg" | "one_kg" | "two_kg"
