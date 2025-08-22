@@ -1,5 +1,5 @@
 import React from 'react';
-import { Calendar, MapPin, Trophy, Target } from 'lucide-react';
+import { Calendar, MapPin, Trophy, Target, Eye } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 
 const Journey = () => {
@@ -46,7 +46,15 @@ const Journey = () => {
       subtitle: t('journey.items.mission.subtitle'),
       description: t('journey.items.mission.description'),
       icon: <Target size={24} />,
-      color: "bg-blue-500",
+      color: "bg-blue-500"
+    },
+    {
+      year: "Future",
+      title: t('journey.items.vision.title'),
+      subtitle: t('journey.items.vision.subtitle'),
+      description: t('journey.items.vision.description'),
+      icon: <Eye size={24} />,
+      color: "bg-indigo-500",
       current: true
     }
   ];
@@ -60,7 +68,7 @@ const Journey = () => {
 
         <div className="relative">
           {/* Timeline line */}
-          <div className="absolute left-8 md:left-1/2 transform md:-translate-x-1/2 h-full w-1 bg-gradient-to-b from-red-500 via-purple-500 via-orange-500 via-green-500 to-blue-500"></div>
+          <div className="absolute left-8 md:left-1/2 transform md:-translate-x-1/2 h-full w-1 bg-gradient-to-b from-red-500 via-purple-500 via-orange-500 via-green-500 via-blue-500 to-indigo-500"></div>
 
           {timelineItems.map((item, index) => (
             <div
