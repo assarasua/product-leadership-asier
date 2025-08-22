@@ -27,7 +27,7 @@ const Hero = () => {
           
           {/* Subtitle */}
           <p className="text-xl md:text-2xl lg:text-3xl font-medium text-muted-foreground mb-8 animate-fade-in-delay">
-            {t('hero.subtitle')}
+            360 Product Builder and Advisor | {t('hero.subtitle')}
           </p>
           
           <p className="text-lg md:text-xl text-muted-foreground mb-16 animate-fade-in-delay-2 max-w-5xl mx-auto leading-relaxed">
