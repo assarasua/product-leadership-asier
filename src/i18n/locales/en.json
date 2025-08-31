@@ -186,6 +186,7 @@
     "title": "Blog",
     "description": "Thoughts on innovation, technology, and the intersection of tradition with modern solutions.",
     "readMore": "Read more",
-    "backToBlog": "Back to Blog"
+    "backToBlog": "Back to Blog",
+    "backToHome": "Back to Home"
   }
 }

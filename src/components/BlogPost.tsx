@@ -3,7 +3,7 @@ import { useParams, Link, Navigate } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
-import { CalendarDays, Clock, ArrowLeft } from 'lucide-react';
+import { CalendarDays, Clock, ArrowLeft, Home } from 'lucide-react';
 
 interface BlogPost {
   id: string;
@@ -68,12 +68,20 @@ const BlogPost = () => {
     <div className="min-h-screen bg-background">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
         <div className="mb-8">
-          <Link to="/blog">
-            <Button variant="ghost" className="mb-6">
-              <ArrowLeft className="h-4 w-4 mr-2" />
-              {t('blog.backToBlog')}
-            </Button>
-          </Link>
+          <div className="flex gap-4 mb-6">
+            <Link to="/">
+              <Button variant="ghost">
+                <Home className="h-4 w-4 mr-2" />
+                {t('blog.backToHome')}
+              </Button>
+            </Link>
+            <Link to="/blog">
+              <Button variant="ghost">
+                <ArrowLeft className="h-4 w-4 mr-2" />
+                {t('blog.backToBlog')}
+              </Button>
+            </Link>
+          </div>
           
           <div className="flex items-center gap-2 text-sm text-muted-foreground mb-4">
             <CalendarDays className="h-4 w-4" />
@@ -103,17 +111,25 @@ const BlogPost = () => {
           </div>
         </div>
 
-        <article className="prose prose-lg max-w-none dark:prose-invert">
+        <article className="prose prose-lg max-w-none dark:prose-invert prose-img:rounded-lg prose-img:shadow-lg prose-video:rounded-lg prose-video:shadow-lg">
           <div dangerouslySetInnerHTML={{ __html: post.content }} />
         </article>
 
         <div className="mt-12 pt-8 border-t border-border">
-          <Link to="/blog">
-            <Button variant="outline">
-              <ArrowLeft className="h-4 w-4 mr-2" />
-              {t('blog.backToBlog')}
-            </Button>
-          </Link>
+          <div className="flex gap-4">
+            <Link to="/">
+              <Button variant="outline">
+                <Home className="h-4 w-4 mr-2" />
+                {t('blog.backToHome')}
+              </Button>
+            </Link>
+            <Link to="/blog">
+              <Button variant="outline">
+                <ArrowLeft className="h-4 w-4 mr-2" />
+                {t('blog.backToBlog')}
+              </Button>
+            </Link>
+          </div>
         </div>
       </div>
     </div>

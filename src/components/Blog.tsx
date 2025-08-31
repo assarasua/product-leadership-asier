@@ -3,7 +3,8 @@ import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
-import { CalendarDays, Clock, ArrowRight } from 'lucide-react';
+import { Button } from '@/components/ui/button';
+import { CalendarDays, Clock, ArrowRight, Home } from 'lucide-react';
 
 interface BlogPost {
   id: string;
@@ -60,6 +61,15 @@ const Blog = () => {
   return (
     <div className="min-h-screen bg-background">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+        <div className="mb-8">
+          <Link to="/">
+            <Button variant="ghost" className="mb-6">
+              <Home className="h-4 w-4 mr-2" />
+              {t('blog.backToHome')}
+            </Button>
+          </Link>
+        </div>
+        
         <div className="text-center mb-16">
           <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
             {t('blog.title')}
