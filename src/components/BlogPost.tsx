@@ -20,33 +20,37 @@ interface BlogPost {
 const blogPosts: BlogPost[] = [
   {
     id: '1',
-    title: 'Building Bridges Between Tradition and Innovation in Rural Tech',
-    description: 'Exploring how traditional Basque farming practices can inspire modern agricultural technology solutions and drive rural innovation.',
+    title: 'Back to the roots, forward to impact',
+    description: 'Leaving Madrid felt like stepping off a fast track that no longer pointed toward meaning. Returning to Ibarra reset the compass: a slower cadence, thicker sense of place, and the clarity that what matters is not just scale but stewardship.',
     content: `
-      <p>The intersection of traditional knowledge and modern technology has always fascinated me. Growing up in the Basque countryside, I witnessed firsthand how generations of farmers developed sophisticated systems for managing land, water, and crops without the aid of modern technology.</p>
+      <p>Leaving Madrid felt like stepping off a fast track that no longer pointed toward meaning; the signal was strong, but the station was wrong. Returning to Ibarra reset the compass: a slower cadence, thicker sense of place, and the clarity that what matters is not just scale but stewardship—how to build from roots that endure. Bizkardo, my grandmother's caserío, is both anchor and invitation: a living blueprint for continuity with room for reinvention.</p>
       
-      <p>Today, as we face global challenges in food security and sustainable agriculture, these traditional practices offer valuable insights for developing innovative solutions. The concept of "txoko" - communal spaces where knowledge is shared - can be reimagined through digital platforms that connect rural communities worldwide.</p>
+      <h2>Why home is a strategy</h2>
+      <p>In the city, access is abundant but attention is thin; in the valley, attention deepens into understanding. Ibarra's culture—where the landscape itself produces icons like the piparra and the Gilda—reminds that excellence grows from specific soils, not generic formulas. Designing from here means treating constraints as features and values as operating principles, so progress compounds locally before it scales outward.</p>
       
-      <h2>The Power of Community-Driven Innovation</h2>
-      <p>In my work at NYU Stern, I've seen how gamification principles can transform learning and engagement. When applied to agricultural knowledge sharing, these same principles can create powerful incentives for farmers to document, share, and iterate on traditional practices.</p>
+      <h2>Bizkardo as framework</h2>
+      <p>A Basque caserío is more than architecture; it is a social and economic unit that has carried names, work, and identity across centuries. That continuity suggests a way to build: cyclical value, intergenerational intent, and governance that keeps benefits rooted where they are made. In this frame, Bizkardo becomes a platform for learning, production, and hospitality that educates while welcoming—heritage as capability, not just memory.</p>
       
-      <p>Consider the traditional Basque practice of "soro" - the careful rotation of crops and grazing animals to maintain soil health. This knowledge, passed down through generations, embodies principles that modern permaculture and regenerative agriculture are just beginning to understand scientifically.</p>
+      <h2>Principles that guide the work</h2>
+      <ul>
+        <li><strong>Start with place:</strong> design with landscape and custom, so solutions fit like tools made for the hand that uses them.</li>
+        <li><strong>Regenerate value:</strong> count soil, skills, livelihoods, and belonging alongside revenue, so growth strengthens the commons.</li>
+        <li><strong>Open by default:</strong> document playbooks so what works here can be adapted elsewhere without losing its integrity.</li>
+        <li><strong>Small is precise:</strong> iterate locally, stabilize slowly, and let replication follow proof, not pitch.</li>
+        <li><strong>Community as shareholder:</strong> ensure that governance and upside remain anchored to the place that creates the value.</li>
+      </ul>
       
-      <h2>Technology as a Bridge, Not a Replacement</h2>
-      <p>The key is to use technology not to replace traditional knowledge, but to bridge it with modern scientific understanding and global connectivity. Mobile apps that help farmers document weather patterns, soil conditions, and crop performance can serve as digital versions of the mental maps that experienced farmers have always maintained.</p>
+      <h2>Shaping a useful future</h2>
+      <p>Positive impact here is tangible: healthier land, steadier income, apprenticeships that carry skills forward, and products whose provenance is a promise. It is also civic: spaces to gather, shared narratives that turn everyday craft into pride, and an economy that rewards care over extraction. If it improves life in Ibarra—workflows, wages, watersheds—it is a worthy export; if not, it's noise.</p>
       
-      <p>This approach to rural innovation isn't just about agriculture - it's about creating sustainable economic opportunities in rural areas while preserving cultural heritage and environmental stewardship.</p>
-      
-      <h2>Looking Forward</h2>
-      <p>As we continue to develop healthtech solutions and rural innovation platforms, the lessons from traditional practices become even more relevant. The holistic approach to health and wellness that characterizes Basque culture - emphasizing fresh air, physical activity, community support, and connection to the land - offers a blueprint for technology solutions that truly serve human wellbeing.</p>
-      
-      <p>The future of innovation lies not in abandoning our roots, but in understanding how deep traditional knowledge can inform and enhance our technological capabilities.</p>
+      <h2>A closing note on ambition</h2>
+      <p>The ambition now is coherence: to let Bizkardo stand as a hinge between inheritance and necessity, translating care into enterprise without burning the foundations that make it possible. From Ibarra, the path is clear enough: go deep, stay open, and build so that what survives is not just a house, but a way of making life together that is unmistakably alive.</p>
     `,
-    slug: 'building-bridges-tradition-innovation-rural-tech',
+    slug: 'back-to-roots-forward-to-impact',
     date: '2024-01-15',
-    readTime: '5 min read',
-    category: 'Innovation',
-    tags: ['Rural Tech', 'Traditional Knowledge', 'Agriculture', 'Gamification']
+    readTime: '6 min read',
+    category: 'Philosophy',
+    tags: ['Rural Innovation', 'Heritage', 'Sustainability', 'Community']
   }
 ];
 
