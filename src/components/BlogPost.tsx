@@ -64,8 +64,8 @@ const blogPosts: BlogPost[] = [
       <p>From Ibarra, the path is clear enough: go deep, stay open, and build so that what survives is not just a house, but a way of making life together that is unmistakably alive.</p>
     `,
     slug: 'back-to-roots-forward-to-impact',
-    date: '2024-01-15',
-    readTime: '6 min read',
+    date: '2025-08-31',
+    readTime: '3 min read',
     category: 'Philosophy',
     tags: ['Rural Innovation', 'Heritage', 'Sustainability', 'Community']
   }
