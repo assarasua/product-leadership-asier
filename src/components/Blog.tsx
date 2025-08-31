@@ -24,15 +24,26 @@ const blogPosts: BlogPost[] = [
     title: 'Back to the roots, forward to impact',
     description: 'Leaving Madrid felt like stepping off a fast track that no longer pointed toward meaning. Returning to Ibarra reset the compass: a slower cadence, thicker sense of place, and the clarity that what matters is not just scale but stewardship.',
     content: `
-      <p>Leaving Madrid felt like stepping off a fast track that no longer pointed toward meaning; the signal was strong, but the station was wrong. Returning to Ibarra reset the compass: a slower cadence, thicker sense of place, and the clarity that what matters is not just scale but stewardship—how to build from roots that endure. Bizkardo, my grandmother's caserío, is both anchor and invitation: a living blueprint for continuity with room for reinvention.</p>
+      <p>Leaving Madrid felt like stepping off a fast track that no longer pointed toward meaning; the signal was strong, but the station was wrong. Returning to Ibarra reset the compass: a slower cadence, thicker sense of place, and the clarity that what matters is not just scale but stewardship—how to build from roots that endure.</p>
+      
+      <p>Bizkardo, my grandmother's caserío, is both anchor and invitation: a living blueprint for continuity with room for reinvention.</p>
+      
+      <img src="/src/assets/basque-countryside-caserio.jpg" alt="Traditional Basque caserío in the countryside of Ibarra, representing heritage and continuity" class="w-full my-8 rounded-lg shadow-lg" />
       
       <h2>Why home is a strategy</h2>
-      <p>In the city, access is abundant but attention is thin; in the valley, attention deepens into understanding. Ibarra's culture—where the landscape itself produces icons like the piparra and the Gilda—reminds that excellence grows from specific soils, not generic formulas. Designing from here means treating constraints as features and values as operating principles, so progress compounds locally before it scales outward.</p>
+      
+      <p>In the city, access is abundant but attention is thin; in the valley, attention deepens into understanding. Ibarra's culture—where the landscape itself produces icons like the piparra and the Gilda—reminds that excellence grows from specific soils, not generic formulas.</p>
+      
+      <p>Designing from here means treating constraints as features and values as operating principles, so progress compounds locally before it scales outward.</p>
       
       <h2>Bizkardo as framework</h2>
-      <p>A Basque caserío is more than architecture; it is a social and economic unit that has carried names, work, and identity across centuries. That continuity suggests a way to build: cyclical value, intergenerational intent, and governance that keeps benefits rooted where they are made. In this frame, Bizkardo becomes a platform for learning, production, and hospitality that educates while welcoming—heritage as capability, not just memory.</p>
+      
+      <p>A Basque caserío is more than architecture; it is a social and economic unit that has carried names, work, and identity across centuries. That continuity suggests a way to build: cyclical value, intergenerational intent, and governance that keeps benefits rooted where they are made.</p>
+      
+      <p>In this frame, Bizkardo becomes a platform for learning, production, and hospitality that educates while welcoming—heritage as capability, not just memory.</p>
       
       <h2>Principles that guide the work</h2>
+      
       <ul>
         <li><strong>Start with place:</strong> design with landscape and custom, so solutions fit like tools made for the hand that uses them.</li>
         <li><strong>Regenerate value:</strong> count soil, skills, livelihoods, and belonging alongside revenue, so growth strengthens the commons.</li>
@@ -42,10 +53,16 @@ const blogPosts: BlogPost[] = [
       </ul>
       
       <h2>Shaping a useful future</h2>
-      <p>Positive impact here is tangible: healthier land, steadier income, apprenticeships that carry skills forward, and products whose provenance is a promise. It is also civic: spaces to gather, shared narratives that turn everyday craft into pride, and an economy that rewards care over extraction. If it improves life in Ibarra—workflows, wages, watersheds—it is a worthy export; if not, it's noise.</p>
+      
+      <p>Positive impact here is tangible: healthier land, steadier income, apprenticeships that carry skills forward, and products whose provenance is a promise. It is also civic: spaces to gather, shared narratives that turn everyday craft into pride, and an economy that rewards care over extraction.</p>
+      
+      <p>If it improves life in Ibarra—workflows, wages, watersheds—it is a worthy export; if not, it's noise.</p>
       
       <h2>A closing note on ambition</h2>
-      <p>The ambition now is coherence: to let Bizkardo stand as a hinge between inheritance and necessity, translating care into enterprise without burning the foundations that make it possible. From Ibarra, the path is clear enough: go deep, stay open, and build so that what survives is not just a house, but a way of making life together that is unmistakably alive.</p>
+      
+      <p>The ambition now is coherence: to let Bizkardo stand as a hinge between inheritance and necessity, translating care into enterprise without burning the foundations that make it possible.</p>
+      
+      <p>From Ibarra, the path is clear enough: go deep, stay open, and build so that what survives is not just a house, but a way of making life together that is unmistakably alive.</p>
     `,
     slug: 'back-to-roots-forward-to-impact',
     date: '2024-01-15',
