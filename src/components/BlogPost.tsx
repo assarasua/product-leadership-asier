@@ -128,7 +128,7 @@ const BlogPost = () => {
           </div>
         </div>
 
-        <article className="prose prose-lg max-w-none dark:prose-invert prose-img:rounded-lg prose-img:shadow-lg prose-video:rounded-lg prose-video:shadow-lg">
+        <article className="prose prose-lg max-w-none dark:prose-invert prose-img:rounded-lg prose-img:shadow-lg prose-video:rounded-lg prose-video:shadow-lg prose-headings:text-foreground prose-h2:text-2xl prose-h2:font-bold prose-h2:mt-12 prose-h2:mb-6 prose-h2:leading-tight prose-p:text-muted-foreground prose-p:leading-relaxed prose-p:mb-6 prose-strong:text-foreground prose-ul:my-6 prose-li:mb-2 prose-li:text-muted-foreground">
           <div dangerouslySetInnerHTML={{ __html: post.content }} />
         </article>
 
