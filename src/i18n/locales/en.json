@@ -4,6 +4,7 @@
     "journey": "Journey",
     "philosophy": "Philosophy",
     "mission": "Achievements",
+    "blog": "Blog",
     "contact": "Contact"
   },
   "hero": {
@@ -180,5 +181,11 @@
   "footer": {
     "subtitle": "Product Leader & Innovation Catalyst",
     "tagline": "Building bridges between cultures and innovation"
+  },
+  "blog": {
+    "title": "Blog",
+    "description": "Thoughts on innovation, technology, and the intersection of tradition with modern solutions.",
+    "readMore": "Read more",
+    "backToBlog": "Back to Blog"
   }
 }

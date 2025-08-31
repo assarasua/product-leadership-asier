@@ -6,6 +6,8 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { useGeolocation } from "@/hooks/useGeolocation";
 import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
+import Blog from "./components/Blog";
+import BlogPost from "./components/BlogPost";
 import './i18n';
 
 const queryClient = new QueryClient();
@@ -16,6 +18,8 @@ function AppContent() {
   return (
     <Routes>
       <Route path="/" element={<Index />} />
+      <Route path="/blog" element={<Blog />} />
+      <Route path="/blog/:slug" element={<BlogPost />} />
       {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
       <Route path="*" element={<NotFound />} />
     </Routes>
