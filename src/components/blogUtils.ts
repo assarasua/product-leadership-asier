@@ -15,14 +15,28 @@ export interface BlogPost {
 
 /*
 ADDING IMAGES TO BLOG POSTS:
-To add images to your blog posts, include them in the HTML content like this:
 
-<img src="/path/to/your/image.jpg" alt="Descriptive alt text" />
+Option 1 - Static images in public folder:
+<img src="/blog-images/your-image.jpg" alt="Descriptive alt text" />
 
+Option 2 - Dynamic images from Supabase Storage (recommended for CMS):
+First upload the image using the blogImageStorage utility, then reference it:
+<img src="{supabase-storage-url}/blog-images/your-image.jpg" alt="Descriptive alt text" />
+
+Use the uploadBlogImage() function from @/utils/blogImageStorage to upload images to Supabase.
 The prose classes will automatically style them with rounded corners and shadows.
 
-Example:
-<img src="/lovable-uploads/your-image.jpg" alt="Beautiful Basque countryside" />
+Example with Supabase:
+import { uploadBlogImage, getBlogImageUrl } from '@/utils/blogImageStorage';
+
+// Upload an image
+const imageUrl = await uploadBlogImage(file, 'my-blog-image.jpg');
+
+// Or get URL for existing image
+const imageUrl = getBlogImageUrl('my-blog-image.jpg');
+
+// Then use in your blog post content:
+<img src="${imageUrl}" alt="Beautiful Basque countryside" />
 
 ADDING YOUTUBE VIDEOS:
 To embed YouTube videos, use iframe with the embed URL:

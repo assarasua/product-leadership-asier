@@ -27,7 +27,7 @@ const blogPosts: BlogPost[] = [
       
       <p>Bizkardo, my grandmother's caserío, is both anchor and invitation: a living blueprint for continuity with room for reinvention.</p>
       
-      <img src="/src/assets/basque-countryside-caserio.jpg" alt="Traditional Basque caserío in the countryside of Ibarra, representing heritage and continuity" class="w-full my-8 rounded-lg shadow-lg" />
+      <img src="/blog-images/basque-countryside-caserio.jpg" alt="Traditional Basque caserío in the countryside of Ibarra, representing heritage and continuity" class="w-full my-8 rounded-lg shadow-lg" />
       
       <h2>Why home is a strategy</h2>
       
