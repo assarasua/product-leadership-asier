@@ -7,15 +7,6 @@ const Experience = () => {
   
   const experiences = [
     {
-      title: t('experience.roles.creativeFarmer'),
-      company: t('experience.companies.bizkardo'),
-      period: "2025 - Present",
-      location: "Ibarra & Globally",
-      description: t('experience.descriptions.bizkardo'),
-      highlights: ["Innovation", "Product Strategy", "Product Execution"],
-      current: true
-    },
-    {
       title: t('experience.roles.headProductIncubationOps'),
       company: t('experience.companies.hutech'),
       period: "2025 - Present",
@@ -40,6 +31,15 @@ const Experience = () => {
       location: "Madrid, Spain",
       description: t('experience.descriptions.nyu'),
       highlights: ["Education", "Technology & Society", "Business Innovation"],
+      current: true
+    },
+    {
+      title: t('experience.roles.creativeFarmer'),
+      company: t('experience.companies.bizkardo'),
+      period: "2025 - Present",
+      location: "Ibarra & Globally",
+      description: t('experience.descriptions.bizkardo'),
+      highlights: ["Innovation", "Product Strategy", "Product Execution"],
       current: true
     },
     {
