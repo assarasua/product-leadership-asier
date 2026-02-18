@@ -34,14 +34,6 @@ const Experience = () => {
       current: true
     },
     {
-      title: t('experience.roles.seniorStaffPM'),
-      company: t('experience.companies.kingmakers'),
-      period: "2024 - 2025",
-      location: "Madrid, Spain",
-      description: t('experience.descriptions.kingmakers'),
-      highlights: ["African Markets", "Payment Strategy", "Team Leadership"]
-    },
-    {
       title: t('experience.roles.globalLecturer'),
       company: t('experience.companies.nyu'),
       period: "2018 - Present",
@@ -49,6 +41,14 @@ const Experience = () => {
       description: t('experience.descriptions.nyu'),
       highlights: ["Education", "Technology & Society", "Business Innovation"],
       current: true
+    },
+    {
+      title: t('experience.roles.seniorStaffPM'),
+      company: t('experience.companies.kingmakers'),
+      period: "2024 - 2025",
+      location: "Madrid, Spain",
+      description: t('experience.descriptions.kingmakers'),
+      highlights: ["African Markets", "Payment Strategy", "Team Leadership"]
     },
     {
       title: t('experience.roles.groupPM'),
