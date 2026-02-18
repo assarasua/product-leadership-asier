@@ -24,7 +24,7 @@
     "quote": "Teknologiaren ahalmenean sinesten dut arazo konplexuak konpontzeko eta eragin esanguratsua sortzeko.",
     "paragraph1": "Hamarkada bat baino gehiagoko esperientzia duen 360 produktu kudeatzaile eta ekintzaile esperientzatua naiz, fintech, datu analisia eta IoT industrietan konponbide berritzaileak eraikitzen. Nire esperientzia programaziotik hasita negozio estrategia eta marketingraino zabaltzen da. Gaur egun, NYU Stern-eko irakaslea naiz eta Hutech Ventures-eko Produktu eta Estrategia Aholkularia eta bizkardo lab-eko Nekazari Sortzailea naiz.",
     "paragraph2": "NYU Stern School of Business-eko Irakasle Global gisa, teknologia eta gizartearen arteko tartea ixteko pasioa dut, berritzaileen hurrengo belaunaldiari teknologiaren botere eraldatzaileari buruz erakusten.",
-    "paragraph3": "Nire enpresari bidaia proiektu arrakastatsuen artean zabaltzen da, Kibbber sortzailea izatetik hasita Graphext-eko lehen langile multzoan egoteraino, kode gabeko datu bistaratzeko plataforma bat, eta CoverWallet-en Group Product Manager gisa aritzera, datuen gainean oinarritutako insurtech plataforma bat, munduko bigarren aseguru korredoria handiena den Aon-erentzat tresna digital hutsak erabiliz aseguru eskuraketa, kokapena eta zerbitzua azeleratzen eta modernizatzen duena. Han, datu analisia eta eraldaketa digitalean zentratutako produktu talde anitzak zuzendu nituen.",
+    "paragraph3": "Nire enpresari bidaia proiektu arrakastatsuen artean zabaltzen da, Kibbber sortzailea izatetik hasita MainTool-eko hasierako taldeko kidea eta Graphext-eko lehen langile multzoan egoteraino, kode gabeko datu bistaratzeko plataforma bat, eta CoverWallet-en Group Product Manager gisa aritzera, datuen gainean oinarritutako insurtech plataforma bat, munduko bigarren aseguru korredoria handiena den Aon-erentzat tresna digital hutsak erabiliz aseguru eskuraketa, kokapena eta zerbitzua azeleratzen eta modernizatzen duena. Han, datu analisia eta eraldaketa digitalean zentratutako produktu talde anitzak zuzendu nituen.",
     "stats": {
       "experience": "Urte Esperientzia",
       "companies": "Enpresak",
@@ -46,15 +46,19 @@
       "globalLecturer": "Irakaslea",
       "groupPM": "Produktu Talde Kudeatzailea",
       "headCustomerSuccess": "Bezero Arrakasta Burua eta Produktu Kudeatzailea",
-      "cmo": "Marketing eta Produktu Zuzendaria"
+      "cmo": "Marketing eta Produktu Zuzendaria",
+      "headProductIncubationOps": "Head of Product Incubation & Operations",
+      "b2bPartnerships": "Product Incubation & B2B Partnerships"
     },
     "companies": {
-      "bizkardo": "Bizkardo Lab (Ezkutuko modua)",
+      "bizkardo": "Bizkardo Lab",
       "kingmakers": "KingMakers",
       "nyu": "NYU Stern School of Business",
       "coverwallet": "CoverWallet (Aon enpresa)",
       "graphext": "Graphext",
-      "maintool": "MainTool"
+      "maintool": "MainTool",
+      "hutech": "Hutech Ventures",
+      "ultrahuman": "Ultrahuman"
     },
     "descriptions": {
       "bizkardo": "Artisau digital eta fisikoa, e2e konponbideak garatzen tokian tokian eta globalki eragina izateko",
@@ -62,7 +66,9 @@
       "nyu": "Negozioetan eta Gizartean Informazio Teknologia irakasten, teknologia eta gizartearen arteko elkargunean zentratuz",
       "coverwallet": "Ordainketa konponbide eskalagarriak abiarazi nituen herralde anitzetan aseguru industria oso erregulatuan: Argentina, AEB, Espainia, Portugal eta Frantzia. Ordainketa metodo ezberdinak inplementatu nituen paper txekeak, txartelak, banku transferentzia, ACH eta Apple Pay barne agente eta bezeroetarako. PCI betetze bermatu nuen 30+ markatan operazio eredu eta arautegia anitzekiko.",
       "graphext": "Datu bistaratzeko plataforma honetako lehen langileen artean, produktu garapena eta bezero arrakasta kudeatu nituen",
-      "maintool": "MainTool-eko hasierako taldeko kidea, produktuaren posizionamendua, go-to-market estrategia eta marka hazkundea gidatuz IoT eta industria-teknologiako konponbideetan."
+      "maintool": "MainTool-eko hasierako taldeko kidea, produktuaren posizionamendua, go-to-market estrategia eta marka hazkundea gidatuz IoT eta industria-teknologiako konponbideetan.",
+      "hutech": "Produktu inkubazioa eta operazioak gidatzen, ideiak exekuzio sistema argiekin venture eskalagarri bihurtzeko.",
+      "ultrahuman": "Produktu inkubazioa eta B2B partnership-ak bultzatzen, hazkunde estrategikoa eta ekosistemaren hedapena indartzeko."
     }
   },
   "journey": {

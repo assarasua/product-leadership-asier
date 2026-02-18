@@ -24,7 +24,7 @@
     "quote": "Creo no poder da tecnoloxía para resolver problemas complexos e crear un impacto significativo.",
     "paragraph1": "Son un experimentado xestor de produto 360 e empresario con máis dunha década de experiencia construíndo solucións innovadoras en fintech, análise de datos e industrias IoT. A miña experiencia abarca todo o espectro desde programación ata estratexia de negocio e marketing. Actualmente, son profesor en NYU Stern e son Asesor de Produto e Estratexia para Hutech Ventures e Agricultor Creativo en bizkardo lab.",
     "paragraph2": "Como Profesor Global en NYU Stern School of Business, son apaixonado por pechar a brecha entre tecnoloxía e sociedade, ensinando á próxima xeración de innovadores sobre o poder transformador da tecnoloxía.",
-    "paragraph3": "A miña traxectoria empresarial abarca múltiples proxectos exitosos, desde fundar Kibbber ata estar entre os primeiros empregados de Graphext, unha plataforma de visualización de datos sen código, e servir como Group Product Manager en CoverWallet, unha plataforma insurtech basada en datos que acelera e moderniza a adquisición, colocación e servizo de seguros utilizando ferramentas puramente dixitais para a segunda corredoría de seguros máis grande do mundo, Aon. Alí, lidereu múltiples grupos de produto enfocados en análise de datos e transformación dixital.",
+    "paragraph3": "A miña traxectoria empresarial abarca múltiples proxectos exitosos, desde fundar Kibbber ata ser membro temperán en MainTool e estar entre os primeiros empregados de Graphext, unha plataforma de visualización de datos sen código, e servir como Group Product Manager en CoverWallet, unha plataforma insurtech basada en datos que acelera e moderniza a adquisición, colocación e servizo de seguros utilizando ferramentas puramente dixitais para a segunda corredoría de seguros máis grande do mundo, Aon. Alí, lidereu múltiples grupos de produto enfocados en análise de datos e transformación dixital.",
     "stats": {
       "experience": "Anos de Experiencia",
       "companies": "Empresas",
@@ -46,15 +46,19 @@
       "globalLecturer": "Profesor",
       "groupPM": "Xerente de Grupo de Produto",
       "headCustomerSuccess": "Xefe de Éxito do Cliente e Xerente de Produto",
-      "cmo": "Director de Marketing e Produto"
+      "cmo": "Director de Marketing e Produto",
+      "headProductIncubationOps": "Head of Product Incubation & Operations",
+      "b2bPartnerships": "Product Incubation & B2B Partnerships"
     },
     "companies": {
-      "bizkardo": "Bizkardo Lab (Modo sigiloso)",
+      "bizkardo": "Bizkardo Lab",
       "kingmakers": "KingMakers",
       "nyu": "NYU Stern School of Business",
       "coverwallet": "CoverWallet (empresa Aon)",
       "graphext": "Graphext",
-      "maintool": "MainTool"
+      "maintool": "MainTool",
+      "hutech": "Hutech Ventures",
+      "ultrahuman": "Ultrahuman"
     },
     "descriptions": {
       "bizkardo": "Artesán dixital e físico, desenvolvendo solucións e2e para impactar local e globalmente",
@@ -62,7 +66,9 @@
       "nyu": "Ensinando Tecnoloxía da Información en Negocios e Sociedade, enfocándome na intersección de tecnoloxía e sociedade",
       "coverwallet": "Lancei solucións de pago escalables en múltiples países na industria de seguros altamente regulada: Arxentina, EUA, España, Portugal e Francia. Implementei diversos métodos de pago incluíndo cheques en papel, tarxetas, transferencia bancaria, ACH e Apple Pay tanto para axentes como clientes. Asegurei o cumprimento PCI en máis de 30 marcas con múltiples modelos operativos e regulacións.",
       "graphext": "Entre os primeiros empregados desta plataforma de visualización de datos, xestionei o desenvolvemento de produtos e o éxito do cliente",
-      "maintool": "Membro temperán do equipo de MainTool, liderando o posicionamento de produto, a estratexia go-to-market e o crecemento de marca para solucións IoT e tecnoloxía industrial."
+      "maintool": "Membro temperán do equipo de MainTool, liderando o posicionamento de produto, a estratexia go-to-market e o crecemento de marca para solucións IoT e tecnoloxía industrial.",
+      "hutech": "Liderando incubación de produto e operacións para converter ideas en ventures escalables con sistemas claros de execución.",
+      "ultrahuman": "Impulsando incubación de produto e alianzas B2B centradas en crecemento estratéxico e expansión do ecosistema."
     }
   },
   "journey": {

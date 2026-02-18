@@ -12,7 +12,25 @@ const Experience = () => {
       period: "2025 - Present",
       location: "Ibarra & Globally",
       description: t('experience.descriptions.bizkardo'),
-      highlights: ["Innovation", "Product Strategy", "Stealth Development"],
+      highlights: ["Innovation", "Product Strategy", "Product Execution"],
+      current: true
+    },
+    {
+      title: t('experience.roles.headProductIncubationOps'),
+      company: t('experience.companies.hutech'),
+      period: "2025 - Present",
+      location: "Global / Remote",
+      description: t('experience.descriptions.hutech'),
+      highlights: ["Product Incubation", "Operations", "Venture Building"],
+      current: true
+    },
+    {
+      title: t('experience.roles.b2bPartnerships'),
+      company: t('experience.companies.ultrahuman'),
+      period: "2025 - Present",
+      location: "Global",
+      description: t('experience.descriptions.ultrahuman'),
+      highlights: ["B2B Partnerships", "HealthTech", "Growth"],
       current: true
     },
     {

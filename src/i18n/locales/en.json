@@ -25,7 +25,7 @@
     "quote": "I believe in the power of technology to solve complex problems and create meaningful impact.",
     "paragraph1": "I'm a seasoned 360 product manager and entrepreneur with over a decade of experience building innovative solutions across fintech, data analytics, and IoT industries. My expertise spans the full spectrum from coding to business strategy and marketing. Currently, I am a professor at NYU Stern and I am a Product & Strategy Advisor for Hutech Ventures & Creative Farmer at bizkardo lab.",
     "paragraph2": "As a Professor at NYU Stern School of Business, I'm passionate about bridging the gap between technology and society, teaching the next generation of innovators about the transformative power of technology.",
-    "paragraph3": "My entrepreneurial journey spans multiple successful ventures, from founding Kibbber to being among the first handful of employees at Graphext, a no-code data visualization platform, and serving as Group Product Manager at CoverWallet, a data-driven insurtech platform that accelerates and modernizes insurance acquisition, placement and servicing utilizing purely digital tools for the 2nd largest insurance brokerage firm in the world, Aon. There, I led multiple product groups focused on data analytics and digital transformation.",
+    "paragraph3": "My entrepreneurial journey spans multiple successful ventures, from founding Kibbber to being an early employee at MainTool and among the first handful of employees at Graphext, a no-code data visualization platform, and serving as Group Product Manager at CoverWallet, a data-driven insurtech platform that accelerates and modernizes insurance acquisition, placement and servicing utilizing purely digital tools for the 2nd largest insurance brokerage firm in the world, Aon. There, I led multiple product groups focused on data analytics and digital transformation.",
     "stats": {
       "experience": "Years Experience",
       "companies": "Companies",
@@ -47,15 +47,19 @@
       "globalLecturer": "Professor",
       "groupPM": "Group Product Manager",
       "headCustomerSuccess": "Head of Customer Success & Product Manager",
-      "cmo": "CMO & Product Lead"
+      "cmo": "CMO & Product Lead",
+      "headProductIncubationOps": "Head of Product Incubation & Operations",
+      "b2bPartnerships": "Product Incubation & B2B Partnerships"
     },
     "companies": {
-      "bizkardo": "Bizkardo Lab (Stealth mode)",
+      "bizkardo": "Bizkardo Lab",
       "kingmakers": "KingMakers",
       "nyu": "NYU Stern School of Business",
       "coverwallet": "CoverWallet (Aon company)",
       "graphext": "Graphext",
-      "maintool": "MainTool"
+      "maintool": "MainTool",
+      "hutech": "Hutech Ventures",
+      "ultrahuman": "Ultrahuman"
     },
     "descriptions": {
       "bizkardo": "Digital and physical artisan, developing e2e solutions to impact local and globally",
@@ -63,7 +67,9 @@
       "nyu": "Teaching Information Technology in Business and Society, focusing on the intersection of technology and society",
       "coverwallet": "Launched scalable payment solutions across multiple countries in the highly regulated insurance industry: Argentina, USA, Spain, Portugal, and France. Implemented diverse payment methods including paper check, cards, bank transfer, ACH, and Apple Pay for both agents and customers. Ensured PCI compliance across 30+ brands with multiple operation models and regulations.",
       "graphext": "Among the first employees at this data visualization platform, managed product development and customer success",
-      "maintool": "Early team member at MainTool, leading product positioning, go-to-market strategy, and brand growth for IoT and industrial technology solutions."
+      "maintool": "Early team member at MainTool, leading product positioning, go-to-market strategy, and brand growth for IoT and industrial technology solutions.",
+      "hutech": "Leading product incubation and operations to turn ideas into scalable ventures with clear execution systems.",
+      "ultrahuman": "Driving product incubation and B2B partnerships focused on strategic growth and ecosystem expansion."
     }
   },
   "journey": {
