@@ -44,6 +44,29 @@ npm run build
 npm run preview
 ```
 
+## Deploy to Cloudflare Pages
+
+This project is ready for Cloudflare Pages (static Vite build).
+
+Use these settings when connecting the GitHub repo:
+
+- Framework preset: `Vite`
+- Build command: `npm run build`
+- Build output directory: `dist`
+- Root directory: `/` (repo root)
+- Node.js version: `20` (recommended)
+
+Add these environment variables in Cloudflare Pages (Production + Preview):
+
+- `VITE_SUPABASE_PROJECT_ID`
+- `VITE_SUPABASE_PUBLISHABLE_KEY`
+- `VITE_SUPABASE_URL`
+
+Notes:
+
+- `public/_redirects` is included for SPA routing (`/* /index.html 200`) so direct URL refreshes do not 404.
+- If using a custom domain, add `bizkardolab.eu` in Pages -> Custom domains.
+
 ## Visibility checklist
 
 - Public repository
