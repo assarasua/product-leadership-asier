@@ -1,73 +1,51 @@
-# Welcome to your Lovable project
+# Product Leadership Portfolio (Asier)
 
-## Project info
+Public portfolio website for Asier Sarasua focused on product leadership, innovation, and cross-cultural technology work.
 
-**URL**: https://lovable.dev/projects/7b016799-5ab6-43d6-8541-97da8dc18d63
+Repository: [assarasua/product-leadership-asier](https://github.com/assarasua/product-leadership-asier)
 
-## How can I edit this code?
+## What this project includes
 
-There are several ways of editing your application.
+- Leadership profile and career journey
+- Product philosophy and achievements
+- Multilingual content (English, Spanish, Basque, Catalan, Galician)
+- Blog section
+- Contact form backed by Supabase
 
-**Use Lovable**
+## Tech stack
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/7b016799-5ab6-43d6-8541-97da8dc18d63) and start prompting.
+- React + TypeScript + Vite
+- Tailwind CSS + shadcn/ui
+- Supabase
+- i18next
 
-Changes made via Lovable will be committed automatically to this repo.
+## Run locally
 
-**Use your preferred IDE**
-
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
-
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
+```bash
+git clone https://github.com/assarasua/product-leadership-asier.git
+cd product-leadership-asier
+npm install
+cp .env.example .env
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+## Environment variables
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+Create a `.env` file from `.env.example`:
 
-**Use GitHub Codespaces**
+- `VITE_SUPABASE_PROJECT_ID`
+- `VITE_SUPABASE_PUBLISHABLE_KEY`
+- `VITE_SUPABASE_URL`
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+## Build
 
-## What technologies are used for this project?
+```bash
+npm run build
+npm run preview
+```
 
-This project is built with:
+## Visibility checklist
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/7b016799-5ab6-43d6-8541-97da8dc18d63) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+- Public repository
+- Clear README with project scope
+- Environment values excluded from source control
