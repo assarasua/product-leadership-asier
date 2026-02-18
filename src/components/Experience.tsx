@@ -19,7 +19,7 @@ const Experience = () => {
       title: t('experience.roles.headProductIncubationOps'),
       company: t('experience.companies.hutech'),
       period: "2025 - Present",
-      location: "Global / Remote",
+      location: "San Diego, United States",
       description: t('experience.descriptions.hutech'),
       highlights: ["Product Incubation", "Operations", "Venture Building"],
       current: true
@@ -37,7 +37,7 @@ const Experience = () => {
       title: t('experience.roles.globalLecturer'),
       company: t('experience.companies.nyu'),
       period: "2018 - Present",
-      location: "New York, NY",
+      location: "Madrid, Spain",
       description: t('experience.descriptions.nyu'),
       highlights: ["Education", "Technology & Society", "Business Innovation"],
       current: true
