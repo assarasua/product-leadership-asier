@@ -50,7 +50,7 @@ const About = () => {
                 <div className="flex justify-center mb-4">
                   <Briefcase className="w-8 h-8 text-secondary" />
                 </div>
-                <div className="text-3xl font-bold text-foreground mb-2">6</div>
+                <div className="text-3xl font-bold text-foreground mb-2">8</div>
                 <div className="text-muted-foreground text-sm">{t('about.stats.companies')}</div>
               </div>
               
