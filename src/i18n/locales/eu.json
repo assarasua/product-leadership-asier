@@ -46,7 +46,7 @@
       "globalLecturer": "Irakaslea",
       "groupPM": "Produktu Talde Kudeatzailea",
       "headCustomerSuccess": "Bezero Arrakasta Burua eta Produktu Kudeatzailea",
-      "cmo": "Marketing Zuzendaria"
+      "cmo": "Marketing eta Produktu Zuzendaria"
     },
     "companies": {
       "bizkardo": "Bizkardo Lab (Ezkutuko modua)",
@@ -62,7 +62,7 @@
       "nyu": "Negozioetan eta Gizartean Informazio Teknologia irakasten, teknologia eta gizartearen arteko elkargunean zentratuz",
       "coverwallet": "Ordainketa konponbide eskalagarriak abiarazi nituen herralde anitzetan aseguru industria oso erregulatuan: Argentina, AEB, Espainia, Portugal eta Frantzia. Ordainketa metodo ezberdinak inplementatu nituen paper txekeak, txartelak, banku transferentzia, ACH eta Apple Pay barne agente eta bezeroetarako. PCI betetze bermatu nuen 30+ markatan operazio eredu eta arautegia anitzekiko.",
       "graphext": "Datu bistaratzeko plataforma honetako lehen langileen artean, produktu garapena eta bezero arrakasta kudeatu nituen",
-      "maintool": "Lehen langileen artean, marketing estrategia eta marka garapena zuzendu nituen IoT eta teknologia konponbideetan"
+      "maintool": "MainTool-eko hasierako taldeko kidea, produktuaren posizionamendua, go-to-market estrategia eta marka hazkundea gidatuz IoT eta industria-teknologiako konponbideetan."
     }
   },
   "journey": {

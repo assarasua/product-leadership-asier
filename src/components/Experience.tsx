@@ -55,7 +55,7 @@ const Experience = () => {
       period: "2014 - 2017",
       location: "Madrid, Spain",
       description: t('experience.descriptions.maintool'),
-      highlights: ["Early Employee", "Marketing Strategy", "Brand Development"]
+      highlights: ["IoT Products", "Go-to-Market", "B2B Growth"]
     }
   ];
 
