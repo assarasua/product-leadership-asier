@@ -52,7 +52,11 @@ function InfiniteWatchDiagnostics() {
 }
 
 const App = () => (
-  <InfiniteWatchProvider organizationId={infiniteWatchOrgId} debug={true}>
+  <InfiniteWatchProvider
+    organizationId={infiniteWatchOrgId}
+    debug={true}
+    defaultSamplingPercent={100}
+  >
     <InfiniteWatchDiagnostics />
     <QueryClientProvider client={queryClient}>
       <TooltipProvider>
