@@ -2,8 +2,9 @@ import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import { InfiniteWatchProvider } from "@infinitewatch/react";
+import { InfiniteWatchProvider, useInfiniteWatch } from "@infinitewatch/react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { useEffect } from "react";
 import { useGeolocation } from "@/hooks/useGeolocation";
 import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
@@ -32,8 +33,27 @@ function AppContent() {
   );
 }
 
+function InfiniteWatchDiagnostics() {
+  const { getSessionInfo, isBlocked } = useInfiniteWatch();
+
+  useEffect(() => {
+    const id = window.setTimeout(() => {
+      const info = getSessionInfo();
+      const blocked = isBlocked();
+      console.log("[InfiniteWatch] session info:", info);
+      console.log("[InfiniteWatch] blocked:", blocked);
+      (window as any).__iw = { info, blocked };
+    }, 2000);
+
+    return () => window.clearTimeout(id);
+  }, [getSessionInfo, isBlocked]);
+
+  return null;
+}
+
 const App = () => (
   <InfiniteWatchProvider organizationId={infiniteWatchOrgId} debug={true}>
+    <InfiniteWatchDiagnostics />
     <QueryClientProvider client={queryClient}>
       <TooltipProvider>
         <Toaster />
