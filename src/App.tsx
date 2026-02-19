@@ -55,6 +55,7 @@ const App = () => (
   <InfiniteWatchProvider
     organizationId={infiniteWatchOrgId}
     debug={true}
+    endpointConfig=""
     defaultSamplingPercent={100}
   >
     <InfiniteWatchDiagnostics />
