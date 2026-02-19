@@ -12,6 +12,11 @@ import BlogPost from "./components/BlogPost";
 import './i18n';
 
 const queryClient = new QueryClient();
+const infiniteWatchOrgId = import.meta.env.VITE_INFINITEWATCH_ORG_ID?.trim();
+
+if (!infiniteWatchOrgId) {
+  console.error("[InfiniteWatch] Missing VITE_INFINITEWATCH_ORG_ID");
+}
 
 function AppContent() {
   useGeolocation(); // Auto-detect language based on location
@@ -28,7 +33,7 @@ function AppContent() {
 }
 
 const App = () => (
-  <InfiniteWatchProvider organizationId={import.meta.env.VITE_INFINITEWATCH_ORG_ID}>
+  <InfiniteWatchProvider organizationId={infiniteWatchOrgId} debug={true}>
     <QueryClientProvider client={queryClient}>
       <TooltipProvider>
         <Toaster />
