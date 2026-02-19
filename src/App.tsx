@@ -12,8 +12,6 @@ import BlogPost from "./components/BlogPost";
 import './i18n';
 
 const queryClient = new QueryClient();
-const infiniteWatchOrgId =
-  import.meta.env.VITE_INFINITEWATCH_ORG_ID || "698ee4257fd92064f9aac24c";
 
 function AppContent() {
   useGeolocation(); // Auto-detect language based on location
@@ -30,7 +28,7 @@ function AppContent() {
 }
 
 const App = () => (
-  <InfiniteWatchProvider organizationId={infiniteWatchOrgId}>
+  <InfiniteWatchProvider organizationId={import.meta.env.VITE_INFINITEWATCH_ORG_ID}>
     <QueryClientProvider client={queryClient}>
       <TooltipProvider>
         <Toaster />
