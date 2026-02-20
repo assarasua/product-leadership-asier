@@ -4,7 +4,7 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { InfiniteWatchProvider, useInfiniteWatch } from "@infinitewatch/react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { useGeolocation } from "@/hooks/useGeolocation";
 import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
@@ -51,14 +51,8 @@ function InfiniteWatchDiagnostics() {
   return null;
 }
 
-const App = () => (
-  <InfiniteWatchProvider
-    organizationId={infiniteWatchOrgId}
-    debug={true}
-    endpointConfig=""
-    defaultSamplingPercent={100}
-  >
-    <InfiniteWatchDiagnostics />
+function AppShell() {
+  return (
     <QueryClientProvider client={queryClient}>
       <TooltipProvider>
         <Toaster />
@@ -68,7 +62,44 @@ const App = () => (
         </BrowserRouter>
       </TooltipProvider>
     </QueryClientProvider>
-  </InfiniteWatchProvider>
-);
+  );
+}
+
+const App = () => {
+  const [isRecordingReady, setIsRecordingReady] = useState(
+    typeof window !== "undefined" && document.readyState === "complete",
+  );
+
+  useEffect(() => {
+    if (isRecordingReady) {
+      return;
+    }
+
+    const onLoad = () => {
+      // Allow one extra frame so CSS/layout settles before first snapshot.
+      window.setTimeout(() => setIsRecordingReady(true), 200);
+    };
+
+    window.addEventListener("load", onLoad);
+    return () => window.removeEventListener("load", onLoad);
+  }, [isRecordingReady]);
+
+  if (!isRecordingReady) {
+    return <AppShell />;
+  }
+
+  return (
+    <InfiniteWatchProvider
+      organizationId={infiniteWatchOrgId}
+      debug={true}
+      endpointConfig=""
+      defaultSamplingPercent={100}
+      inlineStylesheet={true}
+    >
+      <InfiniteWatchDiagnostics />
+      <AppShell />
+    </InfiniteWatchProvider>
+  );
+};
 
 export default App;
