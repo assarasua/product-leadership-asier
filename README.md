@@ -18,6 +18,7 @@ Repository: [assarasua/product-leadership-asier](https://github.com/assarasua/pr
 - Tailwind CSS + shadcn/ui
 - Supabase
 - i18next
+- InfiniteWatch (session analytics)
 
 ## Run locally
 
@@ -36,6 +37,7 @@ Create a `.env` file from `.env.example`:
 - `VITE_SUPABASE_PROJECT_ID`
 - `VITE_SUPABASE_PUBLISHABLE_KEY`
 - `VITE_SUPABASE_URL`
+- `VITE_INFINITEWATCH_ORG_ID`
 
 ## Build
 
@@ -44,11 +46,11 @@ npm run build
 npm run preview
 ```
 
-## Deploy to Cloudflare Pages
+## Deploy to Cloudflare
 
-This project is ready for Cloudflare Pages (static Vite build).
+This project is configured for static Vite output on Cloudflare.
 
-Use these settings when connecting the GitHub repo:
+Recommended build settings:
 
 - Framework preset: `Vite`
 - Build command: `npm run build`
@@ -56,16 +58,27 @@ Use these settings when connecting the GitHub repo:
 - Root directory: `/` (repo root)
 - Node.js version: `20` (recommended)
 
-Add these environment variables in Cloudflare Pages (Production + Preview):
+Add these environment variables in Cloudflare (Production + Preview):
 
 - `VITE_SUPABASE_PROJECT_ID`
 - `VITE_SUPABASE_PUBLISHABLE_KEY`
 - `VITE_SUPABASE_URL`
+- `VITE_INFINITEWATCH_ORG_ID`
 
 Notes:
 
-- `public/_redirects` is included for SPA routing (`/* /index.html 200`) so direct URL refreshes do not 404.
+- SPA fallback is handled by `wrangler.toml` with `not_found_handling = "single-page-application"`.
 - If using a custom domain, add `bizkardolab.eu` in Pages -> Custom domains.
+
+## InfiniteWatch integration
+
+The app uses `@infinitewatch/react` via `InfiniteWatchProvider` in `src/App.tsx`.
+
+Current integration is configured to aid validation in production:
+
+- `debug={true}`
+- `defaultSamplingPercent={100}`
+- `endpointConfig=""` (bypasses remote sampling config)
 
 ## Visibility checklist
 
