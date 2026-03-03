@@ -7,6 +7,7 @@ import Experience from '../components/Experience';
 import Journey from '../components/Journey';
 import Philosophy from '../components/Philosophy';
 import Mission from '../components/Mission';
+import Projects from '../components/Projects';
 import Contact from '../components/Contact';
 import Footer from '../components/Footer';
 
@@ -20,6 +21,7 @@ const Index = () => {
       <Journey />
       <Philosophy />
       <Mission />
+      <Projects />
       <Contact />
       <Footer />
     </div>

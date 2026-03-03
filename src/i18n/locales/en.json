@@ -4,6 +4,7 @@
     "journey": "Journey",
     "philosophy": "Philosophy",
     "mission": "Achievements",
+    "portfolio": "Portfolio",
     "blog": "Blog",
     "contact": "Contact"
   },
@@ -156,6 +157,13 @@
       "Startup Weekend finalists: Startupbus, Ampion, 3dstartup",
       "Datathon winner ICOM and DOMO 2018 in San Sebastian"
     ]
+  },
+  "portfolio": {
+    "title": "Portfolio",
+    "subtitle": "Selected websites and public work.",
+    "githubTitle": "GitHub",
+    "githubDescription": "Explore repositories, experiments, and code projects.",
+    "websitesTitle": "Websites"
   },
   "contact": {
     "title": "Let's Connect",

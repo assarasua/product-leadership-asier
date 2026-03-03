@@ -4,6 +4,7 @@
     "journey": "Bidaia",
     "philosophy": "Filosofia",
     "mission": "Lorpenak",
+    "portfolio": "Portfolioa",
     "contact": "Kontaktua"
   },
   "hero": {
@@ -155,6 +156,13 @@
       "Startup Weekend finalistak: Startupbus, Ampion, 3dstartup",
       "ICOM eta DOMO datathon irabazlea 2018an Donostian"
     ]
+  },
+  "portfolio": {
+    "title": "Portfolioa",
+    "subtitle": "Aukeratutako webguneak eta lan publikoa.",
+    "githubTitle": "GitHub",
+    "githubDescription": "Arakatu biltegiak, esperimentuak eta kode-proiektuak.",
+    "websitesTitle": "Webguneak"
   },
   "contact": {
     "title": "Konektatu Gaitezen",

@@ -26,6 +26,7 @@ const Navigation = () => {
     { href: '#journey', label: t('navigation.journey') },
     { href: '#philosophy', label: t('navigation.philosophy') },
     { href: '#mission', label: t('navigation.mission') },
+    { href: '#portfolio', label: t('navigation.portfolio') },
     { href: '/blog', label: t('navigation.blog'), isRoute: true },
     { href: '#contact', label: t('navigation.contact') }
   ];

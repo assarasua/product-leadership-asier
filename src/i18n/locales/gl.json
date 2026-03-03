@@ -4,6 +4,7 @@
     "journey": "Traxectoria",
     "philosophy": "Filosofía",
     "mission": "Logros",
+    "portfolio": "Portfolio",
     "contact": "Contacto"
   },
   "hero": {
@@ -155,6 +156,13 @@
       "Finalistas de Startup Weekend: Startupbus, Ampion, 3dstartup",
       "Gañador de datathon ICOM e DOMO 2018 en San Sebastián"
     ]
+  },
+  "portfolio": {
+    "title": "Portfolio",
+    "subtitle": "Sitios web seleccionados e traballo público.",
+    "githubTitle": "GitHub",
+    "githubDescription": "Explora repositorios, experimentos e proxectos de código.",
+    "websitesTitle": "Sitios web"
   },
   "contact": {
     "title": "Conectemos",

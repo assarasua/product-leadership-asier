@@ -1,94 +1,60 @@
 
 import React from 'react';
 import { ExternalLink, Github } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
 
 const Projects = () => {
-  const projects = [
-    {
-      title: "E-Commerce Platform",
-      description: "A full-featured e-commerce platform built with React, Node.js, and Stripe integration.",
-      image: "bg-gradient-to-br from-blue-500 to-purple-600",
-      tags: ["React", "Node.js", "MongoDB", "Stripe"],
-      github: "https://github.com/assarasua",
-      live: "https://example.com"
-    },
-    {
-      title: "Task Management App",
-      description: "A collaborative task management application with real-time updates and team features.",
-      image: "bg-gradient-to-br from-green-500 to-teal-600",
-      tags: ["React", "Socket.io", "Express", "PostgreSQL"],
-      github: "https://github.com/assarasua",
-      live: "https://example.com"
-    },
-    {
-      title: "Weather Dashboard",
-      description: "A beautiful weather dashboard with forecasts, maps, and location-based services.",
-      image: "bg-gradient-to-br from-orange-500 to-red-600",
-      tags: ["React", "Weather API", "Charts.js", "Tailwind"],
-      github: "https://github.com/assarasua",
-      live: "https://example.com"
-    },
-    {
-      title: "Portfolio Website",
-      description: "A responsive portfolio website showcasing creative design and smooth animations.",
-      image: "bg-gradient-to-br from-purple-500 to-pink-600",
-      tags: ["React", "Framer Motion", "Tailwind", "Vite"],
-      github: "https://github.com/assarasua",
-      live: "https://example.com"
-    }
+  const { t } = useTranslation();
+
+  const websites = [
+    { name: "Gipuzkoa Foodie", url: "https://gipuzkoafoodie.eu/" },
+    { name: "Product Digest", url: "https://productdigest.es/" },
+    { name: "Belako", url: "https://belako.bizkardolab.eu/" },
+    { name: "Hutech", url: "https://hutech.tech/" },
   ];
 
   return (
-    <section id="projects" className="py-20 px-4">
+    <section id="portfolio" className="py-20 px-4">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">Featured Projects</h2>
+          <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">{t('portfolio.title')}</h2>
           <p className="text-xl text-gray-400 max-w-3xl mx-auto">
-            Here are some of my recent projects that showcase my skills and creativity
+            {t('portfolio.subtitle')}
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-8">
-          {projects.map((project, index) => (
-            <div
-              key={index}
-              className="bg-gray-800/50 backdrop-blur-sm border border-gray-700 rounded-xl overflow-hidden hover:transform hover:scale-105 transition-all duration-300"
+        <div className="grid lg:grid-cols-2 gap-8">
+          <div className="bg-gray-800/50 backdrop-blur-sm border border-gray-700 rounded-xl p-8">
+            <h3 className="text-2xl font-bold text-white mb-4">{t('portfolio.githubTitle')}</h3>
+            <p className="text-gray-400 mb-6">{t('portfolio.githubDescription')}</p>
+            <a
+              href="https://github.com/assarasua"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center px-5 py-3 bg-gray-700 hover:bg-gray-600 text-white rounded-lg transition-colors duration-200"
             >
-              <div className={`h-48 ${project.image} flex items-center justify-center`}>
-                <div className="w-16 h-16 bg-white/20 rounded-lg backdrop-blur-sm"></div>
-              </div>
-              <div className="p-6">
-                <h3 className="text-xl font-bold text-white mb-3">{project.title}</h3>
-                <p className="text-gray-400 mb-4">{project.description}</p>
-                <div className="flex flex-wrap gap-2 mb-4">
-                  {project.tags.map((tag, tagIndex) => (
-                    <span
-                      key={tagIndex}
-                      className="px-3 py-1 bg-blue-600/20 text-blue-400 text-sm rounded-full"
-                    >
-                      {tag}
-                    </span>
-                  ))}
-                </div>
-                <div className="flex space-x-4">
-                  <a
-                    href={project.github}
-                    className="flex items-center px-4 py-2 bg-gray-700 hover:bg-gray-600 text-white rounded-lg transition-colors duration-200"
-                  >
-                    <Github size={16} className="mr-2" />
-                    Code
-                  </a>
-                  <a
-                    href={project.live}
-                    className="flex items-center px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white rounded-lg transition-colors duration-200"
-                  >
-                    <ExternalLink size={16} className="mr-2" />
-                    Live Demo
-                  </a>
-                </div>
-              </div>
+              <Github size={18} className="mr-2" />
+              github.com/assarasua
+            </a>
+          </div>
+
+          <div className="bg-gray-800/50 backdrop-blur-sm border border-gray-700 rounded-xl p-8">
+            <h3 className="text-2xl font-bold text-white mb-4">{t('portfolio.websitesTitle')}</h3>
+            <div className="space-y-3">
+              {websites.map((site) => (
+                <a
+                  key={site.url}
+                  href={site.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center justify-between p-4 bg-gray-900/40 border border-gray-700 rounded-lg hover:border-gray-500 transition-colors duration-200"
+                >
+                  <span className="text-white font-medium">{site.name}</span>
+                  <ExternalLink size={18} className="text-gray-400" />
+                </a>
+              ))}
             </div>
-          ))}
+          </div>
         </div>
       </div>
     </section>
