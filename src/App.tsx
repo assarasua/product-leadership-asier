@@ -14,9 +14,41 @@ import './i18n';
 
 const queryClient = new QueryClient();
 const infiniteWatchOrgId = import.meta.env.VITE_INFINITEWATCH_ORG_ID?.trim();
+const CONSENT_STORAGE_KEYS = [
+  "cookie_consent",
+  "cookieConsent",
+  "analytics_consent",
+  "analyticsConsent",
+];
+const CONSENT_COOKIE_KEYS = ["cookie_consent", "analytics_consent"];
+const ACCEPTED_VALUES = new Set(["accepted", "true", "yes", "allow", "granted"]);
 
 if (!infiniteWatchOrgId) {
   console.error("[InfiniteWatch] Missing VITE_INFINITEWATCH_ORG_ID");
+}
+
+function hasAnalyticsConsent() {
+  if (typeof window === "undefined") {
+    return false;
+  }
+
+  for (const key of CONSENT_STORAGE_KEYS) {
+    const raw = window.localStorage.getItem(key)?.toLowerCase().trim();
+    if (raw && ACCEPTED_VALUES.has(raw)) {
+      return true;
+    }
+  }
+
+  const cookies = document.cookie.split(";").map((chunk) => chunk.trim());
+  for (const key of CONSENT_COOKIE_KEYS) {
+    const match = cookies.find((cookie) => cookie.startsWith(`${key}=`));
+    const value = match?.split("=")[1]?.toLowerCase().trim();
+    if (value && ACCEPTED_VALUES.has(value)) {
+      return true;
+    }
+  }
+
+  return false;
 }
 
 function AppContent() {
@@ -69,6 +101,21 @@ const App = () => {
   const [isRecordingReady, setIsRecordingReady] = useState(
     typeof window !== "undefined" && document.readyState === "complete",
   );
+  const [hasConsent, setHasConsent] = useState(() => hasAnalyticsConsent());
+
+  useEffect(() => {
+    const updateConsent = () => {
+      setHasConsent(hasAnalyticsConsent());
+    };
+
+    window.addEventListener("cookie-consent-accepted", updateConsent);
+    window.addEventListener("storage", updateConsent);
+
+    return () => {
+      window.removeEventListener("cookie-consent-accepted", updateConsent);
+      window.removeEventListener("storage", updateConsent);
+    };
+  }, []);
 
   useEffect(() => {
     if (isRecordingReady) {
@@ -84,7 +131,7 @@ const App = () => {
     return () => window.removeEventListener("load", onLoad);
   }, [isRecordingReady]);
 
-  if (!isRecordingReady) {
+  if (!isRecordingReady || !hasConsent) {
     return <AppShell />;
   }
 
