@@ -9,8 +9,8 @@
   },
   "hero": {
     "title": "Construint Ponts Entre el Patrimoni Basc, la Tecnologia de Silicon Valley i la Innovació Africana",
-    "subtitle": "Agricultor Creatiu | Professor Global | Emprenedor",
-    "description": "Cultivant innovació des del camp basc mentre impulso solucions tecnològiques en mercats globals. Ensenyant a la propera generació a NYU Stern i construint ponts entre patrimoni i innovació.",
+    "subtitle": "AI Principal Product Manager | Professor | Advisor",
+    "description": "Liderant l'estratègia de producte en IA a InfiniteWatch, assessorant venture building a Hutech Ventures i cultivant innovació des de Bizkardo Lab mentre ensenyo a la propera generació a NYU Stern.",
     "cta1": "Posar-se en Contacte",
     "cta2": "Saber Més",
     "stats": {
@@ -23,7 +23,7 @@
     "title": "Sobre Mi",
     "subtitle": "Apassionat per construir productes que marquin la diferència",
     "quote": "Crec en el poder de la tecnologia per resoldre problemes complexos i crear un impacte significatiu.",
-    "paragraph1": "Sóc un experimentat gestor de producte 360 i empresari amb més d'una dècada d'experiència construint solucions innovadores en fintech, anàlisi de dades i indústries IoT. La meva experiència abasta tot l'espectre des de programació fins a estratègia de negoci i màrqueting. Actualment, sóc professor a NYU Stern i sóc Assessor de Producte i Estratègia per a Hutech Ventures i Agricultor Creatiu a bizkardo lab.",
+    "paragraph1": "Sóc un experimentat gestor de producte 360 i empresari amb més d'una dècada d'experiència construint solucions innovadores en fintech, anàlisi de dades, IoT i healthtech. La meva experiència abasta tot l'espectre des de programació fins a estratègia de negoci i màrqueting. Des del març de 2026, estic centrat a liderar l'estratègia de producte en IA a InfiniteWatch, assessorar Hutech Ventures, ensenyar a NYU Stern i continuar el meu treball com a Agricultor Creatiu a Bizkardo Lab.",
     "paragraph2": "Com a Professor Global a NYU Stern School of Business, sóc apassionat per tancar la bretxa entre tecnologia i societat, ensenyant a la propera generació d'innovadors sobre el poder transformador de la tecnologia.",
     "paragraph3": "La meva trajectòria empresarial abasta múltiples projectes exitosos, des de fundar Kibbber fins a ser membre inicial a MainTool i estar entre els primers empleats de Graphext, una plataforma de visualització de dades sense codi, i servir com a Group Product Manager a CoverWallet, una plataforma insurtech basada en dades que accelera i modernitza l'adquisició, col·locació i servei d'assegurances utilitzant eines purament digitals per a la segona corredoria d'assegurances més gran del món, Aon. Allà, vaig liderar múltiples grups de producte enfocats en anàlisi de dades i transformació digital.",
     "stats": {
@@ -48,6 +48,8 @@
       "groupPM": "Gerent de Grup de Producte",
       "headCustomerSuccess": "Cap d'Èxit del Client i Gerent de Producte",
       "cmo": "Director de Màrqueting i Producte",
+      "aiPrincipalPM": "AI Principal Product Manager",
+      "advisor": "Advisor",
       "headProductIncubationOps": "Head of Product Incubation & Operations",
       "b2bPartnerships": "Aliances B2B"
     },
@@ -58,6 +60,7 @@
       "coverwallet": "CoverWallet (empresa Aon)",
       "graphext": "Graphext",
       "maintool": "MainTool",
+      "infinitewatch": "InfiniteWatch",
       "hutech": "Hutech Ventures",
       "ultrahuman": "Ultrahuman"
     },
@@ -68,8 +71,10 @@
       "coverwallet": "Vaig llançar solucions de pagament escalables en múltiples països en la indústria d'assegurances altament regulada: Argentina, EUA, Espanya, Portugal i França. Vaig implementar diversos mètodes de pagament incloent xecs en paper, targetes, transferència bancària, ACH i Apple Pay tant per a agents com clients. Vaig assegurar el compliment PCI en més de 30 marques amb múltiples models operatius i regulacions.",
       "graphext": "Entre els primers empleats d'aquesta plataforma de visualització de dades, vaig gestionar el desenvolupament de productes i l'èxit del client",
       "maintool": "Membre inicial de l'equip de MainTool, liderant el posicionament de producte, l'estratègia go-to-market i el creixement de marca per a solucions IoT i tecnologia industrial.",
-      "hutech": "Liderant incubació de producte i operacions per transformar idees en ventures escalables amb sistemes clars d'execució.",
-      "ultrahuman": "Impulsant aliances B2B enfocades en creixement estratègic i expansió de l'ecosistema."
+      "infinitewatch": "Liderant l'estratègia i l'execució de producte en IA com a Principal Product Manager des del març de 2026, convertint capacitats d'IA en valor escalable per a clients.",
+      "hutech": "Vaig liderar incubació de producte i operacions per transformar idees en ventures escalables amb sistemes clars d'execució.",
+      "hutechAdvisor": "Assessorant en estratègia de producte, disseny de ventures i marcs d'execució per ajudar a convertir idees en negocis escalables.",
+      "ultrahuman": "Vaig impulsar aliances B2B enfocades en creixement estratègic i expansió de l'ecosistema."
     }
   },
   "journey": {

@@ -7,22 +7,38 @@ const Experience = () => {
   
   const experiences = [
     {
+      title: t('experience.roles.aiPrincipalPM'),
+      company: t('experience.companies.infinitewatch'),
+      period: "Mar 2026 - Present",
+      location: "Global",
+      description: t('experience.descriptions.infinitewatch'),
+      highlights: ["AI Product Strategy", "Principal PM", "Execution Systems"],
+      current: true
+    },
+    {
+      title: t('experience.roles.advisor'),
+      company: t('experience.companies.hutech'),
+      period: "Mar 2026 - Present",
+      location: "Global",
+      description: t('experience.descriptions.hutechAdvisor'),
+      highlights: ["Advisory", "Product Strategy", "Venture Support"],
+      current: true
+    },
+    {
       title: t('experience.roles.headProductIncubationOps'),
       company: t('experience.companies.hutech'),
-      period: "2025 - Present",
-      location: "San Diego, United States",
+      period: "2025 - Mar 2026",
+      location: "Global",
       description: t('experience.descriptions.hutech'),
-      highlights: ["Product Incubation", "Operations", "Venture Building"],
-      current: true
+      highlights: ["Product Incubation", "Operations", "Venture Building"]
     },
     {
       title: t('experience.roles.b2bPartnerships'),
       company: t('experience.companies.ultrahuman'),
-      period: "2025 - Present",
+      period: "2025 - Mar 2026",
       location: "Global",
       description: t('experience.descriptions.ultrahuman'),
-      highlights: ["B2B Partnerships", "HealthTech", "Growth"],
-      current: true
+      highlights: ["B2B Partnerships", "HealthTech", "Growth"]
     },
     {
       title: t('experience.roles.globalLecturer'),

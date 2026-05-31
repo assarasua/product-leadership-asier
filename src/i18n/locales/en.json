@@ -10,8 +10,8 @@
   },
   "hero": {
     "title": "Building Bridges Between Basque Heritage, Silicon Valley Tech and Healtech and Rural Innovation",
-    "subtitle": "Creative Farmer | Professor | Entrepreneur",
-    "description": "Cultivating innovation from the Basque countryside while driving technology solutions across global markets. Teaching the next generation at NYU Stern and building bridges between heritage and innovation.",
+    "subtitle": "AI Principal Product Manager | Professor | Advisor",
+    "description": "Leading AI product strategy at InfiniteWatch, advising venture building through Hutech Ventures, and cultivating innovation from Bizkardo Lab while teaching the next generation at NYU Stern.",
     "cta1": "Get In Touch",
     "cta2": "Learn More",
     "stats": {
@@ -25,7 +25,7 @@
     "subtitle": "Passionate about building products that make a difference",
     "quote": "I believe in the power of technology to solve complex problems and create meaningful impact.",
     "paragraph1": "I am a 360 product leader and entrepreneur with over a decade of experience building and scaling products across fintech, data analytics, IoT, and healthtech. My work spans the full stack, from product discovery and execution to go-to-market, operations, and business strategy.",
-    "paragraph2": "Today, I serve as Professor at NYU Stern School of Business, Head of Product Incubation & Operations at Hutech Ventures, and lead B2B Partnerships at Ultrahuman, while continuing my work as Creative Farmer at Bizkardo Lab.",
+    "paragraph2": "Since March 2026, I have focused on leading AI product strategy at InfiniteWatch, advising Hutech Ventures, teaching at NYU Stern School of Business, and continuing my work as Creative Farmer at Bizkardo Lab.",
     "paragraph3": "My journey includes founding Kibber, being an early employee at MainTool, joining the first core team at Graphext, and later serving as Group Product Manager at CoverWallet (Aon), where I led multiple product groups focused on digital transformation, analytics, and scalable insurance operations across international markets.",
     "stats": {
       "experience": "Years Experience",
@@ -49,6 +49,8 @@
       "groupPM": "Group Product Manager",
       "headCustomerSuccess": "Head of Customer Success & Product Manager",
       "cmo": "CMO & Product Lead",
+      "aiPrincipalPM": "AI Principal Product Manager",
+      "advisor": "Advisor",
       "headProductIncubationOps": "Head of Product Incubation & Operations",
       "b2bPartnerships": "B2B Partnerships"
     },
@@ -59,6 +61,7 @@
       "coverwallet": "CoverWallet (Aon company)",
       "graphext": "Graphext",
       "maintool": "MainTool",
+      "infinitewatch": "InfiniteWatch",
       "hutech": "Hutech Ventures",
       "ultrahuman": "Ultrahuman"
     },
@@ -69,8 +72,10 @@
       "coverwallet": "Launched scalable payment solutions across multiple countries in the highly regulated insurance industry: Argentina, USA, Spain, Portugal, and France. Implemented diverse payment methods including paper check, cards, bank transfer, ACH, and Apple Pay for both agents and customers. Ensured PCI compliance across 30+ brands with multiple operation models and regulations.",
       "graphext": "Among the first employees at this data visualization platform, managed product development and customer success",
       "maintool": "Early team member at MainTool, leading product positioning, go-to-market strategy, and brand growth for IoT and industrial technology solutions.",
-      "hutech": "Leading product incubation and operations to turn ideas into scalable ventures with clear execution systems.",
-      "ultrahuman": "Driving B2B partnerships focused on strategic growth and ecosystem expansion."
+      "infinitewatch": "Leading AI product strategy and execution as Principal Product Manager since March 2026, shaping practical systems that turn AI capabilities into scalable customer value.",
+      "hutech": "Led product incubation and operations, turning ideas into scalable ventures with clear execution systems.",
+      "hutechAdvisor": "Advising on product strategy, venture design, and execution frameworks to help ideas mature into scalable businesses.",
+      "ultrahuman": "Led B2B partnerships focused on strategic growth and ecosystem expansion."
     }
   },
   "journey": {

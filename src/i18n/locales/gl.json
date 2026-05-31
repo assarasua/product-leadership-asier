@@ -9,8 +9,8 @@
   },
   "hero": {
     "title": "Construíndo Pontes Entre o Patrimonio Vasco, a Tecnoloxía de Silicon Valley e a Innovación Africana",
-    "subtitle": "Agricultor Creativo | Profesor Global | Empresario",
-    "description": "Cultivando innovación desde o campo vasco mentres impulso solucións tecnolóxicas en mercados globais. Ensinando á próxima xeración en NYU Stern e construíndo pontes entre patrimonio e innovación.",
+    "subtitle": "AI Principal Product Manager | Profesor | Advisor",
+    "description": "Liderando a estratexia de produto en IA en InfiniteWatch, asesorando venture building en Hutech Ventures e cultivando innovación desde Bizkardo Lab mentres ensino á próxima xeración en NYU Stern.",
     "cta1": "Contactar",
     "cta2": "Saber Máis",
     "stats": {
@@ -23,7 +23,7 @@
     "title": "Sobre Min",
     "subtitle": "Apaixonado por construír produtos que marquen a diferenza",
     "quote": "Creo no poder da tecnoloxía para resolver problemas complexos e crear un impacto significativo.",
-    "paragraph1": "Son un experimentado xestor de produto 360 e empresario con máis dunha década de experiencia construíndo solucións innovadoras en fintech, análise de datos e industrias IoT. A miña experiencia abarca todo o espectro desde programación ata estratexia de negocio e marketing. Actualmente, son profesor en NYU Stern e son Asesor de Produto e Estratexia para Hutech Ventures e Agricultor Creativo en bizkardo lab.",
+    "paragraph1": "Son un experimentado xestor de produto 360 e empresario con máis dunha década de experiencia construíndo solucións innovadoras en fintech, análise de datos, IoT e healthtech. A miña experiencia abarca todo o espectro desde programación ata estratexia de negocio e marketing. Desde marzo de 2026, estou centrado en liderar a estratexia de produto en IA en InfiniteWatch, asesorar Hutech Ventures, ensinar en NYU Stern e continuar o meu traballo como Agricultor Creativo en Bizkardo Lab.",
     "paragraph2": "Como Profesor Global en NYU Stern School of Business, son apaixonado por pechar a brecha entre tecnoloxía e sociedade, ensinando á próxima xeración de innovadores sobre o poder transformador da tecnoloxía.",
     "paragraph3": "A miña traxectoria empresarial abarca múltiples proxectos exitosos, desde fundar Kibbber ata ser membro temperán en MainTool e estar entre os primeiros empregados de Graphext, unha plataforma de visualización de datos sen código, e servir como Group Product Manager en CoverWallet, unha plataforma insurtech basada en datos que acelera e moderniza a adquisición, colocación e servizo de seguros utilizando ferramentas puramente dixitais para a segunda corredoría de seguros máis grande do mundo, Aon. Alí, lidereu múltiples grupos de produto enfocados en análise de datos e transformación dixital.",
     "stats": {
@@ -48,6 +48,8 @@
       "groupPM": "Xerente de Grupo de Produto",
       "headCustomerSuccess": "Xefe de Éxito do Cliente e Xerente de Produto",
       "cmo": "Director de Marketing e Produto",
+      "aiPrincipalPM": "AI Principal Product Manager",
+      "advisor": "Advisor",
       "headProductIncubationOps": "Head of Product Incubation & Operations",
       "b2bPartnerships": "Alianzas B2B"
     },
@@ -58,6 +60,7 @@
       "coverwallet": "CoverWallet (empresa Aon)",
       "graphext": "Graphext",
       "maintool": "MainTool",
+      "infinitewatch": "InfiniteWatch",
       "hutech": "Hutech Ventures",
       "ultrahuman": "Ultrahuman"
     },
@@ -68,8 +71,10 @@
       "coverwallet": "Lancei solucións de pago escalables en múltiples países na industria de seguros altamente regulada: Arxentina, EUA, España, Portugal e Francia. Implementei diversos métodos de pago incluíndo cheques en papel, tarxetas, transferencia bancaria, ACH e Apple Pay tanto para axentes como clientes. Asegurei o cumprimento PCI en máis de 30 marcas con múltiples modelos operativos e regulacións.",
       "graphext": "Entre os primeiros empregados desta plataforma de visualización de datos, xestionei o desenvolvemento de produtos e o éxito do cliente",
       "maintool": "Membro temperán do equipo de MainTool, liderando o posicionamento de produto, a estratexia go-to-market e o crecemento de marca para solucións IoT e tecnoloxía industrial.",
-      "hutech": "Liderando incubación de produto e operacións para converter ideas en ventures escalables con sistemas claros de execución.",
-      "ultrahuman": "Impulsando alianzas B2B centradas en crecemento estratéxico e expansión do ecosistema."
+      "infinitewatch": "Liderando a estratexia e execución de produto en IA como Principal Product Manager desde marzo de 2026, convertendo capacidades de IA en valor escalable para clientes.",
+      "hutech": "Liderei incubación de produto e operacións para converter ideas en ventures escalables con sistemas claros de execución.",
+      "hutechAdvisor": "Asesorando en estratexia de produto, deseño de ventures e marcos de execución para axudar a converter ideas en negocios escalables.",
+      "ultrahuman": "Liderei alianzas B2B centradas en crecemento estratéxico e expansión do ecosistema."
     }
   },
   "journey": {
