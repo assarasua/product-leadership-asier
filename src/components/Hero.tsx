@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { ChevronDown, Award, Building2, GraduationCap } from 'lucide-react';
+import { ChevronDown, Award, Building2, GraduationCap, Linkedin, Twitter, Github } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 
 const Hero = () => {
@@ -30,10 +30,40 @@ const Hero = () => {
             {t('hero.subtitle')}
           </p>
           
-          <p className="text-lg md:text-xl text-muted-foreground mb-16 animate-fade-in-delay-2 max-w-5xl mx-auto leading-relaxed">
+          <p className="text-lg md:text-xl text-muted-foreground mb-8 animate-fade-in-delay-2 max-w-5xl mx-auto leading-relaxed">
             {t('hero.description')}
           </p>
-          
+
+          {/* Social links */}
+          <div className="flex gap-4 justify-center mb-16 animate-fade-in-delay-2">
+            <a
+              href="https://www.linkedin.com/in/asier-sarasua/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="p-3 rounded-xl glass-button text-muted-foreground hover:text-foreground transition-colors duration-200"
+              aria-label="LinkedIn"
+            >
+              <Linkedin size={22} />
+            </a>
+            <a
+              href="https://x.com/assarasua"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="p-3 rounded-xl glass-button text-muted-foreground hover:text-foreground transition-colors duration-200"
+              aria-label="Twitter / X"
+            >
+              <Twitter size={22} />
+            </a>
+            <a
+              href="https://github.com/assarasua"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="p-3 rounded-xl glass-button text-muted-foreground hover:text-foreground transition-colors duration-200"
+              aria-label="GitHub"
+            >
+              <Github size={22} />
+            </a>
+          </div>
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in-delay-4">
