@@ -166,12 +166,90 @@
     "title": "Portfolioa",
     "subtitle": "Aukeratutako webguneak eta lan publikoa.",
     "githubTitle": "GitHub",
-    "githubDescription": "Arakatu biltegiak, esperimentuak eta kode-proiektuak.",
-    "websitesTitle": "Webguneak"
+    "githubDescription": "Arakatu biltegiak, esperimentuak eta kode-proiektuak, eta konektatu nirekin GitHub, LinkedIn eta X bidez ere.",
+    "websitesTitle": "Webguneak",
+    "featured": {
+      "visitSite": "Ikusi Gunea",
+      "viewCode": "Ikusi Biltegia",
+      "stackTitle": "Stack-a",
+      "highlightsTitle": "Eraiki Dudana",
+      "foodie": {
+        "label": "Eraikuntza Kasu Nabarmena",
+        "title": "Gipuzkoa Foodie",
+        "subtitle": "Gipuzkoarako tokiko aurkikuntza produktu full-stack gisa eraikitako jatetxe gida kuratua.",
+        "description": "Gipuzkoa Foodie jatetxeen tokiko kurazioa produktu digital erabilgarri bihurtzen duen esperientzia gastronomiko elebiduna da. React frontend moderno batekin eta API/backend dedikatu batekin eraiki nuen, direktorio estatiko hutsa baino harago eskalatu ahal izateko.",
+        "outcome": "Proiektuak kurazio editoriala, produktu pentsamendua eta ingeniaritza praktikoa uztartzen ditu: kategorien araberako esplorazioa, jatetxeen aurkikuntza orrikatua, hizkuntzaren araberako edukia eta datuak eguneratuta mantentzeko inportazio-fluxu egituratua.",
+        "bullets": {
+          "one": "React + TypeScript frontend-a Tailwind CSS eta shadcn/ui-rekin, Cloudflare-ko app estatiko gisa argitaratua.",
+          "two": "Express + Prisma APIa PostgreSQL-rekin Railway-n, kategoriak, jatetxeak eta hizkuntzaren araberako erantzunak onartzeko diseinatua.",
+          "three": "Notion esportazio egituratuetatik jatetxe datuak produkzioko datu-basean kargatzeko eduki-operazioen fluxua."
+        }
+      },
+      "digest": {
+        "label": "Eraikuntza Kasu Nabarmena",
+        "title": "Product Digest",
+        "subtitle": "Medium estiloko produktu argitalpena eta PM eguneroko idazketa, editorial fluxua eta programatutako argitalpena kudeatzeko sistema operatiboa.",
+        "description": "Product Digest edukizko webgune bat baino gehiago da. Produktu ezagutzaren hub gisa eraiki nuen, non editorial argitalpena, bilaketa, harpidetzak eta automatizazioa produktu pentsamendurako sistema operatibo bakar gisa funtzionatzen duten.",
+        "outcome": "Proiektuak editorial UX-a eta produkzio mailako argitalpen azpiegitura uztartzen ditu: Next.js + MDX irakurketa esperientziarako, PostgreSQLn oinarritutako programatutako argitalpena, Railwayko API bat harpidetzetarako eta edukien operazioetarako, eta Cloudflare Workers Cron argitalpena modu errepikakorrean automatizatzeko.",
+        "bullets": {
+          "one": "Next.js + TypeScript frontend-a MDXn oinarritutako argitalpenarekin, bilaketa indizearen sorrerarekin, RSSarekin, sitemaparekin eta argitalpen estiloko irakurketa esperientziarekin.",
+          "two": "Datu-basean oinarritutako argitalpen eredua, non programatutako eta argitaratutako postak PostgreSQLn bizi diren eta sinkronizatu, eguneratu eta modu programatikoan argitaratu daitezkeen.",
+          "three": "Cloudflaren OpenNext bidezko deploy-a gehi Cloudflare Worker scheduler bat, babestutako backend API baten bidez argitaratzeko prest dauden postak automatikoki abiarazteko."
+        }
+      },
+      "newsgang": {
+        "label": "Eraikuntza Kasu Nabarmena",
+        "title": "news.gang",
+        "subtitle": "AIz lagundutako hedabide produktu bat, istorio bera ezkerretik, eskuinetik eta erditik nola kontatzen den alderatu eta sintesi objektiboa argitaratzen duena.",
+        "description": "news.gang produktu kontzeptu bat da, editorial ziri oso argi baten gainean eraikia: artikuluak agregatu beharrean, irakurleei laguntzen die hedabideen artean enkoadraketa ideologikoa nola aldatzen den antzematen. Esperientzia publikoak produktua iturri-loturadun, gardena eta gizakiek berrikusitako media geruza gisa kokatzen du.",
+        "outcome": "Proiektuaren interesgarriena ez da interfazea bakarrik, produktu diseinua baizik: doako geruza objektiboa, 2,99€/hileko ordainpeko konparazio geruza, iturrien atribuzio ikusgarria, kokapen elebiduna eta kurazioan, enkoadraketaren berridazketan eta giza berrikuspenean oinarritutako editorial fluxua.",
+        "bullets": {
+          "one": "Next.jsn oinarritutako landing esperientzia, mezu elebidunekin, kokapen sendoarekin eta bihurketa bultzatzeko informazio arkitekturarekin.",
+          "two": "Iturrien kurazioan, ezker/eskuin enkoadraketen berridazketan eta esteka gardenak eta AI + gizaki sinadura dituen sintesi objektiboan oinarritutako editorial eredua.",
+          "three": "Doako sintesi faktuala eta ordainpeko konparazio ideologikoa bereizten dituen harpidetza kontzeptua, monetizazioa produktuaren parte bihurtuz."
+        }
+      },
+      "guda": {
+        "label": "Produktu Kasua",
+        "title": "Guda",
+        "subtitle": "Artelanen portfolio CMS-a, Pablo Azurza artista tolosarrarentzat hutsetik eraikia.",
+        "description": "Guda full-stack eduki kudeaketa sistema eta portfolio bat da, artista aktibo batentzat hasieratik amaierara garatu nuena. Enkargua argia zen: obra eta berriak erakusteko web publiko garbi bat, gehi artistak bakarrik erabil zezakeen administrazio panel pribatu bat — agentzirik, CMS harpidetzarik eta menpekotasun teknikorik gabe.",
+        "outcome": "Emaitza harpidetzarik gabeko produktu guztiz propio bat da. Irudiak zuzenean PostgreSQL-en gordetzen dira, magic link autentikazioak pasahitzak ordezkatzen ditu, eta administrazio panela artista edozein gailutik erabil dezakeen single-page app bat da. Cloudflare azpiegituran zabaldua.",
+        "bullets": {
+          "one": "Node.js + Express backend PostgreSQL-ekin dena gordetzen — irudi aktiboak bitarrez barne — CDN edo kanpoko biltegiratze zerbitzurik behar gabe.",
+          "two": "Magic link autentikazioa Resend bidez — pasahitzik gogoratzeko beharrik gabe, mantentzeko formulariorik gabe, SHA-256 hash bidezko 15 minutuko tokenak.",
+          "three": "Vanilla JS administrazio panela drag-and-drop berrantolaketa, argitaratze toggleak eta obra, berri eta biografiarentzako CRUD osoarekin — JS framework gabe."
+        }
+      },
+      "hutech": {
+        "label": "Produktu Kasua",
+        "title": "HuTech Product Studio",
+        "subtitle": "HuTech-en inkubazio estudio barneko marketing eta produktu webgunea, non product lead gisa lan egiten dudan.",
+        "description": "HuTech Product Studio HuTech Ventures-en produktu azelerazioaren besoa da — osasun, robotika eta longevitate teknologian zentratutako venture studio bat. Webgune publikoa framework gabeko content-driven produktu gisa eraiki nuen: copy guztia, kasu azterketak, taldeko informazioa eta CTAk JSON datu geruza balioztatuan bizi dira, ez markupean.",
+        "outcome": "Arkitekturak edukia eta aurkezpena berariaz bereizten ditu: JSON Schema balioztagailu batek datuen kalitatea bermatzen du deploy bakoitzaren aurretik, eta bezero aldeko JavaScriptek kasu azterketak eta talde atalak dinamikoki errendatzen ditu datu geruzatik. Cloudflare Workers-en zabaldua Plausible analytics bidezko pribazitate lehenengo jarraipenerako.",
+        "bullets": {
+          "one": "Content-driven arkitektura, copy guztia eta kasu azterketak build denboran aplikatutako JSON Schema balioztatzearekin JSON geruzan — CMS-ik gabe.",
+          "two": "Cloudflare Workers zabalpena Vanilla JS + HTML/CSS stack-arekin: zero framework overhead, edge-tik mundu mailako entrega eta pipeline osoarentzako wrangler.toml bakarra.",
+          "three": "Estudioko product lead gisa eraikia — webguneak taldeak barneko 2 hilabeteko produktu zikloetan erabiltzen duen Problem → Prototype → MAP framework islatzen du."
+        }
+      },
+      "timetracking": {
+        "label": "Produktu Kasua",
+        "title": "HuTech Time Tracking",
+        "subtitle": "HuTech-en barneko erabilerarako eraikitako full-stack GGBB eta denbora jarraipen sistema — fitxatzea, oporrak, fakturak, helburuak eta nomina esportazioak tresna bakarrean.",
+        "description": "HuTech Time Tracking HuTech-en sakabanatutako kalkulu orriak eta eskuzko GGBB prozesuak ordezkatzeko eraiki nuen barneko operazio produktu bat da. Langileren ziklo osoa estaltzen du, eguneroko ordu erregistrotik hiruhilekoko helburuen ebaluaziora, langileentzako autozerbitzu ikuspegiekin eta gainbegiratze eta nomina esportazioetarako administrazio geruza batekin.",
+        "outcome": "Sistemak benetako negozio arauak kudeatzen ditu: eskuzko sarreretan gainjarpen detekzioa, opor eskaeretako jaiegun publiko betearazpena, hileko PDF bakarra langile bakoitzeko fakturetarako, eta Google Calendar sinkronizazioa absenzien ikusgarritasunerako. Denbora errealeko egoera eguneraketak SSE bidez, eta aktibo bitar guztiak (PDFak) zuzenean PostgreSQL-en gordetuta.",
+        "bullets": {
+          "one": "Bizi tenporizadorearekin fitxatzea, gainjarpen detekzioarekin eskuzko ordu sarrera eta aste-asteko saio ikuspegia — Next.js 15 API routes-en gainean eraikia SSE bidezko denbora errealeko egoerarekin.",
+          "two": "Jaiegun publiko eta asteburuaren betearazpen automatikoa duten opor eskaerak, Google Calendar-rekin norabide bakarreko sinkronizazio aukera, eta talde osoko admin gainbegiratzea.",
+          "three": "Hileko ordu txostenekin, CSV nomina esportazioekin, Resend bidezko email alertekin fakturen igotze jarraipenarekin eta langile bakoitzeko hiruhilekoko helburuen ebaluazioarekin administrazio geruza."
+        }
+      }
+    }
   },
   "contact": {
     "title": "Konektatu Gaitezen",
-    "subtitle": "Prest zaude zerbait esanguratsua batera eraikitzeko? Fintech berrikuntzan, produktu lidertzan, gamifikazio estrategietan edo merkatu berrietan interesatua bazaude, entzutea gustatuko litzaidake.",
+    "subtitle": "Prest zaude zerbait esanguratsua batera eraikitzeko? AI produktu lidertzan, fintech berrikuntzan, gamifikazio estrategietan edo merkatu berrietan interesatua bazaude, entzutea gustatuko litzaidake. Nire lana LinkedIn, GitHub eta X bidez ere jarrai dezakezu.",
     "getInTouch": "Harremanetan Jarri",
     "location": "Kokapena",
     "heritage": "Ondarea",
@@ -180,7 +258,7 @@
     "heritageValue": "Euskal Herria",
     "teachingValue": "NYU Stern School of Business",
     "bridgeDescription": "Kulturen eta berrikuntzaren arteko zubiak eraikitzen.",
-    "passionDescription": "Euskal ondarea eta Afrika berrikuntzaren arteko konexio esanguratsuak sortzeko pasioa dut, beti gamifikazio printzipioak aplikatzeko aukerak bilatzen munduko arazo errealak konpontzeko.",
+    "passionDescription": "Euskal ondarearen, healthtech-aren eta landa berrikuntzaren arteko konexio esanguratsuak sortzeko pasioa dut, eta nire lana, ideiak eta esperimentuak maiz partekatzen ditut LinkedIn, GitHub eta X-en.",
     "form": {
       "name": "Izena",
       "email": "Email",

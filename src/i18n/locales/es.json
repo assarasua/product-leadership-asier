@@ -166,12 +166,90 @@
     "title": "Portfolio",
     "subtitle": "Sitios web seleccionados y trabajo público.",
     "githubTitle": "GitHub",
-    "githubDescription": "Explora repositorios, experimentos y proyectos de código.",
-    "websitesTitle": "Sitios web"
+    "githubDescription": "Explora repositorios, experimentos y proyectos de código, y conecta conmigo también en GitHub, LinkedIn y X.",
+    "websitesTitle": "Sitios web",
+    "featured": {
+      "visitSite": "Ver Sitio",
+      "viewCode": "Ver Repositorio",
+      "stackTitle": "Stack",
+      "highlightsTitle": "Qué Construí",
+      "foodie": {
+        "label": "Caso Destacado",
+        "title": "Gipuzkoa Foodie",
+        "subtitle": "Una guía curada de restaurantes construida como producto full-stack de descubrimiento local para Gipuzkoa.",
+        "description": "Gipuzkoa Foodie es una experiencia bilingüe de descubrimiento gastronómico que convierte la curación local de restaurantes en un producto digital útil. La construí con un frontend moderno en React y una API/backend dedicada para que pudiera escalar más allá de un directorio estático.",
+        "outcome": "El proyecto combina curación editorial, pensamiento de producto e ingeniería práctica: exploración por categorías, descubrimiento paginado de restaurantes, contenido sensible al idioma y una vía operativa para mantener los datos actualizados mediante un flujo de importación estructurado.",
+        "bullets": {
+          "one": "Frontend en React + TypeScript con Tailwind CSS y shadcn/ui, desplegado como app estática en Cloudflare.",
+          "two": "API en Express + Prisma con PostgreSQL en Railway, diseñada para soportar categorías, restaurantes y respuestas adaptadas por idioma.",
+          "three": "Flujo de operaciones de contenido capaz de sembrar datos de restaurantes desde exportaciones estructuradas de Notion hacia la base de datos de producción."
+        }
+      },
+      "digest": {
+        "label": "Caso Destacado",
+        "title": "Product Digest",
+        "subtitle": "Una publicación de producto estilo medium y un sistema operativo para escritura diaria de PM, flujo editorial y publicación programada.",
+        "description": "Product Digest es más que una web de contenido. Lo construí como un hub de conocimiento de producto donde la publicación editorial, la búsqueda, las suscripciones y la automatización conviven como un solo sistema operativo para el pensamiento de producto.",
+        "outcome": "El proyecto combina UX editorial con infraestructura de publicación robusta: Next.js + MDX para la experiencia de lectura, publicación programada respaldada por PostgreSQL, una API en Railway para suscripciones y operaciones de contenido, y Cloudflare Workers Cron para automatizar la publicación recurrente.",
+        "bullets": {
+          "one": "Frontend en Next.js + TypeScript con publicación basada en MDX, generación de índice de búsqueda, RSS, sitemap y una experiencia de lectura tipo publicación.",
+          "two": "Modelo de publicación respaldado por base de datos donde los posts programados y publicados viven en PostgreSQL y pueden sincronizarse, actualizarse y publicarse de forma programática.",
+          "three": "Despliegue en Cloudflare con OpenNext más un Worker scheduler de Cloudflare que dispara la publicación de posts pendientes a través de una API backend protegida."
+        }
+      },
+      "newsgang": {
+        "label": "Caso Destacado",
+        "title": "news.gang",
+        "subtitle": "Un producto de medios asistido por IA que compara la cobertura de izquierda, derecha y centro sobre la misma historia y publica una síntesis objetiva.",
+        "description": "news.gang es un concepto de producto construido sobre una cuña editorial muy clara: en lugar de agregar artículos, ayuda a los lectores a detectar cómo cambia el encuadre ideológico entre medios. La experiencia pública posiciona el producto como una capa mediática transparente, enlazada a fuentes y revisada por humanos.",
+        "outcome": "Lo interesante del proyecto no es solo la interfaz, sino el diseño de producto: una capa objetiva gratuita, una capa comparativa de pago por 2,99€/mes, atribución visible de fuentes, posicionamiento bilingüe y un flujo editorial pensado en torno a curación, reescritura del encuadre y revisión humana.",
+        "bullets": {
+          "one": "Experiencia de landing basada en Next.js con mensajes bilingües, posicionamiento fuerte y arquitectura de información orientada a conversión.",
+          "two": "Modelo editorial construido sobre curación de fuentes, reescrituras de encuadre izquierda/derecha y una síntesis objetiva con enlaces transparentes y firma IA + humano.",
+          "three": "Concepto de suscripción que separa la síntesis factual gratuita de la comparación ideológica de pago, haciendo que la monetización forme parte del propio producto."
+        }
+      },
+      "guda": {
+        "label": "Caso de Producto",
+        "title": "Guda",
+        "subtitle": "CMS de portfolio artístico construido de cero para Pablo Azurza, artista contemporáneo de Tolosa.",
+        "description": "Guda es un sistema de gestión de contenidos y portfolio full-stack que desarrollé de principio a fin para un artista en activo. El encargo era claro: un sitio web público limpio para mostrar obras y noticias, más un panel de administración privado que el artista pudiera operar solo, sin agencias, sin suscripciones de CMS ni dependencias técnicas.",
+        "outcome": "El resultado es un producto completamente propio y sin costes de suscripción. Las imágenes se almacenan directamente en PostgreSQL, la autenticación por magic link elimina las contraseñas, y el panel de administración es una single-page app que el artista puede usar desde cualquier dispositivo. Desplegado en infraestructura Cloudflare.",
+        "bullets": {
+          "one": "Backend Node.js + Express con PostgreSQL almacenando todo, incluyendo los activos de imagen en binario, eliminando la necesidad de CDN o almacenamiento externo.",
+          "two": "Autenticación por magic link vía Resend — sin contraseña que recordar, sin formulario que mantener, tokens de 15 minutos con hash SHA-256.",
+          "three": "Panel de administración en Vanilla JS con reordenación drag-and-drop, toggles de publicación y CRUD completo para obras, noticias y biografía — sin frameworks JS."
+        }
+      },
+      "hutech": {
+        "label": "Caso de Producto",
+        "title": "HuTech Product Studio",
+        "subtitle": "Web de marketing y producto para el estudio de incubación interno de HuTech, donde trabajo como Product lead.",
+        "description": "HuTech Product Studio es el brazo de aceleración de producto de HuTech Ventures, un venture studio centrado en salud, robótica y tecnología de longevidad. Construí el sitio público como un producto content-driven sin frameworks: todo el copy, casos de estudio, info del equipo y CTAs viven en una capa de datos JSON validada, no en el markup.",
+        "outcome": "La arquitectura separa contenido de presentación de forma deliberada: un validador JSON Schema garantiza la calidad de los datos antes de cada despliegue, y JavaScript en cliente renderiza casos de estudio y secciones del equipo dinámicamente desde la capa de datos. Desplegado en Cloudflare Workers con Plausible analytics para tracking privado.",
+        "bullets": {
+          "one": "Arquitectura content-driven donde todo el copy y los casos de estudio viven en una capa JSON con validación JSON Schema aplicada en tiempo de build — sin CMS.",
+          "two": "Despliegue en Cloudflare Workers con stack Vanilla JS + HTML/CSS: zero overhead de framework, entrega global desde el edge y un único wrangler.toml para todo el pipeline.",
+          "three": "Construido como product lead del propio estudio — el sitio refleja el framework Problem → Prototype → MAP que el equipo usa internamente en ciclos de producto de 2 meses."
+        }
+      },
+      "timetracking": {
+        "label": "Caso de Producto",
+        "title": "HuTech Time Tracking",
+        "subtitle": "Sistema full-stack de RRHH y seguimiento de tiempo construido para uso interno en HuTech — fichaje, vacaciones, facturas, objetivos y exportaciones de nómina en una sola herramienta.",
+        "description": "HuTech Time Tracking es un producto de operaciones internas que construí para reemplazar hojas de cálculo dispersas y procesos manuales de RRHH en HuTech. Cubre el ciclo completo del empleado, desde el registro diario de horas hasta la evaluación trimestral de objetivos, con vistas de autoservicio para empleados y una capa de administración para supervisión y exportaciones de nómina.",
+        "outcome": "El sistema gestiona reglas de negocio reales: detección de solapamientos en entradas manuales, aplicación de festivos públicos en solicitudes de vacaciones, un PDF por mes por empleado para facturas, y sincronización con Google Calendar para la visibilidad de ausencias. Actualizaciones de estado en tiempo real vía SSE, y todos los activos binarios (PDFs) almacenados directamente en PostgreSQL.",
+        "bullets": {
+          "one": "Fichaje con temporizador en vivo, entrada manual de horas con detección de solapamientos y vista semana a semana — construido sobre Next.js 15 API routes con SSE para estado en tiempo real.",
+          "two": "Solicitudes de vacaciones con aplicación automática de festivos públicos y fines de semana, sincronización opcional con Google Calendar en una dirección, y supervisión admin de todo el equipo.",
+          "three": "Capa de administración con informes de horas mensuales, exportaciones CSV de nómina, seguimiento de subida de facturas con alertas por email via Resend, y evaluación trimestral de objetivos por empleado."
+        }
+      }
+    }
   },
   "contact": {
     "title": "Conectemos",
-    "subtitle": "¿Listo para construir algo significativo juntos? Ya sea que estés interesado en innovación fintech, liderazgo de producto, estrategias de gamificación, o explorando oportunidades en mercados emergentes, me encantaría escucharte.",
+    "subtitle": "¿Listo para construir algo significativo juntos? Ya sea que estés interesado en liderazgo de producto en IA, innovación fintech, estrategias de gamificación u oportunidades en mercados emergentes, me encantaría escucharte. También puedes seguir mi trabajo en LinkedIn, GitHub y X.",
     "getInTouch": "Ponte en Contacto",
     "location": "Ubicación",
     "heritage": "Patrimonio",
@@ -180,7 +258,7 @@
     "heritageValue": "País Vasco",
     "teachingValue": "NYU Stern School of Business",
     "bridgeDescription": "Construyendo puentes entre culturas e innovación.",
-    "passionDescription": "Soy apasionado por crear conexiones significativas entre el patrimonio vasco y la innovación africana, siempre buscando oportunidades para aplicar principios de gamificación para resolver problemas del mundo real.",
+    "passionDescription": "Soy apasionado por crear conexiones significativas entre el patrimonio vasco, healthtech y la innovación rural, y comparto con frecuencia mi trabajo, ideas y experimentos en LinkedIn, GitHub y X.",
     "form": {
       "name": "Nombre",
       "email": "Email",

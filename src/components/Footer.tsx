@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Github, Linkedin, Mail, Heart } from 'lucide-react';
+import { Github, Linkedin, Mail, Heart, Twitter } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 import LanguageSwitcher from './LanguageSwitcher';
 
@@ -30,6 +30,13 @@ const Footer = () => {
               aria-label="LinkedIn"
             >
               <Linkedin size={24} />
+            </a>
+            <a
+              href="https://x.com/assarasua"
+              className="text-gray-400 hover:text-white transition-colors duration-200"
+              aria-label="X"
+            >
+              <Twitter size={24} />
             </a>
             <a
               href="mailto:asier@bizkardolab.eu"

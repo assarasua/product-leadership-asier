@@ -167,12 +167,90 @@
     "title": "Portfolio",
     "subtitle": "Selected websites and public work.",
     "githubTitle": "GitHub",
-    "githubDescription": "Explore repositories, experiments, and code projects.",
-    "websitesTitle": "Websites"
+    "githubDescription": "Explore repositories, experiments, and code projects, and connect with me across GitHub, LinkedIn, and X.",
+    "websitesTitle": "Websites",
+    "featured": {
+      "visitSite": "Visit Live Site",
+      "viewCode": "View Repository",
+      "stackTitle": "Stack",
+      "highlightsTitle": "What I Built",
+      "foodie": {
+        "label": "Featured Build Case",
+        "title": "Gipuzkoa Foodie",
+        "subtitle": "A curated restaurant guide built as a full-stack local discovery product for Gipuzkoa.",
+        "description": "Gipuzkoa Foodie is a bilingual food discovery experience that turns local restaurant curation into a usable digital product. I built it with a modern React frontend and a dedicated API/backend setup so the experience could scale beyond a static directory.",
+        "outcome": "The project combines editorial curation, product thinking, and practical engineering: category-based exploration, paginated restaurant discovery, locale-aware content, and an operational path to keep restaurant data fresh through a structured import workflow.",
+        "bullets": {
+          "one": "React + TypeScript frontend with Tailwind CSS and shadcn/ui, deployed as a Cloudflare static app.",
+          "two": "Express + Prisma API with PostgreSQL on Railway, designed to support categories, restaurants, and locale-aware responses.",
+          "three": "Content operations workflow that can seed restaurant data from structured Notion exports into the production database."
+        }
+      },
+      "digest": {
+        "label": "Featured Build Case",
+        "title": "Product Digest",
+        "subtitle": "A medium-style product publication and operating system for daily PM writing, editorial workflow, and scheduled publishing.",
+        "description": "Product Digest is more than a content site. I built it as a product knowledge hub where editorial publishing, search, subscriptions, and publishing automation work together as one operating system for product thinking.",
+        "outcome": "The project blends editorial UX with production-grade publishing infrastructure: Next.js + MDX for the reading experience, PostgreSQL-backed scheduled publishing, a Railway API for subscriptions and content operations, and Cloudflare Workers Cron to automate publishing on a recurring schedule.",
+        "bullets": {
+          "one": "Next.js + TypeScript frontend with MDX-driven publishing, search index generation, RSS, sitemap, and a publication-style reading experience.",
+          "two": "Database-backed publishing model where scheduled and published posts live in PostgreSQL and can be synced, updated, and released programmatically.",
+          "three": "Cloudflare deployment with OpenNext plus a Cloudflare Worker scheduler that triggers due-post publication through a protected backend API."
+        }
+      },
+      "newsgang": {
+        "label": "Featured Build Case",
+        "title": "news.gang",
+        "subtitle": "An AI-assisted media product that compares left, right, and center coverage of the same story and publishes an objective synthesis.",
+        "description": "news.gang is a product concept built around a sharp editorial wedge: instead of aggregating articles, it helps readers detect how ideological framing changes across outlets. The public landing experience positions the product as a transparent, source-linked, human-reviewed AI media layer.",
+        "outcome": "What makes the project interesting is the product design, not just the interface: a free objective layer, a paid comparison layer at €2.99/month, visible source attribution, bilingual positioning, and an editorial workflow designed around curation, framing rewrite, and human review.",
+        "bullets": {
+          "one": "Next.js-based product landing experience with bilingual messaging, strong positioning, and conversion-focused information architecture.",
+          "two": "Editorial model built around source curation, left/right framing rewrites, and an objective synthesis with transparent links and AI + human bylines.",
+          "three": "Subscription concept that separates free fact synthesis from paid ideological comparison, making the monetization logic part of the product itself."
+        }
+      },
+      "guda": {
+        "label": "Featured Build Case",
+        "title": "Guda",
+        "subtitle": "A self-contained artist portfolio CMS built for Pablo Azurza, a contemporary artist from Tolosa.",
+        "description": "Guda is a full-stack portfolio and content management system I built end-to-end for a working artist. The brief was simple: a clean public-facing website to showcase works and news, plus a private admin panel the artist could operate alone — no agencies, no CMS subscriptions, no tech dependency.",
+        "outcome": "The result is a fully owned, zero-subscription product. All images stored directly in PostgreSQL, magic link authentication replaces passwords, and the admin panel is a single-page app the artist can use from any device. Deployed and running on Cloudflare infrastructure.",
+        "bullets": {
+          "one": "Node.js + Express backend with PostgreSQL storing everything including binary image assets, eliminating the need for a CDN or external storage service.",
+          "two": "Magic link email authentication via Resend — no password to remember, no login form to maintain, 15-minute token expiry with SHA-256 hashing.",
+          "three": "Vanilla JS admin panel with drag-and-drop reordering, publish/unpublish toggles, and full CRUD for works, news, and biography — all without a JS framework."
+        }
+      },
+      "hutech": {
+        "label": "Featured Build Case",
+        "title": "HuTech Product Studio",
+        "subtitle": "Marketing and product website for HuTech's internal incubation studio, where I work as Product lead.",
+        "description": "HuTech Product Studio is the product acceleration arm of HuTech Ventures — a venture studio focused on health, robotics, and longevity tech. I built the public-facing site as a content-driven, framework-free product: all copy, case studies, team info, and CTAs live in a validated JSON data layer, not hardcoded in markup.",
+        "outcome": "The architecture separates content from presentation deliberately — a JSON Schema validator enforces data quality before any deploy, and client-side JavaScript renders case studies and team sections dynamically from the data layer. Deployed on Cloudflare Workers with Plausible analytics for privacy-first tracking.",
+        "bullets": {
+          "one": "Content-driven architecture where all site copy and case studies live in a JSON data layer with JSON Schema validation enforced at build time — no CMS needed.",
+          "two": "Cloudflare Workers deployment with a vanilla JS + HTML/CSS stack: zero framework overhead, global edge delivery, and a single wrangler.toml for the full deploy pipeline.",
+          "three": "Built as the product lead of the studio itself — the site reflects the Problem → Prototype → MAP framework the team uses internally for 2-month product cycles."
+        }
+      },
+      "timetracking": {
+        "label": "Featured Build Case",
+        "title": "HuTech Time Tracking",
+        "subtitle": "A full-stack HR and time tracking system built for internal use at HuTech — clock-in, time off, invoices, goals, and payroll exports in one tool.",
+        "description": "HuTech Time Tracking is an internal operations product I built to replace scattered spreadsheets and manual HR processes at HuTech. It covers the full employee lifecycle from daily time logging to quarterly goal evaluation — with both employee self-service views and an admin layer for oversight and payroll exports.",
+        "outcome": "The system handles real business rules: overlap detection on manual entries, CA public holiday enforcement on time-off requests, one PDF per month per employee for invoices, and Google Calendar sync for time-off visibility. Real-time clock state updates via SSE, and all binary assets (PDFs) stored directly in PostgreSQL.",
+        "bullets": {
+          "one": "Clock in/out with live timer, manual hour entry with overlap detection, and a week-by-week session view — built on Next.js 15 API routes with SSE for real-time state.",
+          "two": "Time off requests with automatic CA public holiday and weekend enforcement, optional one-way Google Calendar sync, and admin oversight across the full team.",
+          "three": "Admin layer with monthly hours reports, CSV payroll exports, invoice upload tracking with Resend email alerts, and quarterly goal evaluation per employee."
+        }
+      }
+    }
   },
   "contact": {
     "title": "Let's Connect",
-    "subtitle": "Ready to build something meaningful together? Whether you're interested in fintech innovation, product leadership, gamification strategies, or exploring opportunities in emerging markets, I'd love to hear from you.",
+    "subtitle": "Ready to build something meaningful together? Whether you're interested in AI product leadership, fintech innovation, gamification strategies, or emerging markets, I'd love to hear from you. You can also follow my work on LinkedIn, GitHub, and X.",
     "getInTouch": "Get In Touch",
     "location": "Location",
     "heritage": "Heritage",
@@ -181,7 +259,7 @@
     "heritageValue": "Basque Country",
     "teachingValue": "NYU Stern School of Business",
     "bridgeDescription": "Building bridges between cultures and innovation.",
-    "passionDescription": "I'm passionate about creating meaningful connections between Basque heritage and healtech and rural innovation, always looking for opportunities to apply gamification principles to solve real-world problems.",
+    "passionDescription": "I'm passionate about creating meaningful connections between Basque heritage, healthtech, and rural innovation, and I regularly share my work, ideas, and experiments on LinkedIn, GitHub, and X.",
     "form": {
       "name": "Name",
       "email": "Email",

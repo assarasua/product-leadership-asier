@@ -1,5 +1,5 @@
 import React, { useState, useRef } from 'react';
-import { Mail, MapPin, GraduationCap, ArrowRight } from 'lucide-react';
+import { MapPin, GraduationCap, ArrowRight, Github, Linkedin, Twitter } from 'lucide-react';
 import { toast } from 'sonner';
 import { supabase } from '@/integrations/supabase/client';
 import { useTranslation } from 'react-i18next';
@@ -163,6 +163,24 @@ const Contact = () => {
     }
   ];
 
+  const socialLinks = [
+    {
+      icon: <Linkedin size={18} />,
+      label: 'LinkedIn',
+      href: 'https://www.linkedin.com/in/asarasua/'
+    },
+    {
+      icon: <Github size={18} />,
+      label: 'GitHub',
+      href: 'https://github.com/assarasua'
+    },
+    {
+      icon: <Twitter size={18} />,
+      label: 'X',
+      href: 'https://x.com/assarasua'
+    }
+  ];
+
   return (
     <section id="contact" className="py-20 px-4 bg-gray-900/30">
       <div className="max-w-7xl mx-auto">
@@ -188,6 +206,21 @@ const Contact = () => {
                     <p className="text-gray-400">{info.info}</p>
                   </div>
                 </div>
+              ))}
+            </div>
+
+            <div className="flex flex-wrap gap-3 mb-8">
+              {socialLinks.map((link) => (
+                <a
+                  key={link.href}
+                  href={link.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center px-4 py-2 bg-gray-800/70 border border-gray-700 rounded-lg text-gray-200 hover:text-white hover:border-gray-500 transition-colors duration-200"
+                >
+                  <span className="mr-2">{link.icon}</span>
+                  {link.label}
+                </a>
               ))}
             </div>
             

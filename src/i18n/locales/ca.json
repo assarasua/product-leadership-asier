@@ -166,12 +166,90 @@
     "title": "Portafoli",
     "subtitle": "Llocs web seleccionats i treball públic.",
     "githubTitle": "GitHub",
-    "githubDescription": "Explora repositoris, experiments i projectes de codi.",
-    "websitesTitle": "Llocs web"
+    "githubDescription": "Explora repositoris, experiments i projectes de codi, i connecta amb mi també a GitHub, LinkedIn i X.",
+    "websitesTitle": "Llocs web",
+    "featured": {
+      "visitSite": "Veure Lloc Web",
+      "viewCode": "Veure Repositori",
+      "stackTitle": "Stack",
+      "highlightsTitle": "Què Vaig Construir",
+      "foodie": {
+        "label": "Cas Destacat",
+        "title": "Gipuzkoa Foodie",
+        "subtitle": "Una guia curada de restaurants construïda com a producte full-stack de descobriment local per a Gipuzkoa.",
+        "description": "Gipuzkoa Foodie és una experiència bilingüe de descobriment gastronòmic que converteix la curació local de restaurants en un producte digital útil. La vaig construir amb un frontend modern en React i una API/backend dedicada perquè pogués escalar més enllà d’un directori estàtic.",
+        "outcome": "El projecte combina curació editorial, pensament de producte i enginyeria pràctica: exploració per categories, descobriment paginat de restaurants, contingut sensible a l’idioma i una via operativa per mantenir les dades actualitzades mitjançant un flux d’importació estructurat.",
+        "bullets": {
+          "one": "Frontend en React + TypeScript amb Tailwind CSS i shadcn/ui, desplegat com a app estàtica a Cloudflare.",
+          "two": "API en Express + Prisma amb PostgreSQL a Railway, dissenyada per donar suport a categories, restaurants i respostes adaptades per idioma.",
+          "three": "Flux d’operacions de contingut capaç de sembrar dades de restaurants des d’exportacions estructurades de Notion cap a la base de dades de producció."
+        }
+      },
+      "digest": {
+        "label": "Cas Destacat",
+        "title": "Product Digest",
+        "subtitle": "Una publicació de producte estil medium i un sistema operatiu per a escriptura diària de PM, flux editorial i publicació programada.",
+        "description": "Product Digest és més que un lloc de contingut. El vaig construir com un hub de coneixement de producte on la publicació editorial, la cerca, les subscripcions i l’automatització funcionen com un únic sistema operatiu per al pensament de producte.",
+        "outcome": "El projecte combina UX editorial amb infraestructura de publicació robusta: Next.js + MDX per a l’experiència de lectura, publicació programada recolzada per PostgreSQL, una API a Railway per a subscripcions i operacions de contingut, i Cloudflare Workers Cron per automatitzar la publicació recurrent.",
+        "bullets": {
+          "one": "Frontend en Next.js + TypeScript amb publicació basada en MDX, generació d’índex de cerca, RSS, sitemap i una experiència de lectura tipus publicació.",
+          "two": "Model de publicació recolzat per base de dades on els posts programats i publicats viuen a PostgreSQL i es poden sincronitzar, actualitzar i publicar de forma programàtica.",
+          "three": "Desplegament a Cloudflare amb OpenNext més un Worker scheduler de Cloudflare que activa la publicació de posts pendents a través d’una API backend protegida."
+        }
+      },
+      "newsgang": {
+        "label": "Cas Destacat",
+        "title": "news.gang",
+        "subtitle": "Un producte de mitjans assistit per IA que compara la cobertura d’esquerra, dreta i centre sobre la mateixa història i publica una síntesi objectiva.",
+        "description": "news.gang és un concepte de producte construït sobre una falca editorial molt clara: en lloc d’agregar articles, ajuda els lectors a detectar com canvia l’enquadrament ideològic entre mitjans. L’experiència pública posiciona el producte com una capa mediàtica transparent, enllaçada a fonts i revisada per humans.",
+        "outcome": "El més interessant del projecte no és només la interfície, sinó el disseny de producte: una capa objectiva gratuïta, una capa comparativa de pagament per 2,99€/mes, atribució visible de fonts, posicionament bilingüe i un flux editorial pensat al voltant de curació, reescriptura de l’enquadrament i revisió humana.",
+        "bullets": {
+          "one": "Experiència de landing basada en Next.js amb missatges bilingües, posicionament fort i arquitectura de la informació orientada a conversió.",
+          "two": "Model editorial construït sobre curació de fonts, reescriptures d’enquadrament esquerra/dreta i una síntesi objectiva amb enllaços transparents i signatura IA + humà.",
+          "three": "Concepte de subscripció que separa la síntesi factual gratuïta de la comparació ideològica de pagament, fent que la monetització formi part del producte mateix."
+        }
+      },
+      "guda": {
+        "label": "Cas de Producte",
+        "title": "Guda",
+        "subtitle": "CMS de portafoli artístic construït de zero per a Pablo Azurza, artista contemporani de Tolosa.",
+        "description": "Guda és un sistema de gestió de continguts i portafoli full-stack que vaig desenvolupar de cap a peus per a un artista en actiu. L'encàrrec era clar: un lloc web públic net per mostrar obres i notícies, més un tauler d'administració privat que l'artista pogués operar sol, sense agències, sense subscripcions de CMS ni dependències tècniques.",
+        "outcome": "El resultat és un producte completament propi i sense costos de subscripció. Les imatges s'emmagatzemen directament a PostgreSQL, l'autenticació per magic link elimina les contrasenyes, i el tauler d'administració és una single-page app que l'artista pot fer servir des de qualsevol dispositiu. Desplegat en infraestructura Cloudflare.",
+        "bullets": {
+          "one": "Backend Node.js + Express amb PostgreSQL emmagatzemant-ho tot, incloent els actius d'imatge en binari, eliminant la necessitat de CDN o emmagatzematge extern.",
+          "two": "Autenticació per magic link via Resend — sense contrasenya a recordar, sense formulari a mantenir, tokens de 15 minuts amb hash SHA-256.",
+          "three": "Tauler d'administració en Vanilla JS amb reordenació drag-and-drop, toggles de publicació i CRUD complet per a obres, notícies i biografia — sense frameworks JS."
+        }
+      },
+      "hutech": {
+        "label": "Cas de Producte",
+        "title": "HuTech Product Studio",
+        "subtitle": "Web de màrqueting i producte per a l'estudi d'incubació intern de HuTech, on treballo com a Product lead.",
+        "description": "HuTech Product Studio és el braç d'acceleració de producte de HuTech Ventures, un venture studio centrat en salut, robòtica i tecnologia de longevitat. Vaig construir el lloc públic com un producte content-driven sense frameworks: tot el copy, casos d'estudi, informació de l'equip i CTAs viuen en una capa de dades JSON validada, no en el markup.",
+        "outcome": "L'arquitectura separa contingut de presentació de forma deliberada: un validador JSON Schema garanteix la qualitat de les dades abans de cada desplegament, i JavaScript al client renderitza casos d'estudi i seccions de l'equip dinàmicament des de la capa de dades. Desplegat a Cloudflare Workers amb Plausible analytics per a tracking privat.",
+        "bullets": {
+          "one": "Arquitectura content-driven on tot el copy i els casos d'estudi viuen en una capa JSON amb validació JSON Schema aplicada en temps de build — sense CMS.",
+          "two": "Desplegament a Cloudflare Workers amb stack Vanilla JS + HTML/CSS: zero overhead de framework, lliurament global des de l'edge i un únic wrangler.toml per a tot el pipeline.",
+          "three": "Construït com a product lead del propi estudi — el lloc reflecteix el framework Problem → Prototype → MAP que l'equip usa internament en cicles de producte de 2 mesos."
+        }
+      },
+      "timetracking": {
+        "label": "Cas de Producte",
+        "title": "HuTech Time Tracking",
+        "subtitle": "Sistema full-stack de RRHH i seguiment de temps construït per a ús intern a HuTech — fitxatge, vacances, factures, objectius i exportacions de nòmina en una sola eina.",
+        "description": "HuTech Time Tracking és un producte d'operacions internes que vaig construir per substituir fulls de càlcul dispersos i processos manuals de RRHH a HuTech. Cobreix el cicle complet de l'empleat, des del registre diari d'hores fins a l'avaluació trimestral d'objectius, amb vistes d'autoservei per a empleats i una capa d'administració per a supervisió i exportacions de nòmina.",
+        "outcome": "El sistema gestiona regles de negoci reals: detecció de solapaments en entrades manuals, aplicació de festius públics en sol·licituds de vacances, un PDF per mes per empleat per a factures, i sincronització amb Google Calendar per a la visibilitat d'absències. Actualitzacions d'estat en temps real via SSE, i tots els actius binaris (PDFs) emmagatzemats directament a PostgreSQL.",
+        "bullets": {
+          "one": "Fitxatge amb temporitzador en viu, entrada manual d'hores amb detecció de solapaments i vista setmana a setmana — construït sobre Next.js 15 API routes amb SSE per a estat en temps real.",
+          "two": "Sol·licituds de vacances amb aplicació automàtica de festius públics i caps de setmana, sincronització opcional amb Google Calendar en una direcció, i supervisió admin de tot l'equip.",
+          "three": "Capa d'administració amb informes d'hores mensuals, exportacions CSV de nòmina, seguiment de pujada de factures amb alertes per email via Resend, i avaluació trimestral d'objectius per empleat."
+        }
+      }
+    }
   },
   "contact": {
     "title": "Connectem",
-    "subtitle": "Llest per construir alguna cosa significativa junts? Ja sigui que estiguis interessat en innovació fintech, lideratge de producte, estratègies de gamificació, o explorant oportunitats en mercats emergents, m'encantaria escoltar-te.",
+    "subtitle": "Llest per construir alguna cosa significativa junts? Tant si t'interessa el lideratge de producte en IA, la innovació fintech, les estratègies de gamificació o les oportunitats en mercats emergents, m'encantaria escoltar-te. També pots seguir la meva feina a LinkedIn, GitHub i X.",
     "getInTouch": "Posar-se en Contacte",
     "location": "Ubicació",
     "heritage": "Patrimoni",
@@ -180,7 +258,7 @@
     "heritageValue": "País Basc",
     "teachingValue": "NYU Stern School of Business",
     "bridgeDescription": "Construint ponts entre cultures i innovació.",
-    "passionDescription": "Sóc apassionat per crear connexions significatives entre el patrimoni basc i la innovació africana, sempre buscant oportunitats per aplicar principis de gamificació per resoldre problemes del món real.",
+    "passionDescription": "Sóc apassionat per crear connexions significatives entre el patrimoni basc, el healthtech i la innovació rural, i comparteixo sovint la meva feina, idees i experiments a LinkedIn, GitHub i X.",
     "form": {
       "name": "Nom",
       "email": "Email",
