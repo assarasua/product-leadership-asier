@@ -10,6 +10,7 @@ import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
 import Blog from "./components/Blog";
 import BlogPost from "./components/BlogPost";
+import ElevenLabsAgent from "./components/ElevenLabsAgent";
 import './i18n';
 
 const queryClient = new QueryClient();
@@ -60,6 +61,7 @@ function AppShell() {
         <BrowserRouter>
           <AppContent />
         </BrowserRouter>
+        <ElevenLabsAgent />
       </TooltipProvider>
     </QueryClientProvider>
   );
