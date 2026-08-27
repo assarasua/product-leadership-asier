@@ -17,6 +17,10 @@ const Hero = () => {
 
       <div className="container-wide z-10">
         <div className="text-center max-w-6xl mx-auto">
+          <p className="inline-flex items-center rounded-full border border-primary/30 bg-primary/10 px-4 py-2 text-xs font-semibold uppercase tracking-[0.22em] text-primary animate-fade-in">
+            {t('hero.eyebrow')}
+          </p>
+
           {/* Main Headline */}
           <h1 className="text-4xl md:text-6xl lg:text-7xl xl:text-8xl font-bold text-foreground mb-8 animate-fade-in leading-tight">
             {t('hero.title')}
@@ -69,6 +73,13 @@ const Hero = () => {
               className="glass-button px-8 py-4 text-foreground font-medium rounded-xl transition-all duration-300 hover-lift"
             >
               {t('hero.cta1')}
+            </a>
+            <a
+              href="#journey"
+              className="px-8 py-4 text-foreground font-medium rounded-xl border border-white/15 hover:bg-white/10 transition-all duration-300"
+            >
+              {t('hero.cta2')}
+              <span aria-hidden="true" className="ml-2">↓</span>
             </a>
           </div>
         </div>

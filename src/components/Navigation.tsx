@@ -8,6 +8,7 @@ const Navigation = () => {
   const { t } = useTranslation();
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const [activeSection, setActiveSection] = useState('hero');
 
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -19,6 +20,25 @@ const Navigation = () => {
     };
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
+  useEffect(() => {
+    const sections = ['about', 'journey', 'philosophy', 'mission', 'portfolio', 'contact']
+      .map((id) => document.getElementById(id))
+      .filter(Boolean) as HTMLElement[];
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        const visible = entries
+          .filter((entry) => entry.isIntersecting)
+          .sort((a, b) => b.intersectionRatio - a.intersectionRatio)[0];
+        if (visible) setActiveSection(visible.target.id);
+      },
+      { rootMargin: '-20% 0px -65% 0px', threshold: [0, 0.25, 0.5] }
+    );
+
+    sections.forEach((section) => observer.observe(section));
+    return () => observer.disconnect();
   }, []);
 
   const navItems = [
@@ -62,7 +82,10 @@ const Navigation = () => {
                   <a
                     key={item.href}
                     href={item.href}
-                    className="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200"
+                    aria-current={activeSection === item.href.slice(1) ? 'page' : undefined}
+                    className={`px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200 ${
+                      activeSection === item.href.slice(1) ? 'text-orange-400 bg-orange-400/10' : 'text-gray-300 hover:text-white'
+                    }`}
                   >
                     {item.label}
                   </a>
@@ -101,7 +124,10 @@ const Navigation = () => {
                 <a
                   key={item.href}
                   href={item.href}
-                  className="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+                  aria-current={activeSection === item.href.slice(1) ? 'page' : undefined}
+                  className={`block px-3 py-2 rounded-md text-base font-medium ${
+                    activeSection === item.href.slice(1) ? 'text-orange-400 bg-orange-400/10' : 'text-gray-300 hover:text-white'
+                  }`}
                   onClick={() => setIsOpen(false)}
                 >
                   {item.label}

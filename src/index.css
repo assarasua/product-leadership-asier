@@ -10,12 +10,12 @@
 @layer base {
   :root {
     /* Gen Z Africa 2025 Color Palette - High Contrast for Accessibility */
-    --background: 20 20% 4%;
-    --foreground: 20 5% 98%;
-    --card: 20 15% 8%;
-    --card-foreground: 20 5% 95%;
-    --popover: 20 15% 8%;
-    --popover-foreground: 20 5% 95%;
+    --background: 222 28% 5%;
+    --foreground: 220 18% 91%;
+    --card: 222 25% 8%;
+    --card-foreground: 220 18% 91%;
+    --popover: 222 25% 8%;
+    --popover-foreground: 220 18% 91%;
     
     /* Vibrant African-inspired primary colors */
     --primary: 25 95% 53%; /* Bright African sun orange */
@@ -23,7 +23,7 @@
     --secondary: 142 76% 36%; /* African green */
     --secondary-foreground: 20 5% 98%;
     --muted: 20 10% 15%;
-    --muted-foreground: 20 5% 70%;
+    --muted-foreground: 220 12% 64%;
     --accent: 271 91% 65%; /* Vibrant purple */
     --accent-foreground: 20 5% 98%;
     
@@ -44,30 +44,30 @@
     --chart-5: 201 96% 32%; /* Blue */
 
     /* Sidebar */
-    --sidebar-background: 20 20% 4%;
-    --sidebar-foreground: 20 5% 98%;
+    --sidebar-background: 222 28% 5%;
+    --sidebar-foreground: 220 18% 91%;
     --sidebar-primary: 25 95% 53%;
     --sidebar-primary-foreground: 20 20% 4%;
-    --sidebar-accent: 20 15% 8%;
-    --sidebar-accent-foreground: 20 5% 95%;
+    --sidebar-accent: 222 25% 8%;
+    --sidebar-accent-foreground: 220 18% 91%;
     --sidebar-border: 20 8% 20%;
     --sidebar-ring: 25 95% 53%;
   }
 
   .dark {
     /* Same as root for consistent dark theme */
-    --background: 20 20% 4%;
-    --foreground: 20 5% 98%;
-    --card: 20 15% 8%;
-    --card-foreground: 20 5% 95%;
-    --popover: 20 15% 8%;
-    --popover-foreground: 20 5% 95%;
+    --background: 222 28% 5%;
+    --foreground: 220 18% 91%;
+    --card: 222 25% 8%;
+    --card-foreground: 220 18% 91%;
+    --popover: 222 25% 8%;
+    --popover-foreground: 220 18% 91%;
     --primary: 25 95% 53%;
     --primary-foreground: 20 20% 4%;
     --secondary: 142 76% 36%;
     --secondary-foreground: 20 5% 98%;
     --muted: 20 10% 15%;
-    --muted-foreground: 20 5% 70%;
+    --muted-foreground: 220 12% 64%;
     --accent: 271 91% 65%;
     --accent-foreground: 20 5% 98%;
     --destructive: 0 84% 60%;
@@ -86,11 +86,10 @@
   body {
     @apply bg-background text-foreground;
     scroll-behavior: smooth;
-    background: linear-gradient(135deg, 
-      hsl(20 20% 4%) 0%, 
-      hsl(20 15% 8%) 30%, 
-      hsl(25 25% 12%) 60%, 
-      hsl(20 20% 4%) 100%);
+    background:
+      radial-gradient(circle at 12% 8%, hsl(25 95% 53% / 0.08), transparent 28rem),
+      radial-gradient(circle at 88% 26%, hsl(271 91% 65% / 0.06), transparent 32rem),
+      linear-gradient(145deg, hsl(222 28% 5%) 0%, hsl(224 24% 7%) 55%, hsl(222 30% 4%) 100%);
     min-height: 100vh;
     font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
     font-feature-settings: 'cv02', 'cv03', 'cv04', 'cv11';
