@@ -9,9 +9,9 @@
     "contact": "Contact"
   },
   "hero": {
-    "title": "Building Bridges Between Basque Heritage, Silicon Valley Tech and Healtech and Rural Innovation",
-    "subtitle": "AI Principal Product Manager | Professor | Advisor",
-    "description": "Leading AI product strategy at InfiniteWatch, advising venture building through Hutech Ventures, and cultivating innovation from Bizkardo Lab while teaching the next generation at NYU Stern.",
+    "title": "I build products like they’re my business.",
+    "subtitle": "Product entrepreneur · AI builder · Professor · Advisor",
+    "description": "I decide what to build, why it matters, and how to make it real — from AI workers at InfiniteWatch to ventures at HuTech, with a decade of hard-earned lessons across fintech, data, hardware, and emerging markets.",
     "cta1": "Get In Touch",
     "cta2": "Learn More",
     "stats": {
@@ -21,12 +21,12 @@
     }
   },
   "about": {
-    "title": "About Me",
-    "subtitle": "Passionate about building products that make a difference",
-    "quote": "I believe in the power of technology to solve complex problems and create meaningful impact.",
-    "paragraph1": "I am a 360 product leader and entrepreneur with over a decade of experience building and scaling products across fintech, data analytics, IoT, and healthtech. My work spans the full stack, from product discovery and execution to go-to-market, operations, and business strategy.",
-    "paragraph2": "Since March 2026, I have focused on leading AI product strategy at InfiniteWatch, advising Hutech Ventures, teaching at NYU Stern School of Business, and continuing my work as Creative Farmer at Bizkardo Lab.",
-    "paragraph3": "My journey includes founding Kibber, being an early employee at MainTool, joining the first core team at Graphext, and later serving as Group Product Manager at CoverWallet (Aon), where I led multiple product groups focused on digital transformation, analytics, and scalable insurance operations across international markets.",
+    "title": "Product entrepreneurship, assembled",
+    "subtitle": "The title is optional. The ownership is not.",
+    "quote": "Product entrepreneurship isn’t founding a company. It’s owning a product like it’s your business — and being the one whose stomach drops when the number doesn’t move.",
+    "paragraph1": "Nobody handed me a playbook. I assembled this craft from two schools and a decade of companies. IE gave me business, data, and systems fluency. LEINN gave me entrepreneurship in the only format that sticks: real teams, real projects, real money on the line.",
+    "paragraph2": "Eight companies supplied the rest of the muscle: freedom at Kibber, direction at Karmacracy, taste at Ibil, wings at MainTool, customer obsession at Graphext, leadership and scale at CoverWallet, and experimental humility in payments across Africa at KingMakers.",
+    "paragraph3": "Today I’m betting the whole pile on the frontier: building AI workers at InfiniteWatch, advising venture building at HuTech, and teaching at NYU Stern. I didn’t get promoted into being a product entrepreneur. I built one out of myself — and never waited for permission.",
     "stats": {
       "experience": "Years Experience",
       "companies": "Companies",
@@ -79,88 +79,88 @@
     }
   },
   "journey": {
-    "title": "The Journey",
+    "title": "The making of a product entrepreneur",
     "items": {
       "spark": {
-        "title": "The Spark",
-        "subtitle": "First African Journey",
-        "description": "At age 8, traveled to Kenya and Tanzania with parents, sparking a lifelong connection to Africa that would later define my professional mission."
+        "title": "Start with permission",
+        "subtitle": "Kibber · Freedom",
+        "description": "Ownership starts as permission you give yourself: the right to have an opinion, try, fail, and choose a direction before anyone gives you the title."
       },
       "foundation": {
-        "title": "The Foundation",
-        "subtitle": "Discovering Product Sense Through Gamification",
-        "description": "My journey into understanding user behavioral change began at Karmacracy, a pioneering Spanish startup founded by Alex Dolara. Working alongside Alex, I discovered the profound impact of game mechanics on user engagement and behavior modification.",
-        "detailed": "At Karmacracy, I learned to be a power user of gamification principles, understanding how elements like karma points, levels, badges, and social competition could drive authentic user engagement. Alex Dolara became an instrumental mentor who brought product sense and gamification expertise into my professional development."
+        "title": "Point at the problem",
+        "subtitle": "Karmacracy · Direction",
+        "description": "Freedom without direction is just wandering with confidence. The entrepreneur’s first job is to choose a problem worth solving and say why it matters before writing a spec.",
+        "detailed": "A product without a why is just features in a trench coat."
       },
       "summit": {
-        "title": "The Summit",
-        "subtitle": "Zegama Aizkorri Marathon",
-        "description": "Completed the prestigious World Cup mountain marathon in 7:49:46, finishing 395th overall. This 42.2km race with 2,853m elevation gain exemplifies my philosophy: 'No mountain is high enough when you combine authentic leadership with strategic vision.'"
+        "title": "Learn the no",
+        "subtitle": "Ibil · Taste",
+        "description": "Half of product judgment is knowing what to refuse: the feature, customer, or shortcut you will not take. Taste is mostly subtraction."
       },
       "leadership": {
-        "title": "Leadership Forged",
-        "subtitle": "Diani Beach Workshop",
-        "description": "During a transformative workshop in Kenya, established core leadership principles through interactions with local mentors like Omari and Nouha. Learned the critical importance of listening to local perspectives and understanding daily realities."
+        "title": "Earn your wings",
+        "subtitle": "MainTool · Hardware, marketing, voice",
+        "description": "Innovation is a process you run on purpose. Hardware taught me to make it physical, marketing taught me to write the words myself, and speaking taught me to carry the story out loud."
       },
       "mission": {
-        "title": "The Mission",
-        "subtitle": "Health Tech & AgriTech Innovation",
-        "description": "Leading health tech and agritech innovation through emerging markets that could have a meaningful positive impact in society, combining Silicon Valley tech and rural foundations of my home town Basque Country."
+        "title": "Make it matter",
+        "subtitle": "Graphext · CoverWallet · KingMakers",
+        "description": "A product does not exist until someone succeeds with it. Customer value, organizational leadership, domain depth, and experiments across Africa turned craft into responsibility at scale."
       },
       "vision": {
-        "title": "The Vision",
-        "subtitle": "AI & Society Harmonization",
-        "description": "Building a future where society and AI coexist harmoniously. We stand at a crossroads where our actions today determine tomorrow's world - the future is ours to shape with care."
+        "title": "Bet on the frontier",
+        "subtitle": "InfiniteWatch · AI workers",
+        "description": "Now every muscle fires at once: freedom to bet, direction to aim, taste to refuse, ownership to carry it, and the humility to let evidence change your mind."
       }
     }
   },
   "philosophy": {
-    "title": "Leadership Philosophy",
-    "basqueValues": "Basque Values",
-    "leadershipFrameworks": "Leadership Frameworks",
+    "title": "The operating system",
+    "basqueValues": "Ownership principles",
+    "leadershipFrameworks": "Product habits",
     "values": {
       "lanEgitea": {
         "term": "Lan Egitea",
-        "meaning": "Honest Work",
-        "application": "The highest honor in Basque culture, prioritizing authentic effort over impressive displays"
+        "meaning": "Own the outcome",
+        "application": "Treat the product like your business. Carry the number, the trade-offs, and the consequences."
       },
       "gardentasuna": {
         "term": "Gardentasuna",
-        "meaning": "Transparency",
-        "application": "Overcoming institutional distrust through honesty and genuine commitment to community success"
+        "meaning": "Say the why",
+        "application": "Make the problem, the bet, and the evidence visible before asking a team to build."
       },
       "auzolan": {
         "term": "Auzolan",
-        "meaning": "Community Cooperation",
-        "application": "Mutual aid networks where individual success depends on collective achievement"
+        "meaning": "Build through people",
+        "application": "Leadership is moving an idea through a real organization, with its gravity, politics, and constraints."
       }
     },
     "frameworks": {
       "slowDown": {
-        "name": "Slow Down, Go Faster",
-        "description": "Strategic patience in building measurement infrastructure enables accelerated execution and data-driven confidence"
+        "name": "Experiment honestly",
+        "description": "Bet, measure, kill what is wrong, and double down on what works. Hold every idea loosely enough for evidence to change it."
       },
       "backwardThinking": {
-        "name": "Backward Thinking",
-        "description": "Start with perfect user moments and reverse engineer the infrastructure needed to create them"
+        "name": "Start from success",
+        "description": "Work backwards from the moment a real customer succeeds, then build the system that makes that moment repeatable."
       }
     }
   },
   "mission": {
-    "title": "Key Achievements",
+    "title": "The evidence",
     "company": "Bizkardo",
     "role": "Creative Farmer & Innovation Lead",
     "description": "Cultivating innovation from the Basque countryside while driving technology solutions across global markets, bridging heritage with cutting-edge innovation.",
-    "achievements": "Key Achievements",
+    "achievements": "The muscles, proven in public",
     "achievementsList": [
-      "Zegama Aizkorri World Cup Marathon finisher (7:49:46, 395th overall, 2019)",
-      "NYU Stern Professor since 2018 (became professor at age 25)",
-      "Payment solutions across 5 countries with 100% PCI compliance",
-      "Stripe Architect & Fundamentals certifications",
-      "Co-founded Kibber, early employee at Graphext, MainTool and Karmacracy",
-      "Event Speaker: Webit, South Summit, La French Tech, MWC, 4YFN",
-      "Startup Weekend finalists: Startupbus, Ampion, 3dstartup",
-      "Datathon winner ICOM and DOMO 2018 in San Sebastian"
+      "Freedom and ownership: founded Kibber and built products from zero",
+      "Direction and taste: chose the problem, then learned what not to build",
+      "Customer success: made value measurable across data and fintech products",
+      "Leadership at scale: shipped regulated payments across five countries",
+      "Global judgment: built for African markets where mistakes move real money",
+      "Voice: wrote the positioning, sold the product, and spoke on international stages",
+      "Teaching as proof: Professor at NYU Stern since 2018",
+      "Frontier bet: leading AI product strategy at InfiniteWatch"
     ]
   },
   "portfolio": {
